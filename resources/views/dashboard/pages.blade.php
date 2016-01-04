@@ -5,8 +5,13 @@
   <div class="row">
     <div class="col-sm-12">
     	<h3>{{ Auth::user()->name }} Charts</h3>  
-      <br>{{ Auth::user()->id }} • {{ Auth::user()->name }} 
-
+      <ul>
+      <li><strong>ID :</strong> {{ Auth::user()->id }} </li>
+      <li> {{ Auth::user()->email }} </li>
+      <li>{{ Auth::user()->created_at }}</li>
+      <li>{{ Auth::user()->updated_at }}</li>
+      <li>{{ Auth::user()->remember_token }}</li>
+</ul>
     </div>
   </div><!--/row-->
   <hr>
