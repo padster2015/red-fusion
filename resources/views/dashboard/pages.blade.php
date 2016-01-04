@@ -7,10 +7,10 @@
     	<h3>{{ Auth::user()->name }} Charts</h3>  
       <ul>
       <li><strong>ID :</strong> {{ Auth::user()->id }} </li>
-      <li> {{ Auth::user()->email }} </li>
-      <li>{{ Auth::user()->created_at }}</li>
-      <li>{{ Auth::user()->updated_at }}</li>
-      <li>{{ Auth::user()->remember_token }}</li>
+      <li> <strong>email :</strong>{{ Auth::user()->email }} </li>
+      <li><strong>created date :</strong>{{ Auth::user()->created_at }}</li>
+      <li><strong>updated at :</strong>{{ Auth::user()->updated_at }}</li>
+      <li><strong>token :</strong>{{ Auth::user()->remember_token }}</li>
 </ul>
     </div>
   </div><!--/row-->
