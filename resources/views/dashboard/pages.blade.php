@@ -4,7 +4,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
-    	<h3>Morris Charts Example</h3>  
+    	<h3>{{ Auth::user()->name }} Charts</h3>  
     </div>
   </div><!--/row-->
   <hr>
