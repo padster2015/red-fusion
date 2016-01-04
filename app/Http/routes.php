@@ -21,9 +21,9 @@ Route::get('/', function () {
 */
 
 
-Route::get('dashboard', ['middleware' => 'auth', function () {
-    return view ('dashboard.pages');
-}]);
+//Route::get('dashboard', ['middleware' => 'auth', function () {
+  //  return view ('dashboard.pages');
+//}]);
 
 
 Route::get('admin/profile', ['middleware' => 'auth', function () {
@@ -45,8 +45,15 @@ Route::group(['middleware' => ['web']], function () {
     //
 });
 
+
+
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
+
+    // Add this!
+    Route::get('/', function () {
+        return view('welcome');
+    });
 
     Route::get('/home', 'HomeController@index');
 });
