@@ -34,9 +34,14 @@ Route::group(['middleware' => ['web']], function () {
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
-    // Add this!
+    // Added this!
     Route::get('/', function () {
         return view('welcome');
+    });
+
+    // dashboard from after login!
+    Route::get('/dashboard', function () {
+        return view('dashboard.pages');
     });
 
     Route::get('/home', 'HomeController@index');
