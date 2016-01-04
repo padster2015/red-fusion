@@ -24,6 +24,10 @@
             margin-right: 6px;
         }
     </style>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+    
 </head>
 <body id="app-layout">
     <nav class="navbar navbar-default">

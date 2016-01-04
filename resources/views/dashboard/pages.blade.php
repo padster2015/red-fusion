@@ -9,82 +9,76 @@
   </div><!--/row-->
   <hr>
   <div class="row">
-    <div class="col-md-12">
-        <div id="area-example" style="height: 300px;"></div>
-    </div>
-    <div class="col-md-12">
-        <div id="line-example" style="height: 300px;"></div>
-    </div>
-    <div class="col-md-6">
-        <div id="donut-example" style="height: 250px;"></div>
-    </div>
-    <div class="col-md-6">
-        <div id="bar-example" style="height: 250px;"></div>
-    </div>
-  </div>
+    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
 </div>
 <script>
-//Morris charts snippet - js
-
-$.getScript('http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js',function(){
-$.getScript('http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.0/morris.min.js',function(){
-
-  Morris.Area({
-    element: 'area-example',
-    data: [
-      { y: '1.1.', a: 100, b: 90 },
-      { y: '2.1.', a: 75,  b: 65 },
-      { y: '3.1.', a: 50,  b: 40 },
-      { y: '4.1.', a: 75,  b: 65 },
-      { y: '5.1.', a: 50,  b: 40 },
-      { y: '6.1.', a: 75,  b: 65 },
-      { y: '7.1.', a: 100, b: 90 }
-    ],
-    xkey: 'y',
-    ykeys: ['a', 'b'],
-    labels: ['Series A', 'Series B']
-  });
-  
-  Morris.Line({
-        element: 'line-example',
-        data: [
-          {year: '2010', value: 20},
-          {year: '2011', value: 10},
-          {year: '2012', value: 5},
-          {year: '2013', value: 2},
-          {year: '2014', value: 20}
-        ],
-        xkey: 'year',
-        ykeys: ['value'],
-        labels: ['Value']
-      });
-      
-      Morris.Donut({
-        element: 'donut-example',
-        data: [
-         {label: "Android", value: 12},
-         {label: "iPhone", value: 30},
-         {label: "Other", value: 20}
-        ]
-      });
-      
-      Morris.Bar({
-         element: 'bar-example',
-         data: [
-            {y: 'Jan 2014', a: 100, b: 90},
-            {y: 'Feb 2014', a: 75,  b: 65},
-            {y: 'Mar 2014', a: 50,  b: 40},
-            {y: 'Apr 2014', a: 75,  b: 65},
-            {y: 'May 2014', a: 50,  b: 40},
-            {y: 'Jun 2014', a: 75,  b: 65}
-         ],
-         xkey: 'y',
-         ykeys: ['a', 'b'],
-         labels: ['Visitors', 'Conversions']
-      });
-  
+$(function () {
+    $('#container').highcharts({
+        title: {
+            text: 'Combination chart'
+        },
+        xAxis: {
+            categories: ['Apples', 'Oranges', 'Pears', 'Bananas', 'Plums']
+        },
+        labels: {
+            items: [{
+                html: 'Total fruit consumption',
+                style: {
+                    left: '50px',
+                    top: '18px',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                }
+            }]
+        },
+        series: [{
+            type: 'column',
+            name: 'Jane',
+            data: [3, 2, 1, 3, 4]
+        }, {
+            type: 'column',
+            name: 'John',
+            data: [2, 3, 5, 7, 6]
+        }, {
+            type: 'column',
+            name: 'Joe',
+            data: [4, 3, 3, 9, 0]
+        }, {
+            type: 'spline',
+            name: 'Average',
+            data: [3, 2.67, 3, 6.33, 3.33],
+            marker: {
+                lineWidth: 2,
+                lineColor: Highcharts.getOptions().colors[3],
+                fillColor: 'white'
+            }
+        }, {
+            type: 'pie',
+            name: 'Total consumption',
+            data: [{
+                name: 'Jane',
+                y: 13,
+                color: Highcharts.getOptions().colors[0] // Jane's color
+            }, {
+                name: 'John',
+                y: 23,
+                color: Highcharts.getOptions().colors[1] // John's color
+            }, {
+                name: 'Joe',
+                y: 19,
+                color: Highcharts.getOptions().colors[2] // Joe's color
+            }],
+            center: [100, 80],
+            size: 100,
+            showInLegend: false,
+            dataLabels: {
+                enabled: false
+            }
+        }]
+    });
 });
-});
+
+
 </script>
 @endsection
 
