@@ -66,6 +66,21 @@ class AuthController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'Facebook_api' => $data['Facebook_api'],
+            'Twitter_api' => $data['Twitter_api'],
+            'Googleplus_api' => $data['Googleplus_api'],
+            'linkedin_api' => $data['linkedin_api'],
+            'SnapChat_api' => $data['SnapChat_api'],
+            'Pinterest_api' => $data['Pinterest_api'],
+            'Email_api' => $data['Email_api'],
+            'Affiliate_api' => $data['Affiliate_api'],
+            'PaidSearch_api' => $data['PaidSearch_api'],
+            'Youtube_api' => $data['Youtube_api'],
+            'Deals_api' => $data['Deals_api'],
+            'GA_api' => $data['GA_api'],
+
+
+
         ]);
     }
 }
