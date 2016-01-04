@@ -36,7 +36,7 @@ Route::group(['middleware' => 'web'], function () {
 
     // Add this!
     Route::get('/', function () {
-        return view('dashboard.pages');
+        return view('welcome');
     });
 
     Route::get('/home', 'HomeController@index');
