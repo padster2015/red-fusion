@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="alert alert-warning alert-success" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Whoo hoo!</strong> Logged in and data is in :)
+</div>
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
