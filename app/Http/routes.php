@@ -15,10 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
+/*Route::get('/dashboard', function () {
     return view('dashboard.pages');
 });
+*/
 
+
+Route::get('dashboard', ['middleware' => 'auth', function () {
+    return view ('dashboard.pages');
+}]);
 
 
 Route::get('admin/profile', ['middleware' => 'auth', function () {
