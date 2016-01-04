@@ -5,6 +5,8 @@
   <div class="row">
     <div class="col-sm-12">
     	<h3>{{ Auth::user()->name }} Charts</h3>  
+      <br>{{ Auth::user()->id }} • {{ Auth::user()->name }} 
+
     </div>
   </div><!--/row-->
   <hr>
