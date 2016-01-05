@@ -24,6 +24,11 @@
             margin-right: 6px;
         }
 
+        .api-edits{
+            width:250px;
+        }
+
+
         li
 {
     list-style-type: none;
