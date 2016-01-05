@@ -8,7 +8,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
-    	<h3>{{ Auth::user()->name }} Charts</h3>  
+    	<h3>{{ Auth::user()->Business_name }} Charts</h3>  
       <ul>
       <li><strong>ID :</strong> {{ Auth::user()->id }} </li>
       <li> <strong>email :</strong>{{ Auth::user()->email }} </li>
@@ -30,7 +30,7 @@ $(function () {
             type: 'area'
         },
         title: {
-            text: 'How your Brand is doing'
+            text: 'How '{{ Auth::user()->Business_name }}' is doing'
         },
       
         xAxis: {
