@@ -27,7 +27,7 @@
         .api-edits{
             width:250px;
             background-color:#fffdbf;
-            padding:4px 4px 4px 8px;
+            padding:4px 4px 4px 16px;
             border-radius:5px;
         }
 
