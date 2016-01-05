@@ -23,6 +23,11 @@
         .fa-btn {
             margin-right: 6px;
         }
+
+        li
+{
+    list-style-type: none;
+}
     </style>
 <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
