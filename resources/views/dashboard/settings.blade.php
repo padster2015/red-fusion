@@ -3,6 +3,9 @@
 @section('content')
 
 <div class="container-fluid">
+
+
+<ul class="nav nav-tabs nav-justified">
   <div class="row">
     <div class="col-sm-12">
     	<h3>{{ Auth::user()->name }}</h3> <br> <h4>Settings</h4>  
@@ -22,8 +25,9 @@
 </ul>
     </div>
   </div><!--/row-->
-  <hr>
-
+  </ul>
+  
+<ul class="nav nav-tabs nav-justified">
   <div class="row">
     <div class="col-sm-12">
 
@@ -45,5 +49,5 @@
 
     </div>
     </div>
-  
+  </ul>
 @endsection
