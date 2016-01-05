@@ -16,7 +16,7 @@ class DataController extends Controller
      */
     public function index()
     {
-                     $BrandData = DB::table('ClicksWithDate')->select('Click Date','clicks')->get();
+                     $BrandData = DB::table('FacebookClickType')->select('Total clicks','Type')->get();
 
         echo json_encode($BrandData,JSON_NUMERIC_CHECK);
     }
