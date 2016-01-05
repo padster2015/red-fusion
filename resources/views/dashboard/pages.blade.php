@@ -27,7 +27,7 @@
 $(function () {
     $('#container').highcharts({
         title: {
-            text: 'Combination chart'
+            text: 'Brand'
         },
         xAxis: {
             categories: ['Apples', 'Oranges', 'Pears', 'Bananas', 'Plums']
@@ -43,19 +43,19 @@ $(function () {
             }]
         },
         series: [{
-            type: 'column',
+            type: 'area',
             name: 'Jane',
             data: [3, 2, 1, 3, 4]
         }, {
-            type: 'column',
+            type: 'area',
             name: 'John',
             data: [2, 3, 5, 7, 6]
         }, {
-            type: 'column',
+            type: 'area',
             name: 'Joe',
             data: [4, 3, 3, 9, 0]
         }, {
-            type: 'spline',
+            type: 'area',
             name: 'Average',
             data: [3, 2.67, 3, 6.33, 3.33],
             marker: {
@@ -81,9 +81,9 @@ $(function () {
             }],
             center: [100, 80],
             size: 100,
-            showInLegend: false,
+            showInLegend: true,
             dataLabels: {
-                enabled: false
+                enabled: true
             }
         }]
     });
