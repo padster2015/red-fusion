@@ -63,7 +63,7 @@ $(function () {
                 lineColor: Highcharts.getOptions().colors[3],
                 fillColor: 'white'
             }
-        }
+        }, 
             center: [100, 80],
             size: 100,
             showInLegend: true,
