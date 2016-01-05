@@ -42,6 +42,11 @@ return [
     | so make sure you have the driver for your particular database of
     | choice installed on your machine before you begin development.
     |
+
+
+
+
+
     */
 
     'connections' => [
@@ -54,10 +59,10 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'forge'),
-            'username'  => env('DB_USERNAME', 'forge'),
-            'password'  => env('DB_PASSWORD', ''),
+            'host'      => env('DB_HOST', '172.17.0.2'),
+            'database'  => env('DB_DATABASE', 'redfusion_auth'),
+            'username'  => env('DB_USERNAME', 'maindb'),
+            'password'  => env('DB_PASSWORD', 'H097729422a!'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
