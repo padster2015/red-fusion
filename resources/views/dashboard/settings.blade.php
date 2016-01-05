@@ -31,9 +31,9 @@
     <h4> Settings </h4>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="5WN3XZJS9NFFN">
+<input type="hidden" name="hosted_button_id" value="FQD58QDFSCPWC">
 <table>
-<tr><td><input type="hidden" name="on0" value=""></td></tr><tr><td><select name="os0">
+<tr><td><input type="hidden" name="on0" value="Payment Options">Payment Options</td></tr><tr><td><select name="os0">
   <option value="Monthly">Monthly : $50.00 USD - monthly</option>
   <option value="Yearly">Yearly : $500.00 USD - yearly</option>
 </select> </td></tr>
