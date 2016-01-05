@@ -5,7 +5,7 @@
 <div class="container-fluid">
 
 
-<ul class="nav nav-tabs nav-justified">
+<ul class="class="nav nav-pills"">
   <div class="row">
     <div class="col-sm-12">
     	<h3>{{ Auth::user()->name }}</h3> <br> <h4>Settings</h4>  
@@ -27,7 +27,7 @@
   </div><!--/row-->
   </ul>
   
-<ul class="nav nav-tabs nav-justified">
+<ul class="class="nav nav-pills"">
   <div class="row">
     <div class="col-sm-12">
 
