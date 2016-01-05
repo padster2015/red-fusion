@@ -44,9 +44,14 @@ Route::group(['middleware' => 'web'], function () {
         return view('dashboard.pages');
     });
 
-        // dashboard from after login!
+        // profile from after login!
     Route::get('/profile', function () {
         return view('dashboard.profile');
+    });
+
+        // profile from after login!
+    Route::get('/settings', function () {
+        return view('dashboard.settings');
     });
 
     Route::get('/home', 'HomeController@index');
