@@ -59,5 +59,11 @@ Route::group(['middleware' => 'web'], function () {
         return view('dashboard.settings');
     });
 
+
+        // profile from after login!
+    Route::get('/settings/billing', function () {
+        return view('dashboard.billings');
+    });
+
     Route::get('/home', 'HomeController@index');
 });
