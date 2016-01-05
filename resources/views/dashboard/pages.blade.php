@@ -26,48 +26,65 @@
 <script>
 $(function () {
     $('#container').highcharts({
+        chart: {
+            type: 'area'
+        },
         title: {
-            text: 'Brand'
+            text: 'Historic and Estimated Worldwide Population Growth by Region'
+        },
+        subtitle: {
+            text: 'Source: Wikipedia.org'
         },
         xAxis: {
-            categories: ['Apples', 'Oranges', 'Pears', 'Bananas', 'Plums']
+            categories: ['1750', '1800', '1850', '1900', '1950', '1999', '2050'],
+            tickmarkPlacement: 'on',
+            title: {
+                enabled: false
+            }
         },
-        labels: {
-            items: [{
-                html: 'Total fruit consumption',
-                style: {
-                    left: '50px',
-                    top: '18px',
-                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+        yAxis: {
+            title: {
+                text: 'Billions'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value / 1000;
                 }
-            }]
+            }
+        },
+        tooltip: {
+            shared: true,
+            valueSuffix: ' millions'
+        },
+        plotOptions: {
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 1,
+                marker: {
+                    lineWidth: 1,
+                    lineColor: '#666666'
+                }
+            }
         },
         series: [{
-            type: 'area',
-            name: 'Jane',
-            data: [3, 2, 1, 3, 4]
+            name: 'New Year - New You',
+            data: [502, 635, 809, 947, 1402, 3634, 5268]
         }, {
-            type: 'area',
-            name: 'John',
-            data: [2, 3, 5, 7, 6]
+            name: 'Spring into action',
+            data: [106, 107, 111, 133, 221, 767, 1766]
         }, {
-            type: 'area',
-            name: 'Joe',
-            data: [4, 3, 3, 9, 0]
+            name: 'Summer Sale',
+            data: [163, 203, 276, 408, 547, 729, 628]
         }, {
-            type: 'spline',
-            name: 'Average',
-            data: [3, 2.67, 3, 6.33, 3.33],
-            marker: {
-                lineWidth: 2,
-                lineColor: Highcharts.getOptions().colors[3],
-                fillColor: 'white'
-            }
-        }
+            name: 'Cyber Monday',
+            data: [18, 31, 54, 156, 339, 818, 1201]
+        }, {
+            name: 'Boxing Day Madness',
+            data: [2, 2, 2, 6, 13, 30, 46]
         }]
     });
 });
-
 
 </script>
 @endsection
