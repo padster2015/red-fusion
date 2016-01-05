@@ -23,5 +23,15 @@
     </div>
   </div><!--/row-->
   <hr>
+
+  <div class="row">
+    <div class="col-sm-12">
+
+    <h3> Billing and Payment </h3><br>
+    <h4> Settings </h4>
+    
+
+    </div>
+    </div>
   
 @endsection
