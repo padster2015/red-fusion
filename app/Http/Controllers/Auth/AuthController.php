@@ -78,7 +78,7 @@ class AuthController extends Controller
             'Youtube_api' => $data['Youtube_api'],
             'Deals_api' => $data['Deals_api'],
             'GA_api' => $data['GA_api'],
-
+            'B_name' => $data['B_name'],
 
 
         ]);
