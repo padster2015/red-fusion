@@ -30,7 +30,7 @@ $(function () {
             type: 'area'
         },
         title: {
-            text: 'How '{{ Auth::user()->Business_name }}' is doing'
+            text: 'How '<?php {{ Auth::user()->Business_name }} ?>' is doing'
         },
       
         xAxis: {
