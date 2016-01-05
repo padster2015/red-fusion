@@ -5,7 +5,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
-    	<h3>{{ Auth::user()->name }} Settings</h3>  
+    	<h3>{{ Auth::user()->name }}</h3> <br> <h4>Settings</h4>  
       <ul>
       <li><i class="fa fa-link"></i> &nbsp; <strong>Affiliate :</strong> {{ Auth::user()->Affiliate_api }} </li>
       <li><i class="fa fa-money"></i> &nbsp; <strong>Deals :</strong> {{ Auth::user()->Deals_api }} </li>
