@@ -42,11 +42,11 @@ $(function () {
         },
         yAxis: {
             title: {
-                text: 'Billions'
+                text: 'Clicks'
             },
             labels: {
                 formatter: function () {
-                    return this.value / 1000;
+                    return this.value / 100;
                 }
             }
         },
