@@ -5,7 +5,7 @@
 <div class="container-fluid">
 <ul class="nav nav-pills">
   <li role="presentation" class="active"><a href="#">Settings</a></li>
-  <li role="presentation"><a href="/settings/billings">Billing</a></li>
+  <li role="presentation"><a href="/settings/billing">Billing</a></li>
 </ul>
 
 <ul class="nav nav-pills">
