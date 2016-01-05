@@ -215,7 +215,7 @@
                         </div>
 
                          <div class="form-group{{ $errors->has('Deals_api') ? ' has-error' : '' }}">
-                            <label class="col-md-4 control-label">Youtube api</label>
+                            <label class="col-md-4 control-label">Deals api</label>
 
                             <div class="col-md-6">
                                 <input type="text" class="form-control" name="Deals_api" value="{{ old('Deals_api') }}">
