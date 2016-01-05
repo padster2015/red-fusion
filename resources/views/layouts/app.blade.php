@@ -69,9 +69,17 @@
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown">
+                            <li><a href="{{ url('/dashboard') }}"><i class="fa fa-btn fa-tachometer"></i>Dashboard</a></li>
+
+                            <a href="/profile/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                               Profile<span class="caret"></span>
+                            </a>
+                            </li>
+
+
                                 <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
 
-                                <li><a href="{{ url('/dashboard') }}"><i class="fa fa-btn fa-tachometer"></i>Dashboard</a></li>
                             </ul>
                         </li>
                     @endif
