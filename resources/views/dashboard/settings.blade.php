@@ -7,7 +7,7 @@
     <div class="col-sm-12">
     	<h3>{{ Auth::user()->name }} Settings</h3>  
       <ul>
-      <li><i class="fa fa-link"></i> &nbsp; <strong>Affiliate :</strong> {{ Auth::user()->name }} </li>
+      <li><i class="fa fa-link"></i> &nbsp; <strong>Affiliate :</strong> {{ Auth::user()->Affiliate_api }} </li>
       <li><i class="fa fa-money"></i> &nbsp; <strong>Deals :</strong> {{ Auth::user()->Deals }} </li>
       <li><i class="fa fa-envelope-o"> &nbsp; </i><strong>Email :</strong> {{ Auth::user()->Email }} </li>
       <li><i class="fa fa-facebook-official"></i> &nbsp; <strong>Facebook :</strong> {{ Auth::user()->Facebook }} </li>
