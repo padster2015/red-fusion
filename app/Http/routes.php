@@ -18,7 +18,10 @@
 
 
 
-Route::get('/api/v1/Data/show/{limit}', 'DataController@index');
+Route::get('/api/v1/Data/show/', 'DataController@index');
+
+
+
 
 //Route::get('/api/v1/words/lang/{lang}', 'Words@language');
 /*
@@ -64,6 +67,15 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/settings/billing', function () {
         return view('dashboard.billings');
     });
+
+
+Route::get('/api/v1/Data/show/{aid}', 'DataController@aid');
+Route::get('/api/v1/Data/show/{aid}/{campaign}', 'DataController@aid_campaign');
+Route::get('/api/v1/Data/show/{aid}/{campaign}/{channel}', 'DataController@aid_campaign_channel');
+Route::get('/api/v1/Data/show/{aid}/{campaign}/{channel}/{message}', 'DataController@aid_campaign_channel_message');
+Route::get('/api/v1/Data/show/{aid}/{campaign}/{channel}/{message}/{type}', 'DataController@aid_campaign_channel_type');
+
+    
 
     Route::get('/home', 'HomeController@index');
 });
