@@ -23,6 +23,15 @@
     <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 </div>
+
+<script>
+window.setTimeout(function() {
+    $(".alert").fadeTo(500, 0).slideUp(500, function(){
+        $(this).remove(); 
+    });
+}, 5000);
+</script>
+
 <script>
 $(function () {
     $('#container').highcharts({
