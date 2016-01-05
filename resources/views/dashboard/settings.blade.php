@@ -26,9 +26,6 @@
       <li><i class="fa fa-twitter"></i> &nbsp; <strong>Twitter Api Key:</strong> <p class="api-edits" contenteditable="true"> {{ Auth::user()->Twitter_api }} </p></li>
       <li><i class="fa fa-youtube"></i> &nbsp; <strong>Youtube Api Key:</strong> <p class="api-edits" contenteditable="true"> {{ Auth::user()->Youtube_api }}</p> </li>
 </ul>
-<ul class="nav nav-pills">
-Billing
-</ul>
     </div>
   </div><!--/row-->
   </ul>
