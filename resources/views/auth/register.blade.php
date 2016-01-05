@@ -24,15 +24,15 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('Business_name') ? ' has-error' : '' }}">
-                            <label class="col-md-4 control-label">Business Name</label>
+                        <div class="form-group{{ $errors->has('B_name') ? ' has-error' : '' }}">
+                            <label class="col-md-4 control-label">B_name Name</label>
 
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="name" value="{{ old('Business_name') }}">
+                                <input type="text" class="form-control" name="name" value="{{ old('B_name') }}">
 
-                                @if ($errors->has('Business_name'))
+                                @if ($errors->has('B_name'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('Business_name') }}</strong>
+                                        <strong>{{ $errors->first('B_name') }}</strong>
                                     </span>
                                 @endif
                             </div>
