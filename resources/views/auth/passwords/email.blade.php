@@ -1,4 +1,5 @@
-@extends('layouts.app')
+@extends('layouts.app-nocharts')
+
 
 <!-- Main Content -->
 @section('content')
