@@ -28,7 +28,7 @@
                             <label class="col-md-4 control-label">B_name Name</label>
 
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="name" value="{{ old('B_name') }}">
+                                <input type="text" class="form-control" name="B_name" value="{{ old('B_name') }}">
 
                                 @if ($errors->has('B_name'))
                                     <span class="help-block">
