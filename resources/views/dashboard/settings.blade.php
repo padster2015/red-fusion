@@ -7,7 +7,7 @@
     <div class="col-sm-12">
     	<h3>{{ Auth::user()->name }} Settings</h3>  
       <ul>
-      <li><i class="fa fa-link"></i> &nbsp; <strong>Affiliate :</strong> {{ Auth::user()->Affiliate }} </li>
+      <li><i class="fa fa-link"></i> &nbsp; <strong>Affiliate :</strong> {{ Auth::user()->name }} </li>
       <li><i class="fa fa-money"></i> &nbsp; <strong>Deals :</strong> {{ Auth::user()->Deals }} </li>
       <li><i class="fa fa-envelope-o"> &nbsp; </i><strong>Email :</strong> {{ Auth::user()->Email }} </li>
       <li><i class="fa fa-facebook-official"></i> &nbsp; <strong>Facebook :</strong> {{ Auth::user()->Facebook }} </li>
@@ -19,8 +19,6 @@
       <li><i class="fa fa-camera"></i> &nbsp; <strong>SnapChat :</strong> {{ Auth::user()->SnapChat }} </li>
       <li><i class="fa fa-twitter"></i> &nbsp; <strong>Twitter :</strong> {{ Auth::user()->Twitter }} </li>
       <li><i class="fa fa-youtube"></i> &nbsp; <strong>Youtube :</strong> {{ Auth::user()->Youtube }} </li>
-
-      
 </ul>
     </div>
   </div><!--/row-->
