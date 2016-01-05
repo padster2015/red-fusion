@@ -24,7 +24,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                        <div class="form-group{{ $errors->has('Business_name') ? ' has-error' : '' }}">
                             <label class="col-md-4 control-label">Business Name</label>
 
                             <div class="col-md-6">
