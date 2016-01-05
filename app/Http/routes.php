@@ -20,7 +20,7 @@
 
 Route::get('/api/v1/Data/show/{limit}', 'DataController@index');
 
-Route::get('/api/v1/words/lang/{lang}', 'Words@language');
+//Route::get('/api/v1/words/lang/{lang}', 'Words@language');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
