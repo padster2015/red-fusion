@@ -30,13 +30,11 @@ $(function () {
             type: 'area'
         },
         title: {
-            text: 'Historic and Estimated Worldwide Population Growth by Region'
+            text: 'How your Brand is doing'
         },
-        subtitle: {
-            text: 'Source: Wikipedia.org'
-        },
+      
         xAxis: {
-            categories: ['1750', '1800', '1850', '1900', '1950', '1999', '2050'],
+            categories: ['01-01-2015', '01-03-2015', '01-06-2015', '01-09-2015', '01-10-2015', '01-11-2015', '31-12-2015'],
             tickmarkPlacement: 'on',
             title: {
                 enabled: false
