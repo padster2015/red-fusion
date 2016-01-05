@@ -78,7 +78,7 @@
                             <li><a href="{{ url('/dashboard') }}"><i class="fa fa-btn fa-tachometer"></i>Dashboard</a></li>
 
                             <li><a href="{{ url('/profile') }}"> <i class="fa fa-btn fa-user"></i>Profile</a></li>
-                            <li><a href="{{ url('/settings') }}"> <i class="fa fa-btn fa-cog"></i>Profile</a></li>
+                            <li><a href="{{ url('/settings') }}"> <i class="fa fa-btn fa-cog"></i>Settings</a></li>
 
                                 <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
 
