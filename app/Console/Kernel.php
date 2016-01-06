@@ -7,7 +7,7 @@ use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel
 {
-    /**
+    /** testing
      * The Artisan commands provided by your application.
      *
      * @var array
