@@ -5,6 +5,8 @@ echo "<br>";
 echo exec("git status"); echo "<br>";                                           
 exec("git pull https://padster2015:H097729422a!@github.com/padster2015/red-fusion.git");
 echo "<br>";
-    echo exec("git status");                                                                     
+    echo exec("git status"); 
+    echo "<br>";
+                                                                    
 echo "success";                                                                 
 ?>  
