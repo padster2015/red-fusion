@@ -1,5 +1,5 @@
 <?php
 //lost this don't work! still
+echo"lost"
 
-echo "hello patrick how are you good i hope this sucks now"
  ?>
