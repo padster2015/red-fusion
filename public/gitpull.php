@@ -1,5 +1,5 @@
 <?php     
-//auto push and pull stupid thing losting 
+//auto push and pull stupid thing losting dgsdfg
 echo "<h1>getting files</h1>";
 echo "<br>";                                                      
 echo exec("git status"); echo "<br>";                                           
