@@ -1,4 +1,4 @@
 <?php
-//lost
+//lost this don't work!
 git `pull`;
  ?>
