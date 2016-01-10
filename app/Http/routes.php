@@ -53,6 +53,12 @@ Route::group(['middleware' => 'web'], function () {
     });
 
 
+    // dashboard from after login!
+    Route::get('/messaging', function () {
+        return view('messaging.posts');
+    });
+
+
 
         // profile from after login!
     Route::get('/profile', function () {
