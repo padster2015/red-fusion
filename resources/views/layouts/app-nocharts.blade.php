@@ -67,7 +67,10 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/') }}">Home</a></li>
                                         <li><a href="{{ url('/dashboard') }}">Reporting</a></li>
-                                                                                <li><a href="{{ url('/messaging') }}">messaging</a></li>
+   
+ <li><a href="{{ url('/budget') }}">Budget</a></li>
+
+                                                                             <li><a href="{{ url('/messaging') }}">Budget</a></li>
 
 
                 </ul>
