@@ -40,16 +40,11 @@ Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
     // Added this!
+
+
     Route::get('/', function () {
         return view('welcome');
     });
-
-
-
-    // Messaging
-    route::get('/messaging/', function(){
-        return view('messaging.post');
-    })
 
 
     // dashboard from after login!
