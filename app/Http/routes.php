@@ -48,7 +48,7 @@ Route::group(['middleware' => 'web'], function () {
 
     // Messaging
     route::get('/messaging/', function(){
-        return view('messaging.post')
+        return view('messaging.post');
     })
 
 
