@@ -70,7 +70,8 @@
    
  <li><a href="{{ url('/budget') }}">Budget</a></li>
 
-                                                                             <li><a href="{{ url('/messaging') }}">Budget</a></li>
+                                                                             <li><a href="{{ url('/messaging') }}">
+Messaging</a></li>
 
 
                 </ul>
