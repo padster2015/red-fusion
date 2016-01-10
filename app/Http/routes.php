@@ -58,6 +58,10 @@ Route::group(['middleware' => 'web'], function () {
         return view('messaging.posts');
     });
 
+//dashboard for budgets
+  Route::get('/budget', function () {
+        return view('budget.budget');
+    });
 
 
         // profile from after login!
