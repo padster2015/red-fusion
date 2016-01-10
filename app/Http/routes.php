@@ -44,10 +44,20 @@ Route::group(['middleware' => 'web'], function () {
         return view('welcome');
     });
 
+
+
+    // Messaging
+    route::get('/messaging/', function(){
+        return view('messaging.post')
+    })
+
+
     // dashboard from after login!
     Route::get('/dashboard', function () {
         return view('dashboard.pages');
     });
+
+
 
         // profile from after login!
     Route::get('/profile', function () {
