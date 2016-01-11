@@ -8,6 +8,67 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Register</div>
                 <div class="panel-body">
+                <div class="registration-box">
+
+
+
+<div class="steps" id="steps">  <span class="step_nb"></span>
+
+        <p class="form_title">Please Fill The field Bellow</p>
+        <form action="#" method="post" autocomplete="off">
+            <ul>
+                <li class="current_step">
+                    <input type="text" class="text_field" id="name" name="name" placeholder="Enter You Name" />
+                </li>
+                <li>
+                    <input type="text" class="text_field" id="email" name="email" placeholder="Enter You Email" />
+                </li>
+                <li>
+                    <input type="text" class="text_field" id="age" name="age" placeholder="Enter You Age" />
+                </li>
+                <li>
+                    <input type="text" class="text_field" id="country" name="country" placeholder="Enter You Country" />
+                </li>
+            </ul>
+        </form> <span class="note">Note : you can hit "Enter" to move to next step</span>
+
+    </div>
+    <!-- End Form Steps -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
                         {!! csrf_field() !!}
 
@@ -302,6 +363,7 @@
                             </div>
                         </div>
                     </form>
+                </div>
                 </div>
             </div>
         </div>
