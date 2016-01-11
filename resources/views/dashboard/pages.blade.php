@@ -21,22 +21,19 @@
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder text-center" style="border-radius:100%; background-color:#000; color:#FFF; width:200px; height:200px; padding-top:36px;">
             <h1>#5000 </h1>
-              <h4>clicks</h4>
+              <h4>Clicks</h4>
             </div>
-            <div class="col-xs-6 col-sm-3 placeholder text-center">
-              <img src="//placehold.it/200/66ff66/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+             <div class="col-xs-6 col-sm-3 placeholder text-center" style="border-radius:100%; background-color:#000; color:#FFF; width:200px; height:200px; padding-top:36px;">
+            <h1>#5000 </h1>
+              <h4>Impressions</h4>
             </div>
-            <div class="col-xs-6 col-sm-3 placeholder text-center">
-              <img src="//placehold.it/200/6666ff/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+             <div class="col-xs-6 col-sm-3 placeholder text-center" style="border-radius:100%; background-color:#000; color:#FFF; width:200px; height:200px; padding-top:36px;">
+            <h1>$10,000 </h1>
+              <h4>Spend to Date</h4>
             </div>
-            <div class="col-xs-6 col-sm-3 placeholder text-center">
-              <img src="//placehold.it/200/66ff66/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+             <div class="col-xs-6 col-sm-3 placeholder text-center" style="border-radius:100%; background-color:#000; color:#FFF; width:200px; height:200px; padding-top:36px;">
+            <h1>$20,000 </h1>
+              <h4>ROI</h4>
             </div>
           </div>
           
