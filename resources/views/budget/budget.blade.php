@@ -6,12 +6,13 @@
   <div class="row">
     <div class="col-sm-12">
 <form action="deliver()">
-<SELECT NAME="Network" MULTIPLE SIZE=5> 
-<OPTION VALUE="Small">Small 
-<OPTION VALUE="medium">medium
- <OPTION VALUE="large">large
- <OPTION VALUE="aggressive">aggressive 
- <OPTION VALUE="advisory">advisory</SELECT>
+<SELECT NAME="Network"> 
+<OPTION VALUE="Small">Small</OPTION> 
+<OPTION VALUE="medium">medium</OPTION>
+ <OPTION VALUE="large">large</OPTION>
+ <OPTION VALUE="aggressive">aggressive </OPTION>
+ <OPTION VALUE="advisory">advisory</OPTION>
+ </SELECT>
 
 <button>Send</button>
 </form>

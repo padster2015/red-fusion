@@ -7,12 +7,11 @@
     <div class="col-sm-12">
 <form action="deliver()">
 <SELECT NAME="Network" MULTIPLE SIZE=5> 
-<OPTION VALUE="Facebook">Facebook></OPTION>
-<OPTION VALUE="LinkedIn">LinkedIn></OPTION>
- <OPTION VALUE="Twitter">Twitter></OPTION>
- <OPTION VALUE="Pinterst">Pinterst></OPTION> 
- <OPTION VALUE="olives">SnapChat></OPTION>
- </SELECT>
+<OPTION VALUE="Facebook">Facebook 
+<OPTION VALUE="LinkedIn">LinkedIn
+ <OPTION VALUE="Twitter">Twitter 
+ <OPTION VALUE="Pinterst">Pinterst 
+ <OPTION VALUE="olives">SnapChat</SELECT>
 
 <textarea editable="true" placeholder="Craft Post" id="Craft_Post"></textarea>
 <button>Send</button>
