@@ -13,17 +13,17 @@
         {!! csrf_field() !!}
 <ul>
                 <li class="current_step">
-                    <input type="text" class="form-control" name="name" value="{{ old('name') }}">
-                    <input type="text" class="form-control" name="Business_name" value="{{ old('Business_name') }}">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" value="{{ old('name') }}">
+                    <input type="text" class="form-control" name="Business_name" placeholder="Business Name"  value="{{ old('Business_name') }}">
                 
               
-                                <input type="email" class="form-control" name="email" value="{{ old('email') }}">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" value="{{ old('email') }}">
              
                 <li>
-                                <input type="password" class="form-control" name="password">
+                                <input type="password" class="form-control" placeholder="Your Password"  name="password">
               
               
-                                <input type="password" class="form-control" name="password_confirmation">
+                                <input type="password" class="form-control" placeholder="Confirmation Password"  name="password_confirmation">
                 </li>
 
                 <li>
@@ -31,7 +31,7 @@
 
 
 
-                
+
                 <button type="submit" class="btn btn-primary">
                                     <i class="fa fa-btn fa-user"></i>Register
                                 </button>
