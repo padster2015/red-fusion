@@ -11,7 +11,10 @@
 <OPTION VALUE="LinkedIn">LinkedIn
  <OPTION VALUE="Twitter">Twitter 
  <OPTION VALUE="Pinterst">Pinterst 
- <OPTION VALUE="olives">SnapChat</SELECT>
+ <OPTION VALUE="olives">SnapChat
+ <OPTION VALUE="olives">All
+
+ </SELECT>
 
 <textarea editable="true" placeholder="Craft Post" id="Craft_Post"></textarea>
 <button>Send</button>
