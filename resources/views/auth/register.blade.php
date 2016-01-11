@@ -32,23 +32,7 @@
                                 <input type="text" class="form-control" name="PaidSearch_api" placeholder="PaidSearch Api"value="{{ old('PaidSearch_api') }}">
                                 <input type="text" class="form-control" name="Youtube_api" placeholder="Youtube Api" value="{{ old('Youtube_api') }}">
                                 <input type="text" class="form-control" name="Deals_api" placeholder="Deals_Api"value="{{ old('Deals_api') }}">
-                                <input type="text" class="form-control" name="GA_api" placeholder="Google Analytics" Api"value="{{ old('GA_api') }}">
-
-
-
-                </li>
-
-
-
-
-
-
-
-
-
-
-
-                <li>
+                                <input type="text" class="form-control" name="GA_api" placeholder="Google Analytics" value="{{ old('GA_api') }}">
                     <button type="submit" class="btn btn-primary"><i class="fa fa-btn fa-user"></i>Register</button>
                 </li>
             </ul>
