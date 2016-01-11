@@ -36,7 +36,12 @@
           </div>
           
           <hr>
-
+<select>
+<option value="column" onclick= "chartfunc()">Column</option>
+<option value="Bar" onclick= "chartfunc()">Bar</option>
+<option value="pie" onclick= "chartfunc()">pie</option>
+<option value="line" onclick= "chartfunc()">line</option>
+</select>
 
 <label class="btn btn-default" >
         <input name="mychart" value="column" class="active mychart" id= "column" onclick= "chartfunc()" checked>
