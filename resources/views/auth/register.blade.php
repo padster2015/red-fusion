@@ -27,11 +27,15 @@
                 <li>
                                 <input type="password" class="form-control" name="password_confirmation">
                 </li>
-            </ul>
 
-             <button type="submit" class="btn btn-primary">
+                <li>
+                <button type="submit" class="btn btn-primary">
                                     <i class="fa fa-btn fa-user"></i>Register
                                 </button>
+                </li>
+            </ul>
+
+
         </form> <span class="note">Note : you can hit "Enter" to move to next step</span>
 
     </div>
