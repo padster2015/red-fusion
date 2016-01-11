@@ -206,7 +206,7 @@ $(function () {
     },
 
         chart: {
-            type: 'area'
+            type: 'areaspline'
         },
         title: {
             text: 'How Fit Awards is doing'
