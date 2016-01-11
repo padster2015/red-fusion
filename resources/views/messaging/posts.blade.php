@@ -16,8 +16,7 @@
 
  </SELECT>
 
-<textarea id="textpost" editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="144"><i class="fa fa-hashtag"></i> 
-  
+<textarea id="textpost" editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="144"><i class="fa fa-hashtag"></i> </textarea>
 <Select NAME="HashTags">
 <option value="Sale">Sale
 <option value="Summer">Summer
