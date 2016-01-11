@@ -16,9 +16,7 @@
 
  </SELECT>
 
-<textarea editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="255"></textarea>
-
-<i class="fa fa-hashtag"></i> 
+<textarea id="textpost" editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="144"><i class="fa fa-hashtag"></i> 
   
 <Select NAME="HashTags">
 <option value="Sale">Sale
@@ -31,6 +29,26 @@
 
 <button>Send</button>
 </form>
+
+
+<div id="textarea_feedback"></div>
+<script>
+
+$(document).ready(function() {
+    var text_max = 99;
+    $('#textarea_feedback').html(text_max + ' characters remaining');
+
+    $('#textpost').keyup(function() {
+        var text_length = $('#textpost').val().length;
+        var text_remaining = text_max - text_length;
+
+        $('#textarea_feedback').html(text_remaining + ' characters remaining');
+    });
+});
+
+</script>
+
+
     </div>
   </div><!--/row-->
   <hr>
