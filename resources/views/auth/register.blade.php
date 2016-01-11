@@ -22,8 +22,8 @@
                 </li>
                 <li>
                  <input type="text" class="form-control" name="Facebook_api" placeholder="Facebook Api" value="{{ old('Facebook_api') }}">
-                 <input type="text" class="form-control" name="Twitter_api" placeholder="Twitter Api value="{{ old('Twitter_api') }}">
-                                <input type="text" class="form-control" placeholder="Google+ Api name="Googleplus_api" value="{{ old('Googleplus_api') }}">
+                 <input type="text" class="form-control" name="Twitter_api" placeholder="Twitter Api" value="{{ old('Twitter_api') }}">
+                                <input type="text" class="form-control" placeholder="Google+ Api" name="Googleplus_api" value="{{ old('Googleplus_api') }}">
                                 <input type="text" class="form-control" name="linkedin_api" placeholder="Linkedin Api" value="{{ old('linkedin_api') }}">
                                 <input type="text" class="form-control" name="SnapChat_api" placeholder="Snapchat Api" value="{{ old('SnapChat_api') }}">
                                 <input type="text" class="form-control" name="Pinterest_api"  placeholder="Pinterest Api" value="{{ old('Pinterest_api') }}">
