@@ -39,7 +39,7 @@
 
 <br>
 
-<input type="button" name="mychart" class="mychart radio-inline" id= "column" value="column" onclick= "chartfunc()" checked><i class="fa fa-bar-chart"></i>
+<input type="button" name="mychart" class="fa fa-bar-chart mychart radio-inline" id= "column" value="column" onclick= "chartfunc()" checked><i class="fa fa-bar-chart"></i>
 <input type="button" name="mychart" class="mychart radio-inline" id= "bar" value="bar" onclick= "chartfunc()"><i class="fa fa-bar-chart"></i>
 <input type="button" name="mychart" class="mychart radio-inline" id= "pie" value="pie" onclick= "chartfunc()"><i class="fa fa-pie-chart"></i>
 <input type="button" name="mychart" class="mychart radio-inline" id= "line" value="line" onclick= "chartfunc()"><i class="fa fa-line-chart"></i>
