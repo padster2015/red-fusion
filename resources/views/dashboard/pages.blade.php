@@ -40,7 +40,7 @@
 <input type="radio" name="mychart" class="mychart" id= "column" value="column" onclick= "chartfunc()" checked>Column
 <input type="radio" name="mychart" class="mychart" id= "bar" value="bar" onclick= "chartfunc()">Bar
 <input type="radio" name="mychart" class="mychart" id= "pie" value="pie" onclick= "chartfunc()">Pie
-<input type="radio" name="mychart" class="mychart" id= "line" value="line" onclick= "chartfunc()">Line
+<input type="radio" name="mychart" class="mychart" id= "line" value="line" onclick= "chartfunc()">line
 
 
             <div class="row">
@@ -194,86 +194,125 @@ $(function () {
              '#e74c3c', '#e74c3c', '#e74c3c']});
 
 
+// Create the chart
 
-    $('#container').highcharts({
-
-      
-        
+var options = {
     chart: {
-        backgroundColor: {
-            linearGradient: [0, 0, 500, 500],
-            stops: [
-                [0, 'rgb(255, 255, 255)'],
-                [1, 'rgb(240, 240, 255)']
-            ]
+       events: {
+            drilldown: function (e) {
+                if (!e.seriesOptions) {
+
+            var chart = this,
+                            drilldowns = {
+                                'Animals': {
+                                    name: 'Animals',
+                                    data: [
+                                        ['Cows', 2],
+                                        ['Sheep', 3]
+                                    ]
+                                },
+                                'Fruits': {
+                                    name: 'Fruits',
+                                    data: [
+                                        ['Apples', 5],
+                                        ['Oranges', 7],
+                                        ['Bananas', 2]
+                                    ]
+                                },
+                                'Cars': {
+                                    name: 'Cars',
+                                    data: [
+                                        ['Toyota', 1],
+                                        ['Volkswagen', 2],
+                                        ['Opel', 5]
+                                    ]
+                                }
+                            },
+                            series = drilldowns[e.point.name];
+
+                        
+
+                    // Show the loading label
+                    chart.showLoading('Loading ...');
+
+                    setTimeout(function () {
+                        chart.hideLoading();
+                        chart.addSeriesAsDrilldown(e.point, series);
+                    }, 1000); 
+                }
+
+            }
         },
+        plotBorderWidth: 0
     },
 
-        chart: {
-            type: 'areaspline'
-        },
-        title: {
-            text: 'How Fit Awards is doing'
-        },
-      
-        xAxis: {
-            categories: ['01-01-2015', '01-03-2015', '01-06-2015', '01-09-2015', '01-10-2015', '01-11-2015', '31-12-2015'],
-            tickmarkPlacement: 'on',
+    title: {
+        text: 'Chart Title',
+    },
+    //
+    subtitle: {
+            text: 'Subtitle'
+    },
+    //
+    xAxis: {
+            type: 'category',
+    },
+    //
+    yAxis: {
+
             title: {
-                enabled: false
+                margin: 10,
+                text: 'No. of user'
+            },      
+    },
+    //
+    legend: {
+        enabled: true,
+    },
+    //
+    plotOptions: {
+        series: {
+            pointPadding: 0.2,
+            borderWidth: 0,
+            dataLabels: {
+                enabled: true
             }
         },
-        yAxis: {
-            title: {
-                text: 'Clicks thousands'
-            },
-            labels: {
-                formatter: function () {
-                    return this.value / 10;
-                }
+        pie: {
+            plotBorderWidth: 0,
+            allowPointSelect: true,
+            cursor: 'pointer',
+            size: '100%',
+            dataLabels: {
+                enabled: true,
+                format: '{point.name}: <b>{point.y}</b>'
             }
-        },
-        tooltip: {
-            shared: true,
-            valueSuffix: ' millions'
-        },
-        plotOptions: {
-            area: {
-                stacking: 'normal',
-                lineColor: '#666666',
-                lineWidth: 1,
-                marker: {
-                    lineWidth: 1,
-                    lineColor: '#666666'
-                }
-            }
-        },
-        credits: {
-      enabled: false
-  },
-        series: [{
-            name: 'New Year - New You',
-            data: [5032, 635, 10, 5, 2, 0, 2500],
-            //type: 'spline'
-        }, {
-            name: 'Spring into action',
-            data: [0, 6000, 3000, 20, 30, 0, 0]
-        }, {
-            name: 'Summer Sale',
-            data: [0, 0, 6500, 300, 20, 0, 0]
-        }, {
-            name: 'Cyber Monday',
-            data: [0, 0, 54, 156, 4000, 6000, 30]
-        }, {
-            name: 'Boxing Day Madness',
-            data: [0, 2, 2, 6, 13, 1, 4000]
-        }]
-    });
-});
+        }
+    },
+    //
+     series: [{
+            name: 'Things',
+            colorByPoint: true,
+            data: [{
+                name: 'Animals',
+                y: 5,
+                drilldown: true
+            }, {
+                name: 'Fruits',
+                y: 2,
+                drilldown: true
+            }, {
+                name: 'Cars',
+                y: 4,
+                drilldown: true
+            }]
+        }],
+    //
+    drilldown: {
+        series: []
+    }
+};
 
-
-
-// column changers
 // Column chart
 options.chart.renderTo = 'container';
 options.chart.type = 'column';
@@ -319,13 +358,7 @@ $('#change_chart_title').click(function(){
     options.title.text = $('#chart_title').val();
     var chart1 = new Highcharts.Chart(options);
 });
-
-
-
-
-
-
-
+});
 
 
 
