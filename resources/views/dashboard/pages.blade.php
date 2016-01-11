@@ -19,9 +19,9 @@
           {{ Auth::user()->Business_name }} Charts</h1>
 
           <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder text-center">
-              <img src="//placehold.it/200/6666ff/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
+            <div class="col-xs-6 col-sm-3 placeholder text-center" style="border-radius:100%; background-color:#000; color:#FFF;">
+            <h1>#5000 </h1>
+              <h4>clicks</h4>
               <span class="text-muted">Something else</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder text-center">
