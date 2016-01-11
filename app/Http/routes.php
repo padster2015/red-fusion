@@ -66,18 +66,18 @@ Route::group(['middleware' => 'web'], function () {
 
         // profile from after login!
     Route::get('/profile', function () {
-        return view('dashboard.profile');
+        return view('profile.profile');
     });
 
         // profile from after login!
     Route::get('/settings', function () {
-        return view('dashboard.settings');
+        return view('profile.settings');
     });
 
 
         // profile from after login!
     Route::get('/settings/billing', function () {
-        return view('dashboard.billings');
+        return view('profile.billings');
     });
 
     Route::get('/home', 'HomeController@index');
