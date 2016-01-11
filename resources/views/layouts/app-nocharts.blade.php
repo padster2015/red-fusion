@@ -68,9 +68,9 @@
                     <li><a href="{{ url('/') }}">Home</a></li>
                                         <li><a href="{{ url('/dashboard') }}"> <i class="fa fa-line-chart"></i>Reporting</a></li>
    
- <li><a href="{{ url('/budget') }}"> <i class="fa fa-line-money"> Budget</a></li>
+ <li><a href="{{ url('/budget') }}"> <i class="fa fa-line-money"> </i>Budget</a></li>
 
-                                 <li><a href="{{ url('/messaging') }}"><i class="fa fa-line-envelope-o">Messaging</a></li>
+                                 <li><a href="{{ url('/messaging') }}"><i class="fa fa-line-envelope-o"></i>Messaging</a></li>
 
 
                 </ul>
