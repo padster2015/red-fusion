@@ -37,6 +37,10 @@
           
           <hr>
 
+
+<label class="btn btn-default">
+        <input name="mychart" value="column" class="active mychart" type="radio" id= "column" onclick= "chartfunc()" checked>Column
+      </label>
 <input type="radio" name="mychart" class="mychart" id= "column" value="column" onclick= "chartfunc()" checked>Column
 <input type="radio" name="mychart" class="mychart" id= "bar" value="bar" onclick= "chartfunc()">Bar
 <input type="radio" name="mychart" class="mychart" id= "pie" value="pie" onclick= "chartfunc()">Pie
