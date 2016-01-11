@@ -14,21 +14,24 @@
 <ul>
                 <li class="current_step">
                     <input type="text" class="form-control" name="name" value="{{ old('name') }}">
-                </li>
-                <li>
-                                <input type="text" class="form-control" name="Business_name" value="{{ old('Business_name') }}">
-                </li>
-                <li>
+                    <input type="text" class="form-control" name="Business_name" value="{{ old('Business_name') }}">
+                
+              
                                 <input type="email" class="form-control" name="email" value="{{ old('email') }}">
-                </li>
+             
                 <li>
                                 <input type="password" class="form-control" name="password">
-                </li>
-                <li>
+              
+              
                                 <input type="password" class="form-control" name="password_confirmation">
                 </li>
 
                 <li>
+
+
+
+
+                
                 <button type="submit" class="btn btn-primary">
                                     <i class="fa fa-btn fa-user"></i>Register
                                 </button>
