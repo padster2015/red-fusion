@@ -72,6 +72,8 @@
         <li><a href="{{ url('/dashboard') }}"> <i class="fa fa-line-chart"></i> Reporting</a></li>
         <li><a href="{{ url('/budget') }}"> <i class="fa fa-money"></i> Budget</a></li> 
         <li><a href="{{ url('/messaging') }}"> <i class="fa fa-envelope-o"></i> Messaging</a></li>
+                        <li><a href="{{ url('/help') }}"> <i class="fa fa-question"></i> Help</a></li>
+
     </ul>
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
