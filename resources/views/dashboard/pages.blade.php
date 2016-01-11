@@ -37,6 +37,10 @@
           
           <hr>
 
+<input type="radio" name="mychart" class="mychart" id= "column" value="column" onclick= "chartfunc()" checked>Column
+<input type="radio" name="mychart" class="mychart" id= "bar" value="bar" onclick= "chartfunc()">Bar
+<input type="radio" name="mychart" class="mychart" id= "pie" value="pie" onclick= "chartfunc()">Pie
+<input type="radio" name="mychart" class="mychart" id= "line" value="line" onclick= "chartfunc()">Line
 
 
             <div class="row">
@@ -266,6 +270,64 @@ $(function () {
         }]
     });
 });
+
+
+
+// column changers
+// Column chart
+options.chart.renderTo = 'container';
+options.chart.type = 'column';
+var chart1 = new Highcharts.Chart(options);
+
+chartfunc = function()
+{
+var column = document.getElementById('column');
+var bar = document.getElementById('bar');
+var pie = document.getElementById('pie');
+var line = document.getElementById('line');
+
+        
+if(column.checked)
+    {
+        
+        options.chart.renderTo = 'container';
+        options.chart.type = 'column';
+        var chart1 = new Highcharts.Chart(options);
+    }
+else if(bar.checked)
+    {
+        options.chart.renderTo = 'container';
+        options.chart.type = 'bar';
+        var chart1 = new Highcharts.Chart(options);
+    }
+else if(pie.checked)
+    {
+        options.chart.renderTo = 'container';
+        options.chart.type = 'pie';
+        var chart1 = new Highcharts.Chart(options);
+    }
+else
+    {
+        options.chart.renderTo = 'container';
+        options.chart.type = 'line';
+        var chart1 = new Highcharts.Chart(options);
+    }
+
+}
+
+$('#change_chart_title').click(function(){
+    options.title.text = $('#chart_title').val();
+    var chart1 = new Highcharts.Chart(options);
+});
+
+
+
+
+
+
+
+
+
 
 </script>
 @endsection
