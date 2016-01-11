@@ -15,7 +15,7 @@ error_reporting(E_ALL);
 	$commands = array(
 		'echo $PWD',
 		'whoami',
-		'sudo git pull',
+		'git pull',
 		'git status',
 		'git submodule sync',
 		'git submodule update',
