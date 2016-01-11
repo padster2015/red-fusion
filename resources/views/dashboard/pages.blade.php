@@ -38,11 +38,11 @@
           <hr>
 
 <br>
-<button id= "column" value="column" onclick= "chartfunc()"><i class="fa fa-bar-chart"></i></button>
-<input type="button" name="mychart" class="mychart" id= "column" value="column" onclick= "chartfunc()" checked>
-<input type="button" name="mychart" class="mychart" id= "bar" value="bar" onclick= "chartfunc()"><i class="fa fa-bar-chart"></i>
-<input type="button" name="mychart" class="mychart" id= "pie" value="pie" onclick= "chartfunc()"><i class="fa fa-pie-chart"></i>
-<input type="button" name="mychart" class="mychart" id= "line" value="line" onclick= "chartfunc()"><i class="fa fa-line-chart"></i>
+
+<input type="button" name="mychart" class="mychart radio-inline" id= "column" value="column" onclick= "chartfunc()" checked><i class="fa fa-bar-chart"></i>
+<input type="button" name="mychart" class="mychart radio-inline" id= "bar" value="bar" onclick= "chartfunc()"><i class="fa fa-bar-chart"></i>
+<input type="button" name="mychart" class="mychart radio-inline" id= "pie" value="pie" onclick= "chartfunc()"><i class="fa fa-pie-chart"></i>
+<input type="button" name="mychart" class="mychart radio-inline" id= "line" value="line" onclick= "chartfunc()"><i class="fa fa-line-chart"></i>
 
 
 
