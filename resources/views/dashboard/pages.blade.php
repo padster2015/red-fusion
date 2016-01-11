@@ -206,27 +206,27 @@ var options = {
 
             var chart = this,
                             drilldowns = {
-                                'New Year': {
-                                    name: 'New Year',
+                                'Animals': {
+                                    name: 'Animals',
                                     data: [
-                                        ['Click', 2000],
-                                        ['Impressions', 30000]
+                                        ['Cows', 2],
+                                        ['Sheep', 3]
                                     ]
                                 },
-                                'Summer Sale': {
-                                    name: 'Summer Sale',
+                                'Fruits': {
+                                    name: 'Fruits',
                                     data: [
-                                        ['Click', 390],
-                                        ['Impressions', 13000],
-                                        ['Acquisition', 5]
+                                        ['Apples', 5],
+                                        ['Oranges', 7],
+                                        ['Bananas', 2]
                                     ]
                                 },
-                                'Black Friday': {
-                                    name: 'Black Friday',
+                                'Cars': {
+                                    name: 'Cars',
                                     data: [
-                                        ['Click', 1500],
-                                        ['Impression', 50000],
-                                        ['Acquisition', 750]
+                                        ['Toyota', 1],
+                                        ['Volkswagen', 2],
+                                        ['Opel', 5]
                                     ]
                                 }
                             },
@@ -249,10 +249,12 @@ var options = {
     },
 
     title: {
-        text: 'Fit Award Brand',
+        text: 'Chart Title',
     },
     //
-    
+    subtitle: {
+            text: 'Subtitle'
+    },
     //
     xAxis: {
             type: 'category',
@@ -262,7 +264,7 @@ var options = {
 
             title: {
                 margin: 10,
-                text: 'No. of Clicks'
+                text: 'No. of user'
             },      
     },
     //
@@ -291,19 +293,19 @@ var options = {
     },
     //
      series: [{
-            name: 'Channels',
+            name: 'Things',
             colorByPoint: true,
             data: [{
-                name: 'New Year',
-                y: 2000,
+                name: 'Animals',
+                y: 5,
                 drilldown: true
             }, {
-                name: 'Summer Sale',
-                y: 390,
+                name: 'Fruits',
+                y: 2,
                 drilldown: true
             }, {
-                name: 'Black Friday',
-                y: 1500,
+                name: 'Cars',
+                y: 4,
                 drilldown: true
             }]
         }],
