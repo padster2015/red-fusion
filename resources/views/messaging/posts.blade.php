@@ -22,13 +22,13 @@
 <select>
   
 
-<select>
-<option>Sale</option>
-<option>Summer</option>
-<option>LGRW</option>
-<option>BlackFriday</option>
-<option>NewYear</option>
-<option>JimmyWho</option>
+<Select>
+<option value="Sale">Sale
+<option value="Summer">Summer
+<optionvalue="LGRW">LGRW
+<option value="BlackFriday">BlackFriday
+<option value="NewYear">NewYear<
+<option value="JimmyWHo">JimmyWho</option>
 </select>
 
 <button>Send</button>
