@@ -252,7 +252,7 @@ $(function () {
             data: [5032, 635, 10, 5, 2, 0, 2500]
         }, {
             name: 'Spring into action',
-            data: [0, 6000, 3000, 20, 30, 0, -]
+            data: [0, 6000, 3000, 20, 30, 0, 0]
         }, {
             name: 'Summer Sale',
             data: [0, 0, 6500, 300, 20, 0, 0]
