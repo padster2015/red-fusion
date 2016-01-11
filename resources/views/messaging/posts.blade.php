@@ -22,14 +22,14 @@
 <select>
   
 
-<Select>
+<Select NAME="HashTags">
 <option value="Sale">Sale
 <option value="Summer">Summer
-<optionvalue="LGRW">LGRW
+<option value="LGRW">LGRW
 <option value="BlackFriday">BlackFriday
-<option value="NewYear">NewYear<
-<option value="JimmyWHo">JimmyWho</option>
-</select>
+<option value="NewYear">NewYear
+<option value="JimmyWHo">JimmyWho
+</Select>
 
 <button>Send</button>
 </form>
