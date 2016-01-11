@@ -31,7 +31,7 @@ $(function () {
             type: 'pie'
         },
         title: {
-            text: 'Browser market shares January, 2015 to May, 2015'
+            text: 'Current Budget by channel'
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -53,25 +53,25 @@ $(function () {
             name: 'Brands',
             colorByPoint: true,
             data: [{
-                name: 'Microsoft Internet Explorer',
-                y: 56.33
+                name: 'Facebook',
+                y: 50000
             }, {
-                name: 'Chrome',
-                y: 24.03,
+                name: 'twitter',
+                y: 5000
                 sliced: true,
                 selected: true
             }, {
-                name: 'Firefox',
-                y: 10.38
+                name: 'Display - Retargeting',
+                y: 10000
             }, {
-                name: 'Safari',
-                y: 4.77
+                name: 'Affiliate',
+                y: 20000
             }, {
-                name: 'Opera',
-                y: 0.91
+                name: 'Pinterest',
+                y: 4000
             }, {
-                name: 'Proprietary or Undetectable',
-                y: 0.2
+                name: 'Offline',
+                y: 32000
             }]
         }]
     });
