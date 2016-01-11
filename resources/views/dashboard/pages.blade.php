@@ -186,7 +186,7 @@ window.setTimeout(function() {
 <script>
 $(function () {
      Highcharts.setOptions({
-    colors: ['#1abc9c', '#2ecc71', '#3498db', '#9b59b6', '#34495e', '#f1c40f', 
+    colors: ['#1abc9c', '#f1c40f', '#3498db', '#9b59b6', '#34495e', '#2c3e50', 
              '#e74c3c', '#e74c3c', '#e74c3c']});
 
 
