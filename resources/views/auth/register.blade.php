@@ -21,18 +21,18 @@
                     <input type="password" class="form-control" placeholder="Confirmation Password"  name="password_confirmation">
                 </li>
                 <li>
-                 <input type="text" class="form-control" name="Facebook_api" value="{{ old('Facebook_api') }}">
-                 <input type="text" class="form-control" name="Twitter_api" value="{{ old('Twitter_api') }}">
-                                <input type="text" class="form-control" name="Googleplus_api" value="{{ old('Googleplus_api') }}">
-                                <input type="text" class="form-control" name="linkedin_api" value="{{ old('linkedin_api') }}">
-                                <input type="text" class="form-control" name="SnapChat_api" value="{{ old('SnapChat_api') }}">
-                                <input type="text" class="form-control" name="Pinterest_api" value="{{ old('Pinterest_api') }}">
-                                <input type="text" class="form-control" name="Email_api" value="{{ old('Email_api') }}">
-                                <input type="text" class="form-control" name="Affiliate_api" value="{{ old('Affiliate_api') }}">
-                                <input type="text" class="form-control" name="PaidSearch_api" value="{{ old('PaidSearch_api') }}">
-                                <input type="text" class="form-control" name="Youtube_api" value="{{ old('Youtube_api') }}">
-                                <input type="text" class="form-control" name="Deals_api" value="{{ old('Deals_api') }}">
-                                <input type="text" class="form-control" name="GA_api" value="{{ old('GA_api') }}">
+                 <input type="text" class="form-control" name="Facebook_api" placeholder="Facebook Api" value="{{ old('Facebook_api') }}">
+                 <input type="text" class="form-control" name="Twitter_api" placeholder="Twitter Api value="{{ old('Twitter_api') }}">
+                                <input type="text" class="form-control" placeholder="Google+ Api name="Googleplus_api" value="{{ old('Googleplus_api') }}">
+                                <input type="text" class="form-control" name="linkedin_api" placeholder="Linkedin Api" value="{{ old('linkedin_api') }}">
+                                <input type="text" class="form-control" name="SnapChat_api" placeholder="Snapchat Api" value="{{ old('SnapChat_api') }}">
+                                <input type="text" class="form-control" name="Pinterest_api"  placeholder="Pinterest Api" value="{{ old('Pinterest_api') }}">
+                                <input type="text" class="form-control" name="Email_api" placeholder="Email Api" value="{{ old('Email_api') }}">
+                                <input type="text" class="form-control" name="Affiliate_api" placeholder="Affiliate Api" value="{{ old('Affiliate_api') }}">
+                                <input type="text" class="form-control" name="PaidSearch_api" placeholder="PaidSearch Api"value="{{ old('PaidSearch_api') }}">
+                                <input type="text" class="form-control" name="Youtube_api" placeholder="Youtube Api" value="{{ old('Youtube_api') }}">
+                                <input type="text" class="form-control" name="Deals_api" placeholder="Deals_Api"value="{{ old('Deals_api') }}">
+                                <input type="text" class="form-control" name="GA_api" placeholder="Google Analytics" Api"value="{{ old('GA_api') }}">
 
 
 
