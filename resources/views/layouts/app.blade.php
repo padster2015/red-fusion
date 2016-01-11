@@ -65,10 +65,12 @@
 
             <div class="collapse navbar-collapse" id="spark-navbar-collapse">
                 <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/') }}">Home</a></li>
-                </ul>
-
+    <ul class="nav navbar-nav">
+        <li><a href="{{ url('/') }}"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="{{ url('/dashboard') }}"> <i class="fa fa-line-chart"></i> Reporting</a></li>
+        <li><a href="{{ url('/budget') }}"> <i class="fa fa-money"></i> Budget</a></li> 
+        <li><a href="{{ url('/messaging') }}"> <i class="fa fa-envelope-o"></i> Messaging</a></li>
+    </ul>
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
