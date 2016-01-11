@@ -19,10 +19,9 @@
           {{ Auth::user()->Business_name }} Charts</h1>
 
           <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder text-center" style="border-radius:100%; background-color:#000; color:#FFF; width:200px; height:200px;">
+            <div class="col-xs-6 col-sm-3 placeholder text-center" style="border-radius:100%; background-color:#000; color:#FFF; width:200px; height:200px; padding-top:50%">
             <h1>#5000 </h1>
               <h4>clicks</h4>
-              <span class="text-muted">Something else</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder text-center">
               <img src="//placehold.it/200/66ff66/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
