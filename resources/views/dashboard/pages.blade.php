@@ -295,15 +295,15 @@ var options = {
             colorByPoint: true,
             data: [{
                 name: 'Facebook',
-                y: 5,
+                y: 2000,
                 drilldown: true
             }, {
                 name: 'Affiliate',
-                y: 2,
+                y: 390,
                 drilldown: true
             }, {
                 name: 'Display',
-                y: 4,
+                y: 1500,
                 drilldown: true
             }]
         }],
