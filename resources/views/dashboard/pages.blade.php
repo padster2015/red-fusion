@@ -13,60 +13,171 @@
     	<h3>{{ Auth::user()->Business_name }} Charts</h3>  
     </div>
 
-<section class="rankingSection">
-        <div class="rankingItems">
-            <div class="rankingItem fadeInDown rankingItem--global" data-view="WebsitePageModule.Views.RankingView" data-rank-subject="Global">
-                
+        <!--main-->
+        <div class="col-sm-9 col-md-10 main">
+          <!--toggle sidebar button-->
+          <p class="visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+          </p>
+          
+          <h1 class="page-header">
+            Dashboard
+            <p class="lead">(with off-canvas sidebar)</p>
+          </h1>
 
-<div class="rankingItem-content">
-    <span class="rankingItem-title"><i class="rankingItem-icon icon-geo"></i>Global Rank<i class="tooltip informationButton owMrkClick" original-title="Traffic rank of site, as compared to all other sites in the world"></i></span>
-    <div itemprop="url" class="rankingItem-underTitle">
-<a class="rankingItem-subTitle is-link" data-analytics-category="Internal Link" data-analytics-label="Global Rank/Worldwide" href="/global" itemprop="significantLink">Worldwide</a>            </div>
-    <div class="rankingItem-rank js-editable">
-                <span class="rankingItem-value js-countable" data-value="31,567">#31,567</span><i class="rankingItem-valueIcon rankingItem-valueIcon--increased icon-arrow-down-ranking rankingItem-valueIcon--is-shown"></i>
-                    
-
-    </div>
-</div>
-<div class="rankingItem-embed"></div>
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder text-center">
+              <img src="//placehold.it/200/6666ff/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
             </div>
-            <div class="rankingItem fadeInDown rankingItem--country" data-view="WebsitePageModule.Views.RankingView" data-rank-subject="Country">
-
-
-                
-
-<div class="rankingItem-content">
-    <span class="rankingItem-title"><i class="rankingItem-icon icon-country-rank"></i>Country Rank<i class="tooltip informationButton owMrkClick" original-title="Traffic rank of site, as compared to all other sites in its leading country"></i></span>
-    <div itemprop="url" class="rankingItem-underTitle">
-<a class="rankingItem-subTitle is-link" href="/country/united_states" itemprop="significantLink" data-analytics-category="Internal Link" data-analytics-label="Country Rank/840">United States</a>            <i class="flag us"></i>            </div>
-    <div class="rankingItem-rank js-editable">
-                <span class="rankingItem-value js-countable" data-value="23,936">#23,936</span><i class="rankingItem-valueIcon rankingItem-valueIcon--increased icon-arrow-down-ranking rankingItem-valueIcon--is-shown"></i>
-                    
-
-    </div>
-</div>
-<div class="rankingItem-embed"></div>
+            <div class="col-xs-6 col-sm-3 placeholder text-center">
+              <img src="//placehold.it/200/66ff66/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
             </div>
-            <div class="rankingItem fadeInDown rankingItem--category" data-view="WebsitePageModule.Views.RankingView" data-rank-subject="Category">
-
-
-                
-
-<div class="rankingItem-content">
-    <span class="rankingItem-title"><i class="rankingItem-icon categories-sprite small computer_and_electronics"></i>Category Rank<i class="tooltip informationButton owMrkClick" original-title="Traffic rank of site, as compared to all other sites in its main category"></i></span>
-    <div itemprop="url" class="rankingItem-underTitle">
-<a class="rankingItem-subTitle is-link" href="/category/computer_and_electronics" itemprop="significantLink" data-analytics-category="Internal Link" data-analytics-label="Category Rank/computer_and_electronics">Computer and Electronics</a>                    <a class="rankingItem-categoryEdit js-editCategory" data-options="{&quot;domain&quot;:&quot;Bootply.com&quot;,&quot;category&quot;: &quot;Computer_and_Electronics&quot;,&quot;categoryClass&quot;:&quot;&quot;,&quot;categoryLabel&quot;: &quot;Computer and Electronics&quot;}" itemprop="name">Edit</a>
-    </div>
-    <div class="rankingItem-rank js-editable">
-                <span class="rankingItem-value js-countable" data-value="1,729">#1,729</span><i class="rankingItem-valueIcon rankingItem-valueIcon--increased icon-arrow-down-ranking rankingItem-valueIcon--is-shown"></i>
-                    
-
-    </div>
-</div>
-<div class="rankingItem-embed"></div>
+            <div class="col-xs-6 col-sm-3 placeholder text-center">
+              <img src="//placehold.it/200/6666ff/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
             </div>
-        </div>
-    </section>
+            <div class="col-xs-6 col-sm-3 placeholder text-center">
+              <img src="//placehold.it/200/66ff66/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+          </div>
+          
+          <hr>
+
+          <h2 class="sub-header">Section title</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,001</td>
+                  <td>Lorem</td>
+                  <td>ipsum</td>
+                  <td>dolor</td>
+                  <td>sit</td>
+                </tr>
+                <tr>
+                  <td>1,002</td>
+                  <td>amet</td>
+                  <td>consectetur</td>
+                  <td>adipiscing</td>
+                  <td>elit</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>Integer</td>
+                  <td>nec</td>
+                  <td>odio</td>
+                  <td>Praesent</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>libero</td>
+                  <td>Sed</td>
+                  <td>cursus</td>
+                  <td>ante</td>
+                </tr>
+                <tr>
+                  <td>1,004</td>
+                  <td>dapibus</td>
+                  <td>diam</td>
+                  <td>Sed</td>
+                  <td>nisi</td>
+                </tr>
+                <tr>
+                  <td>1,005</td>
+                  <td>Nulla</td>
+                  <td>quis</td>
+                  <td>sem</td>
+                  <td>at</td>
+                </tr>
+                <tr>
+                  <td>1,006</td>
+                  <td>nibh</td>
+                  <td>elementum</td>
+                  <td>imperdiet</td>
+                  <td>Duis</td>
+                </tr>
+                <tr>
+                  <td>1,007</td>
+                  <td>sagittis</td>
+                  <td>ipsum</td>
+                  <td>Praesent</td>
+                  <td>mauris</td>
+                </tr>
+                <tr>
+                  <td>1,008</td>
+                  <td>Fusce</td>
+                  <td>bootply</td>
+                  <td>tellus</td>
+                  <td>sed</td>
+                </tr>
+                <tr>
+                  <td>1,009</td>
+                  <td>augue</td>
+                  <td>semper</td>
+                  <td>porta</td>
+                  <td>Mauris</td>
+                </tr>
+                <tr>
+                  <td>1,010</td>
+                  <td>massa</td>
+                  <td>Vestibulum</td>
+                  <td>lacinia</td>
+                  <td>arcu</td>
+                </tr>
+                <tr>
+                  <td>1,011</td>
+                  <td>eget</td>
+                  <td>nulla</td>
+                  <td>Class</td>
+                  <td>aptent</td>
+                </tr>
+                <tr>
+                  <td>1,012</td>
+                  <td>taciti</td>
+                  <td>sociosqu</td>
+                  <td>ad</td>
+                  <td>litora</td>
+                </tr>
+                <tr>
+                  <td>1,013</td>
+                  <td>torquent</td>
+                  <td>per</td>
+                  <td>conubia</td>
+                  <td>nostra</td>
+                </tr>
+                <tr>
+                  <td>1,014</td>
+                  <td>per</td>
+                  <td>inceptos</td>
+                  <td>himenaeos</td>
+                  <td>Curabitur</td>
+                </tr>
+                <tr>
+                  <td>1,015</td>
+                  <td>sodales</td>
+                  <td>ligula</td>
+                  <td>in</td>
+                  <td>libero</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!--/main-->
 
 
 
