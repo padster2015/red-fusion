@@ -23,6 +23,7 @@
             {{ Auth::user()->Business_name }} Charts
 
           </h1>
+<hr>
 
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder text-center">
@@ -48,6 +49,14 @@
           </div>
           
           <hr>
+
+
+
+            <div class="row">
+    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+</div>
+<hr>
 
           <h2 class="sub-header">Section title</h2>
           <div class="table-responsive">
@@ -181,11 +190,6 @@
 
 
   </div><!--/row-->
-  <hr>
-  <div class="row">
-    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-
-</div>
 
 <script>
 window.setTimeout(function() {
