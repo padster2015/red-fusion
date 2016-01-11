@@ -37,6 +37,257 @@
 {
     list-style-type: none;
 }
+
+
+
+.back_link {
+    display: block;
+    text-decoration: none;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-family:'opensans-regular', Helvetica, Arial, sans-serif;
+    color: #515860;
+    font-size: 16px;
+}
+.back_link .back_arrow_icon {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+/*  form steps  */
+ .steps {
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 40px;
+    background: #ffffff;
+    border: 1px solid #e1e8f2;
+    position: relative;
+    text-align: center;
+}
+.steps:after {
+    content:"";
+    display: block;
+    width: 16px;
+    height: 8px;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    margin-left: -8px;
+}
+.steps ul li {
+    width: 100%;
+    list-style: none;
+    display: none;
+    float: left;
+}
+.steps ul li.current_step {
+    display: block;
+}
+.steps ul li .text_field {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #d0d7e1;
+    font-family:"opensans-regular", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #515860;
+    letter-spacing: 1px;
+    background: #ffffff;
+    margin: 0 auto;
+    outline: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.steps ul li.error .text_field {
+    border: 1px solid #CE8349;
+}
+.steps .form_title {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:'opensans-bold', Helvetica, Arial, sans-serif;
+    color: #515860;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.steps .note {
+    display: inline-block;
+    font-family:'opensans-regular', Helvetica, Arial, sans-serif;
+    color: #c7d3e1;
+    font-size: 12px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+/*  steps navigation  */
+ .navigation_container ul {
+    display: inline-block;
+    margin-top: 50px;
+}
+.navigation_container li {
+    list-style: none;
+    position: relative;
+    display: block;
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin: 24px 10px 0 0;
+    background: #d8e0eb;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.navigation_container li:first-child {
+    margin-left: 0;
+}
+.navigation_container .current_nav {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin: 0 15px 0 5px;
+    top: -1px;
+    background: #6DC097;
+    border: 4px solid #FFF;
+    cursor: pointer;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.navigation_container .valid {
+    background: #6DC097!important;
+}
+.navigation_container .error {
+    background: #CE8349!important;
+    -webkit-animation: bounce_btn .5s linear;
+    -moz-animation: bounce_btn .5s linear;
+    -ms-animation: bounce_btn .5s linear;
+    -o-animation: bounce_btn .5s linear;
+    animation: bounce_btn .5s linear;
+}
+/*  SVG icons css  */
+ .animate {
+    -webkit-animation: bounce_btn .5s linear;
+    -moz-animation: bounce_btn .5s linear;
+    -ms-animation: bounce_btn .5s linear;
+    -o-animation: bounce_btn .5s linear;
+    animation: bounce_btn .5s linear;
+}
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.arrow {
+    opacity: 0;
+}
+.current_nav .arrow {
+    opacity: 1;
+    display: block!important;
+}
+.step_nb {
+    display: none;
+    width: 50px;
+    height: 50px;
+    font-family:"opensans-regular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #515860;
+    background: #F5F5F5;
+    margin: 0 auto 30px auto;
+    line-height: 50px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+}
+/*  bounce effect animation  */
+ @-webkit-keyframes bounce_btn {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    30% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
+    60% {
+        transform: scale(.95);
+        -webkit-transform: scale(.95);
+    }
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+@keyframes bounce_btn {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    30% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
+    60% {
+        transform: scale(.95);
+        -webkit-transform: scale(.95);
+    }
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+/*  reponsive css  */
+ @media (max-width : 750px) {
+    .navigation_container ul {
+        display: block;
+        text-align: center;
+        margin-left: 0!important;
+    }
+    .navigation_container li {
+        display: none;
+    }
+    .navigation_container li.current_nav {
+        display: inline-block;
+        float: none;
+        margin: 0;
+    }
+    .wrapper {
+        max-width:660px;
+        margin: 50px 20px;
+    }
+    .step_nb {
+        display: block;
+    }
+}
     </style>
 <!-- JavaScripts -->
 <script src="app/js/slide.js"></script>
