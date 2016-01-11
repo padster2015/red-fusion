@@ -186,6 +186,11 @@ window.setTimeout(function() {
 <script>
 $(function () {
     $('#container').highcharts({
+
+        Highcharts.theme = {
+    colors: ['#1abc9c', '#2ecc71', '#3498db', '#9b59b6', '#34495e', '#f1c40f', 
+             '#e74c3c', '#e74c3c', '#e74c3c']
+         }
 credits: {
       enabled: false
   },
