@@ -207,14 +207,14 @@ var options = {
             var chart = this,
                             drilldowns = {
                                 'New Year': {
-                                    name: 'Facebook',
+                                    name: 'New Year',
                                     data: [
                                         ['Click', 2000],
                                         ['Impressions', 30000]
                                     ]
                                 },
                                 'Summer Sale': {
-                                    name: 'Affiliate',
+                                    name: 'Summer Sale',
                                     data: [
                                         ['Click', 390],
                                         ['Impressions', 13000],
@@ -222,7 +222,7 @@ var options = {
                                     ]
                                 },
                                 'Black Friday': {
-                                    name: 'Display',
+                                    name: 'Black Friday',
                                     data: [
                                         ['Click', 1500],
                                         ['Impression', 50000],
@@ -294,15 +294,15 @@ var options = {
             name: 'Channels',
             colorByPoint: true,
             data: [{
-                name: 'Facebook',
+                name: 'New Year',
                 y: 2000,
                 drilldown: true
             }, {
-                name: 'Affiliate',
+                name: 'Summer Sale',
                 y: 390,
                 drilldown: true
             }, {
-                name: 'Display',
+                name: 'Black Friday',
                 y: 1500,
                 drilldown: true
             }]
