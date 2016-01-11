@@ -53,6 +53,7 @@ $(function () {
         series: [{
             name: 'Brands',
             colorByPoint: true,
+innerSize: '90%',
             data: [{
                 name: 'Facebook',
                 y: 5000
