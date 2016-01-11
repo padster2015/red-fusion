@@ -13,8 +13,8 @@
         {!! csrf_field() !!}
 <ul>
                 <li class="current_step">
-                    <input type="text" class="form-control" name="name" placeholder="Your Name" value="{{ old('name') }}">
-                    <input type="text" class="form-control" name="Business_name" placeholder="Business Name"  value="{{ old('Business_name') }}">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" value="{{ old('name') }}"><br>
+                    <input type="text" class="form-control" name="Business_name" placeholder="Business Name"  value="{{ old('Business_name') }}"><br>
                 
               
                                 <input type="email" class="form-control" name="email" placeholder="Your Email" value="{{ old('email') }}">
