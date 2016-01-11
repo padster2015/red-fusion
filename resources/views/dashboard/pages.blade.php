@@ -414,7 +414,7 @@ $('#change_chart_title').click(function(){
 jQuery(function($) {
         $('.clicks').countTo({
             from: 0,
-            to: 10000,
+            to: 500,
             speed: 1000,
             refreshInterval: 50,
             onComplete: function(value) {
@@ -440,7 +440,7 @@ jQuery(function($) {
 jQuery(function($) {
         $('.spend').countTo({
             from: 0,
-            to: 10000,
+            to: 20000,
             speed: 1000,
             refreshInterval: 50,
             onComplete: function(value) {
@@ -452,7 +452,7 @@ jQuery(function($) {
 jQuery(function($) {
         $('.roi').countTo({
             from: 0,
-            to: 10000,
+            to: 50000,
             speed: 1000,
             refreshInterval: 50,
             onComplete: function(value) {
