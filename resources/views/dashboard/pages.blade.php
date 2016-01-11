@@ -22,15 +22,15 @@
               <h4>Clicks</h4>
             </div>
              <div class="col-xs-6 col-sm-3 placeholder text-center positive" style="border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:10%;">
-            <h1>#5000 </h1>
+            <h1><strong>#5000</strong> </h1>
               <h4>Impressions</h4>
             </div>
              <div class="col-xs-6 col-sm-3 placeholder text-center negative " style="border-radius:100%; background-color:#c0392b; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:10%;">
-            <h1>$10,000 </h1>
+            <h1><strong>$10,000</strong> </h1>
               <h4>Spend to Date</h4>
             </div>
              <div class="col-xs-6 col-sm-3 placeholder text-center positive" style="border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:10%;">
-            <h1>$20,000 </h1>
+            <h1><strong>$20,000 </strong></h1>
               <h4>ROI</h4>
             </div>
           </div>
