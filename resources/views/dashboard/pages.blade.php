@@ -8,7 +8,7 @@
 
 
 <div class="container-fluid">
-  <div class="row">
+
 
         <!--main-->
         <div class="col-sm-9 col-md-10 main">
@@ -174,9 +174,6 @@
             </table>
           </div><!--/main-->
 
-
-
-  </div><!--/row-->
 
 <script>
 window.setTimeout(function() {
