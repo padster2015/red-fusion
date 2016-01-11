@@ -181,7 +181,7 @@ $(document).ready(function () {
 
     //Function to send the form or show a message
     function form_ready() {
-        alert('Thanks for filling up the form!');
+        
     }
 
     //Function to update step number(visible on small size screens)
