@@ -204,27 +204,27 @@ var options = {
 
             var chart = this,
                             drilldowns = {
-                                'Animals': {
-                                    name: 'Animals',
+                                'New Year': {
+                                    name: 'Facebook',
                                     data: [
-                                        ['Cows', 2],
-                                        ['Sheep', 3]
+                                        ['Click', 2000],
+                                        ['Impressions', 30000]
                                     ]
                                 },
-                                'Fruits': {
-                                    name: 'Fruits',
+                                'Summer Sale': {
+                                    name: 'Affiliate',
                                     data: [
-                                        ['Apples', 5],
-                                        ['Oranges', 7],
-                                        ['Bananas', 2]
+                                        ['Click', 390],
+                                        ['Impressions', 13000],
+                                        ['Acquisition', 5]
                                     ]
                                 },
-                                'Cars': {
-                                    name: 'Cars',
+                                'Black Friday': {
+                                    name: 'Display',
                                     data: [
-                                        ['Toyota', 1],
-                                        ['Volkswagen', 2],
-                                        ['Opel', 5]
+                                        ['Click', 1500],
+                                        ['Impression', 50000],
+                                        ['Acquisition', 750]
                                     ]
                                 }
                             },
@@ -294,15 +294,15 @@ var options = {
             name: 'Things',
             colorByPoint: true,
             data: [{
-                name: 'Animals',
+                name: 'Facebook',
                 y: 5,
                 drilldown: true
             }, {
-                name: 'Fruits',
+                name: 'Affiliate',
                 y: 2,
                 drilldown: true
             }, {
-                name: 'Cars',
+                name: 'Display',
                 y: 4,
                 drilldown: true
             }]
