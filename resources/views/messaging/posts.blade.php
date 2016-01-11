@@ -16,7 +16,7 @@
 
  </SELECT>
 
-<textarea editable="true" placeholder="Craft Post" id="Craft_Post"></textarea>
+<textarea editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="255"></textarea>
 
 <i class="fa fa-hashtag"></i> 
   
