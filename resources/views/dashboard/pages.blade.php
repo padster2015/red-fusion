@@ -15,9 +15,8 @@
         <!--main-->
         <div class="col-sm-9 col-md-10 main">
           
-          <h1 class="page-header">
+          <h1>
           {{ Auth::user()->Business_name }} Charts</h1>
-<hr>
 
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder text-center">
