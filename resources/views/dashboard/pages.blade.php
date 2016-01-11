@@ -14,15 +14,9 @@
 
         <!--main-->
         <div class="col-sm-9 col-md-10 main">
-          <!--toggle sidebar button-->
-          <p class="visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
-          </p>
           
           <h1 class="page-header">
-            {{ Auth::user()->Business_name }} Charts
-
-          </h1>
+          {{ Auth::user()->Business_name }} Charts</h1>
 <hr>
 
           <div class="row placeholders">
