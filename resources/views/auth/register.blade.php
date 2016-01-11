@@ -9,21 +9,29 @@
 <div class="steps" id="steps">  <span class="step_nb"></span>
 
         <p class="form_title">Please Fill The field Bellow</p>
-        <form action="#" method="post" autocomplete="off">
-            <ul>
+        <form autocomplete="off" class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+        {!! csrf_field() !!}
+<ul>
                 <li class="current_step">
-                    <input type="text" class="text_field" id="name" name="name" placeholder="Enter You Name" />
+                    <input type="text" class="form-control" name="name" value="{{ old('name') }}">
                 </li>
                 <li>
-                    <input type="text" class="text_field" id="email" name="email" placeholder="Enter You Email" />
+                                <input type="text" class="form-control" name="Business_name" value="{{ old('Business_name') }}">
                 </li>
                 <li>
-                    <input type="text" class="text_field" id="age" name="age" placeholder="Enter You Age" />
+                                <input type="email" class="form-control" name="email" value="{{ old('email') }}">
                 </li>
                 <li>
-                    <input type="text" class="text_field" id="country" name="country" placeholder="Enter You Country" />
+                                <input type="password" class="form-control" name="password">
+                </li>
+                <li>
+                                <input type="password" class="form-control" name="password_confirmation">
                 </li>
             </ul>
+
+             <button type="submit" class="btn btn-primary">
+                                    <i class="fa fa-btn fa-user"></i>Register
+                                </button>
         </form> <span class="note">Note : you can hit "Enter" to move to next step</span>
 
     </div>
