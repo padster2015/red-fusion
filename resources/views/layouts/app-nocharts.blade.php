@@ -66,12 +66,11 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/') }}">Home</a></li>
-                                        <li><a href="{{ url('/dashboard') }}">Reporting</a></li>
+                                        <li><a href="{{ url('/dashboard') }}"> <i class="fa fa-line-chart"></i>Reporting</a></li>
    
- <li><a href="{{ url('/budget') }}">Budget</a></li>
+ <li><a href="{{ url('/budget') }}"> <i class="fa fa-line-money"> Budget</a></li>
 
-                                                                             <li><a href="{{ url('/messaging') }}">
-Messaging</a></li>
+                                 <li><a href="{{ url('/messaging') }}"><i class="fa fa-line-envelope-o">Messaging</a></li>
 
 
                 </ul>
