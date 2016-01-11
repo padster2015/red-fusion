@@ -42,23 +42,12 @@
 <option value="pie" onclick= "chartfunc()">pie</option>
 <option value="line" onclick= "chartfunc()">line</option>
 </select>
+<br>
 
-<label class="btn btn-default" >
-        <input name="mychart" value="column" class="active mychart" id= "column" onclick= "chartfunc()" checked>
-      </label>
-
-      <label class="btn btn-info active">
+<input type="radio" name="mychart" class="mychart" id= "column" value="column" onclick= "chartfunc()" checked>Column
 <input type="radio" name="mychart" class="mychart" id= "bar" value="bar" onclick= "chartfunc()">Bar
-</label>
-
-
-     <label class="btn btn-info active">
 <input type="radio" name="mychart" class="mychart" id= "pie" value="pie" onclick= "chartfunc()">Pie
-</label>
-
-     <label class="btn btn-info active">
-<input type="radio" name="mychart" class="mychart" id= "line" value="line" onclick= "chartfunc()">line
-</label>
+<input type="radio" name="mychart" class="mychart" id= "line" value="line" onclick= "chartfunc()">Line
 
 
 
