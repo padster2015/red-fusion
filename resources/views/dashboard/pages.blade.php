@@ -11,7 +11,7 @@
 
 
         <!--main-->
-        <div class="main-view">
+        <div class="main-view" style="width:80%; margin:0 auto;">
           
           <h1>
           {{ Auth::user()->Business_name }} Charts</h1>
