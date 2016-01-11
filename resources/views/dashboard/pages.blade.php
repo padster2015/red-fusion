@@ -10,7 +10,6 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
-    	<h3>{{ Auth::user()->Business_name }} Charts</h3>  
     </div>
 
         <!--main-->
@@ -21,8 +20,8 @@
           </p>
           
           <h1 class="page-header">
-            Dashboard
-            <p class="lead">(with off-canvas sidebar)</p>
+            {{ Auth::user()->Business_name }} Charts
+
           </h1>
 
           <div class="row placeholders">
