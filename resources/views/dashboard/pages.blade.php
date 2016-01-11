@@ -247,12 +247,10 @@ var options = {
     },
 
     title: {
-        text: 'Chart Title',
+        text: 'Fit Award Brand',
     },
     //
-    subtitle: {
-            text: 'Subtitle'
-    },
+    
     //
     xAxis: {
             type: 'category',
@@ -262,7 +260,7 @@ var options = {
 
             title: {
                 margin: 10,
-                text: 'No. of user'
+                text: 'No. of Clicks'
             },      
     },
     //
@@ -291,7 +289,7 @@ var options = {
     },
     //
      series: [{
-            name: 'Things',
+            name: 'Channels',
             colorByPoint: true,
             data: [{
                 name: 'Facebook',
