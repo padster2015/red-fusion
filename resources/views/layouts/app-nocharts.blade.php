@@ -319,12 +319,14 @@
             <div class="collapse navbar-collapse" id="spark-navbar-collapse">
                 <!-- Left Side Of Navbar -->
     <ul class="nav navbar-nav">
+                        @if (Auth::guest())
         <li><a href="{{ url('/') }}"><i class="fa fa-home"></i> Home</a></li>
+        @else
         <li><a href="{{ url('/dashboard') }}"> <i class="fa fa-line-chart"></i> Reporting</a></li>
         <li><a href="{{ url('/budget') }}"> <i class="fa fa-money"></i> Budget</a></li> 
         <li><a href="{{ url('/messaging') }}"> <i class="fa fa-envelope-o"></i> Messaging</a></li>
                 <li><a href="{{ url('/help') }}"> <i class="fa fa-question"></i> Help</a></li>
-
+@endif
     </ul>
 
                 <!-- Right Side Of Navbar -->
