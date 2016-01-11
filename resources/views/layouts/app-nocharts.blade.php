@@ -343,7 +343,6 @@
 
                             <ul class="dropdown-menu" role="menu">
                             <li class="dropdown">
-                            <li><a href="{{ url('/dashboard') }}"><i class="fa fa-btn fa-tachometer"></i>Dashboard</a></li>
 
                             <li><a href="{{ url('/profile') }}"> <i class="fa fa-btn fa-user"></i>Profile</a></li>
                             <li><a href="{{ url('/settings') }}"> <i class="fa fa-btn fa-cog"></i>Settings</a></li>
