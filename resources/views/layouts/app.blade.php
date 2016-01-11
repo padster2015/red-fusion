@@ -99,9 +99,7 @@
             </div>
         </div>
     </nav>
-                    @if (Auth::check()) {
 
-@endif
     @yield('content')
 
 
