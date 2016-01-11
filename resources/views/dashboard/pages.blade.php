@@ -186,6 +186,10 @@ window.setTimeout(function() {
 <script>
 $(function () {
     $('#container').highcharts({
+credits: {
+      enabled: false
+  },
+        
         chart: {
             type: 'area'
         },
