@@ -249,7 +249,8 @@ $(function () {
   },
         series: [{
             name: 'New Year - New You',
-            data: [5032, 635, 10, 5, 2, 0, 2500]
+            data: [5032, 635, 10, 5, 2, 0, 2500],
+            type: 'spline'
         }, {
             name: 'Spring into action',
             data: [0, 6000, 3000, 20, 30, 0, 0]
