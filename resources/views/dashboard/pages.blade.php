@@ -189,11 +189,17 @@ $(function () {
 
         Highcharts.theme = {
     colors: ['#1abc9c', '#2ecc71', '#3498db', '#9b59b6', '#34495e', '#f1c40f', 
-             '#e74c3c', '#e74c3c', '#e74c3c']
-         }
-credits: {
-      enabled: false
-  },
+             '#e74c3c', '#e74c3c', '#e74c3c'],
+        
+    chart: {
+        backgroundColor: {
+            linearGradient: [0, 0, 500, 500],
+            stops: [
+                [0, 'rgb(255, 255, 255)'],
+                [1, 'rgb(240, 240, 255)']
+            ]
+        },
+    },
 
         chart: {
             type: 'area'
@@ -234,6 +240,9 @@ credits: {
                 }
             }
         },
+        credits: {
+      enabled: false
+  },
         series: [{
             name: 'New Year - New You',
             data: [502, 635, 809, 947, 1402, 3634, 5268]
