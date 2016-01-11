@@ -45,7 +45,7 @@
 </div>
 <hr>
 
-          <h2 class="sub-header">Fit Awards Data</h2>
+          <h2 class="sub-header">{{ Auth::user()->Business_name }} Data</h2>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
