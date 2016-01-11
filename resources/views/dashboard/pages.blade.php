@@ -19,19 +19,19 @@
           {{ Auth::user()->Business_name }} Charts</h1>
 
           <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder text-center" style="border-radius:100%; background-color:#000; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:5%;">
+            <div class="col-xs-6 col-sm-3 placeholder text-center" style="border-radius:100%; background-color:#000; color:#FFF; width:200px; height:200px; padding-top:36px; margin-left:2%; margin-right:2%;">
             <h1>#5000 </h1>
               <h4>Clicks</h4>
             </div>
-             <div class="col-xs-6 col-sm-3 placeholder text-center" style="border-radius:100%; background-color:#000; color:#FFF; width:200px; height:200px; padding-top:36px;">
+             <div class="col-xs-6 col-sm-3 placeholder text-center" style="border-radius:100%; background-color:#000; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:2%;">
             <h1>#5000 </h1>
               <h4>Impressions</h4>
             </div>
-             <div class="col-xs-6 col-sm-3 placeholder text-center" style="border-radius:100%; background-color:#000; color:#FFF; width:200px; height:200px; padding-top:36px;">
+             <div class="col-xs-6 col-sm-3 placeholder text-center" style="border-radius:100%; background-color:#000; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:2%;">
             <h1>$10,000 </h1>
               <h4>Spend to Date</h4>
             </div>
-             <div class="col-xs-6 col-sm-3 placeholder text-center" style="border-radius:100%; background-color:#000; color:#FFF; width:200px; height:200px; padding-top:36px;">
+             <div class="col-xs-6 col-sm-3 placeholder text-center" style="border-radius:100%; background-color:#000; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:2%;">
             <h1>$20,000 </h1>
               <h4>ROI</h4>
             </div>
