@@ -290,7 +290,10 @@
 }
     </style>
 <!-- JavaScripts -->
-<script src="app/js/slide.js"></script>
+<script src="app/js/slide.js"></script> 
+<script src="https://cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>
+<script src="https://raw.githubusercontent.com/adobe-webplatform/Snap.svg/master/dist/snap.svg-min.js"></script>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
