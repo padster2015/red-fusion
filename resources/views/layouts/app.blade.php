@@ -19,6 +19,7 @@
         body {
             font-family: 'Lato';
 background-color:#22313F;
+color:#FFF;
         }
 
         .fa-btn {
