@@ -36,18 +36,13 @@
           </div>
           
           <hr>
-<select>
-<option value="column" onclick= "chartfunc()">Column</option>
-<option value="Bar" onclick= "chartfunc()">Bar</option>
-<option value="pie" onclick= "chartfunc()">pie</option>
-<option value="line" onclick= "chartfunc()">line</option>
-</select>
+
 <br>
 
-<input type="radio" name="mychart" class="mychart" id= "column" value="column" onclick= "chartfunc()" checked>Column
-<input type="radio" name="mychart" class="mychart" id= "bar" value="bar" onclick= "chartfunc()">Bar
-<input type="radio" name="mychart" class="mychart" id= "pie" value="pie" onclick= "chartfunc()">Pie
-<input type="radio" name="mychart" class="mychart" id= "line" value="line" onclick= "chartfunc()">Line
+<input type="radio" name="mychart" class="mychart" id= "column" value="column" onclick= "chartfunc()" checked><i class="fa fa-bar-chart"></i>
+<input type="radio" name="mychart" class="mychart" id= "bar" value="bar" onclick= "chartfunc()"><i class="fa fa-bar-chart"></i>
+<input type="radio" name="mychart" class="mychart" id= "pie" value="pie" onclick= "chartfunc()"><i class="fa fa-pie-chart"></i>
+<input type="radio" name="mychart" class="mychart" id= "line" value="line" onclick= "chartfunc()"><i class="fa fa-line-chart"></i>
 
 
 
