@@ -31,7 +31,7 @@ $(function () {
             type: 'pie'
         },
         title: {
-            text: 'Current Budget by channel'
+            text: 'Budget by channel'
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -54,21 +54,21 @@ $(function () {
             colorByPoint: true,
             data: [{
                 name: 'Facebook',
-                y: 50000
+                y: 5000
             }, {
                 name: 'twitter',
-                y: 5000
+                y: 5000,
                 sliced: true,
                 selected: true
             }, {
-                name: 'Display - Retargeting',
+                name: 'Affiliate',
                 y: 10000
             }, {
-                name: 'Affiliate',
+                name: 'Retargeting',
                 y: 20000
             }, {
-                name: 'Pinterest',
-                y: 4000
+                name: 'Twitter',
+                y: 1000
             }, {
                 name: 'Offline',
                 y: 32000
