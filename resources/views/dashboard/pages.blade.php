@@ -273,7 +273,6 @@ backgroundColor: null,
     plotOptions: {
         series: {
             pointPadding: 0.2,
-            borderWidth: 0,
             dataLabels: {
                 enabled: true
             }
