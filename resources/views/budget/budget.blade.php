@@ -54,7 +54,7 @@ backgroundColor: null
         series: [{
             name: 'Brands',
             colorByPoint: true,
-innerSize: '98%',
+innerSize: '96%',
             data: [{
                 name: 'Facebook',
                 y: 5000
