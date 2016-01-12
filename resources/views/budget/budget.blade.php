@@ -84,9 +84,6 @@ innerSize: '96%',
                 name: 'Retargeting',
                 y: 20000
             }, {
-                name: 'Twitter',
-                y: 1000
-            }, {
                 name: 'Offline',
                 y: 32000
             }]
