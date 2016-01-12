@@ -45,6 +45,7 @@ backgroundColor: null
             pie: {
                 allowPointSelect: true,
                 cursor: 'pointer',
+                 borderWidth: 0,
                 dataLabels: {
                     enabled: true,
                     format: '<b>{point.name}</b>: {point.percentage:.1f} %',
