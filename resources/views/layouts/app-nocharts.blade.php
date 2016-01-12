@@ -17,7 +17,7 @@
 
     <style>
         body {
-font-family: 'Work Sans', sans-serif;
+font-family: 'Work Sans' , sans-serif;
         }
 
         .fa-btn {
