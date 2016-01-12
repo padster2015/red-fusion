@@ -29,7 +29,8 @@ $(function () {
             plotBackgroundColor: null,
             plotBorderWidth: null,
             plotShadow: false,
-            type: 'pie'
+            type: 'pie',
+backgroundColor: null
         },
         title: {
             text: 'Budget by channel'
