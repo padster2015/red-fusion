@@ -199,7 +199,6 @@ $(function () {
 
 var options = {
     chart: {
-backgroundColor: null,
        events: {
             drilldown: function (e) {
                 if (!e.seriesOptions) {
@@ -330,14 +329,12 @@ if(column.checked)
         
         options.chart.renderTo = 'container';
         options.chart.type = 'column';
-options.chart.pointWidth: 28;
         var chart1 = new Highcharts.Chart(options);
     }
 else if(bar.checked)
     {
         options.chart.renderTo = 'container';
         options.chart.type = 'bar';
-options.chart.pointWidth: 28;
         var chart1 = new Highcharts.Chart(options);
     }
 else if(pie.checked)
