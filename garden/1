@@ -1,0 +1,37 @@
+WARNING: NODE_ENV value of 'test' did not match any deployment config file names.
+WARNING: See https://github.com/lorenwest/node-config/wiki/Strict-Mode
+[32minfo[39m: Command: `test features/Health.feature`, env: `test`
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module 'plus.garden'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.require.resolve (module.js:384:19)
+    at Object.<anonymous> (/var/www/html/red-fusion/garden/features/support/world.js:1:92)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (/var/www/html/red-fusion/garden/node_modules/cucumber/node_modules/coffee-script/lib/coffee-script/coffee-script.js:211:36)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.context (/var/www/html/red-fusion/garden/features/support/context.js:2:18)
+    at /var/www/html/red-fusion/garden/node_modules/cucumber/lib/cucumber/cli/support_code_loader.js:58:25
+    at Array.forEach (native)
+    at Object.wrapper (/var/www/html/red-fusion/garden/node_modules/cucumber/lib/cucumber/cli/support_code_loader.js:55:15)
+    at Object.initializer (/var/www/html/red-fusion/garden/node_modules/cucumber/lib/cucumber/cli/support_code_loader.js:16:37)
+    at Object.Library (/var/www/html/red-fusion/garden/node_modules/cucumber/lib/cucumber/support_code/library.js:91:25)
+    at Object.getSupportCodeLibrary (/var/www/html/red-fusion/garden/node_modules/cucumber/lib/cucumber/cli/support_code_loader.js:7:58)
+    at Object.getSupportCodeLibrary (/var/www/html/red-fusion/garden/node_modules/cucumber/lib/cucumber/cli/configuration.js:47:52)
+    at Object.getSupportCodeLibrary (/var/www/html/red-fusion/garden/node_modules/cucumber/lib/cucumber/runtime.js:29:46)
+    at Object.start (/var/www/html/red-fusion/garden/node_modules/cucumber/lib/cucumber/runtime.js:11:37)
+    at Object.runSuiteWithConfiguration (/var/www/html/red-fusion/garden/node_modules/cucumber/lib/cucumber/cli.js:19:15)
+    at Object.run (/var/www/html/red-fusion/garden/node_modules/cucumber/lib/cucumber/cli.js:12:14)
+    at Object.<anonymous> (/var/www/html/red-fusion/garden/node_modules/cucumber/bin/cucumber.js:4:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:929:3
