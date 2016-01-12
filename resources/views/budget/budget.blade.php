@@ -24,6 +24,14 @@
 
 <script>
 $(function () {
+
+     Highcharts.setOptions({
+    colors: ['#1abc9c', '#f1c40f', '#3498db', '#9b59b6', '#34495e', '#2c3e50', 
+             '#e74c3c', '#e74c3c', '#e74c3c']});
+
+
+// Create the chart
+    
     $('#Current').highcharts({
         chart: {
             plotBackgroundColor: null,
