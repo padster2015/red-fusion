@@ -38,7 +38,7 @@
 
 <br>
 
-<input type="radio" name="mychart" class="mychart" id= "column" value="column" onclick= "chartfunc()" checked>Column
+<input type="radio" name="mychart" class="mychart" id= "column" value="column" onclick= "chartfunc()" checked>Column data
 <input type="radio" name="mychart" class="mychart" id= "bar" value="bar" onclick= "chartfunc()">Bar
 <input type="radio" name="mychart" class="mychart" id= "pie" value="pie" onclick= "chartfunc()">Pie
 <input type="radio" name="mychart" class="mychart" id= "line" value="line" onclick= "chartfunc()">Line
