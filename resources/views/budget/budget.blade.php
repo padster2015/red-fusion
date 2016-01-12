@@ -36,6 +36,7 @@ $(function () {
    title: {
       style: {
          color: '#FFF',
+         font: '25px "Work Sans", Helvetica, sans-serif'
       }
    },
 backgroundColor: null
@@ -44,6 +45,7 @@ backgroundColor: null
             text: 'Budget by channel',
 style: {
          color: '#FFF',
+         font: '25px "Work Sans", Helvetica, sans-serif'
       }
         },
         tooltip: {
