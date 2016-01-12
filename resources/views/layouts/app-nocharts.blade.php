@@ -20,6 +20,11 @@
 font-family: 'Work Sans' , sans-serif;
 font-weight:200 !important;
         }
+        h1{
+            font-family: 'Work Sans' , sans-serif !important;
+font-weight:200 !important;
+
+        }
 
         .fa-btn {
             margin-right: 6px;
