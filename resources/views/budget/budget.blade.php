@@ -40,7 +40,7 @@ backgroundColor: null
             style: {
          color: '#FFF',
          font: 'bold 16px "Trebuchet MS", Verdana, sans-serif'
-      }
+      },
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
