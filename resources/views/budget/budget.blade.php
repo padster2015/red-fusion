@@ -45,6 +45,7 @@ backgroundColor: null
             text: 'Budget by channel',
 style: {
          color: '#FFF',
+         font-weight:'200',
          font: '25px "Work Sans", Helvetica, sans-serif'
       }
         },
