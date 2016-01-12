@@ -30,6 +30,9 @@ $(function () {
             plotBorderWidth: null,
             plotShadow: false,
             type: 'pie',
+            credits: {
+      enabled: false
+  },
 backgroundColor: null
         },
         title: {
