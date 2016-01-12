@@ -43,6 +43,7 @@ backgroundColor: null
         },
         title: {
             text: 'Budget by channel'
+            color: '#FFFFFF';
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
