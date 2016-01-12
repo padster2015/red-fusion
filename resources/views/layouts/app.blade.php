@@ -21,6 +21,11 @@ font-weight: 200 !important;
 background-color:#22313F;
 color:#FFF;
         }
+        h1{
+            font-family: 'Work Sans' , sans-serif !important;
+font-weight:200 !important;
+
+        }
 
         .fa-btn {
             margin-right: 6px;
