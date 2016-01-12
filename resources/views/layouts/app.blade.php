@@ -17,6 +17,7 @@
     <style>
         body {
 font-family: 'Work Sans' , sans-serif;
+font-weight: 200;
 background-color:#22313F;
 color:#FFF;
         }
