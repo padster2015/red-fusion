@@ -57,7 +57,7 @@
                 <tr>
                   <th>#</th>
                   <th>Header</th>
-                  <th>Header testing2333</th>
+                  <th>Header testing Patrick hook</th>
                   <th>Header</th>
                   <th>Header</th>
                 </tr>
