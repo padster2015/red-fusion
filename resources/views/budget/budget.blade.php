@@ -33,14 +33,16 @@ $(function () {
             credits: {
       enabled: false
   },
+   title: {
+      style: {
+         color: '#FFF',
+         font: 'bold 25px "Trebuchet MS", Verdana, sans-serif'
+      }
+   },
 backgroundColor: null
         },
         title: {
             text: 'Budget by channel'
-            style: {
-         color: '#FFF',
-         font: 'bold 16px "Trebuchet MS", Verdana, sans-serif'
-      },
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
