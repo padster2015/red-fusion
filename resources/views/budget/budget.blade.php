@@ -45,7 +45,7 @@ backgroundColor: null
             text: 'Budget by channel',
 style: {
          color: '#FFF',
-         font: 'bold 25px "Trebuchet MS", Verdana, sans-serif'
+         font: 'bold 25px "Poiret One", Helvetica, sans-serif'
       }
         },
         tooltip: {
