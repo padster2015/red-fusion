@@ -15,7 +15,7 @@ error_reporting(E_ALL);
 	$commands = array(
 		'echo $PWD',
 		'whoami',
-		'git pull 2>&1',
+		'git -c user.email="git@patrickhenry.co.uk" pull  2>&1', 
 		'git status',
 		'git submodule sync',
 		'git submodule update',
