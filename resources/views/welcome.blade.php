@@ -9,6 +9,9 @@
 
                 <div class="panel-body">
                    <h1>Red Fusion</h1>
+                   <br>
+                   <p><strong>Red Fusion</strong> is your Digital Marketing Solution from budgeting, posting and reporitng
+                   </p>
                 </div>
             </div>
         </div>
