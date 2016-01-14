@@ -341,6 +341,12 @@ style: {
             backgroundColor: null
         },
         title: {
+style: {
+         color: '#FFF',
+         fontweight:'200',
+         font: '25px "Work Sans", Helvetica, sans-serif'
+      },
+
             text: 'Pie Test'
         },
         subtitle: {
