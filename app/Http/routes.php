@@ -24,13 +24,13 @@ Route::get('/api/v1/Data/show/{limit}', 'DataController@index');
 Route::get('/api/v1/Data/channel/show/', 'DataController@channel');
 
 
-Route::get('/api/v1/Data/{channel}/{message-id}/show/{limit}', 'DataController@Channelmessage');
+Route::get('/api/v1/Data/channel/{channel}/{message-id}/show/{limit}', 'DataController@Channelmessage');
 
 
-Route::get('/api/v1/Data/{channel}/{message-id}/{metric}/show/{limit}', 'DataController@Channelmessage');
+Route::get('/api/v1/Data/channel/{channel}/{message-id}/{metric}/show/{limit}', 'DataController@Channelmessage');
 
 
-Route::get('/api/v1/Data/{channel}/show/{limit}', 'DataController@channel');
+Route::get('/api/v1/Data/channel/{channel}/show/{limit}', 'DataController@channel');
 
 
 Route::get('/api/v1/Data/save/', 'DataController@store');
