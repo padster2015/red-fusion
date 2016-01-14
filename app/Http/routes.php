@@ -33,7 +33,7 @@ Route::get('/api/v1/Data/{channel}/{message-id}/{metric}/show/{limit}', 'DataCon
 Route::get('/api/v1/Data/{channel}/show/{limit}', 'DataController@channel');
 
 
-Route::post('/api/v1/Data/save/', 'DataController@store');
+Route::get('/api/v1/Data/save/', 'DataController@store');
 
 
 // messaging
@@ -42,11 +42,10 @@ Route::post('/api/v1/Data/save/', 'DataController@store');
 Route::get('/api/v1/messages/show/{limit}', 'MessagingController@index');
 
 
-Route::post('/api/v1/messages/save/{limit}', 'MessagingController@index');
+Route::post('/api/v1/messages/save/{limit}', 'MessagingController@show');
 
 
-//Route::get('/api/v1/words/lan
-g/{lang}', 'Words@language');
+//Route::get('/api/v1/words/lang/{lang}', 'Words@language');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
