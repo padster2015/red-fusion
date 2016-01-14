@@ -39,7 +39,7 @@ class DataController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        echo "store";
     }
 
     /**
@@ -50,7 +50,7 @@ class DataController extends Controller
      */
     public function show($id)
     {
-        //
+        echo "show message id";
     }
 
     /**
