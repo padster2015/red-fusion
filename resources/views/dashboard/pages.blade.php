@@ -391,14 +391,9 @@ style: {
                     }
                 },
                 dataLabels: {
-                    enabled: true,
+                    enabled: false,
                     color: '#FFFFFF',
 shadow: false,
-style: {
-         color: '#FFF',
-         fontweight:'200',
-         font: '16px "Work Sans", Helvetica, sans-serif'
-      },
                     //label colors
                     connectorColor: '#FFFFFF',
                     // connector label colors
