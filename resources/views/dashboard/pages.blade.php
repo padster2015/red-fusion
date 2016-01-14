@@ -370,6 +370,7 @@ $(document).ready(function() { /*begin chart render*/
                 dataLabels: {
                     enabled: true,
                     color: '#FFFFFF',
+shadow: false,
                     //label colors
                     connectorColor: '#FFFFFF',
                     // connector label colors
