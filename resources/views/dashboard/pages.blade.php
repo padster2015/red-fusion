@@ -321,13 +321,17 @@ $(document).ready(function() { /*begin chart render*/
             borderWidth: 0,
             pointWidth: 15,
             shadow: false,
+
             color: color || 'white'
         });
     }
     chart = new Highcharts.Chart({
         chart: {
             renderTo: 'container',
-            type: 'pie',
+plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,            
+type: 'pie',
             /* changes bar size */
             pointPadding: -0.3,
             borderWidth: 0,
