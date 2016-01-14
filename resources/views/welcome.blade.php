@@ -8,7 +8,7 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
-                   <h1>Red Fusion</h1>
+                   <h1>Red Fusion v1</h1>
                    <br>
                    <p><strong>Red Fusion</strong> is your Digital Marketing Solution from budgeting, social media posting to full market analytics. </p>
 <br>
