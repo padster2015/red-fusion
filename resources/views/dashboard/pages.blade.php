@@ -210,7 +210,9 @@ var options = {
                                     data: [
                                         ['Facebook', 2000],
                                         ['Affiliate', 30000]
-                                    ]
+                                    ],
+drilldown:true,
+name:'Message'
                                 },
                                 drilldowns ={
                                'Message':{
