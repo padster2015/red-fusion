@@ -369,12 +369,12 @@ $(document).ready(function() { /*begin chart render*/
                 },
                 dataLabels: {
                     enabled: true,
-                    color: '#000',
+                    color: '#FFFFFF',
                     //label colors
-                    connectorColor: '#000',
+                    connectorColor: '#FFFFFF',
                     // connector label colors
                     formatter: function() {
-                        return '<b>' + this.point.name + '</b>: ' + this.y;
+                        return '<b>' + this.point.name + '</b>: ' + this.y;22
                     }
                 }
             }
@@ -405,7 +405,7 @@ $(document).ready(function() { /*begin chart render*/
             borderWidth: 0,
             pointWidth: 15,
             shadow: false,
-            color: 'black' //Sectors icon
+            color: 'white' //Sectors icon
             }],
         exporting: {
             enabled: false
