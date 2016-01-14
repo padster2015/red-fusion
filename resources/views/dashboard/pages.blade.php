@@ -339,10 +339,7 @@ Highcharts.setOptions({
             pointPadding: -0.3,
             borderWidth: 0,
             pointWidth: 10,
-            shadow: false,
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false
+            shadow: false
         },
         title: {
             text: 'Fit Award'
@@ -377,9 +374,9 @@ Highcharts.setOptions({
                 },
                 dataLabels: {
                     enabled: true,
-                    color: '#000',
+                    color: '#fff',
                     //label colors
-                    connectorColor: '#000',
+                    connectorColor: '#fff',
                     // connector label colors
                     formatter: function() {
                         return '<b>' + this.point.name + '</b>: ' + this.y;
