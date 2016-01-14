@@ -11,39 +11,43 @@
 |
 */
 
-
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
-
+//Analyitcs Data Dashboard
 
 Route::get('/api/v1/Data/show/{limit}', 'DataController@index');
-
-
-Route::get('/api/v1/Data/channel/show/', 'DataController@channel');
-
-
-Route::get('/api/v1/Data/channel/{channel}/{message-id}/show/{limit}', 'DataController@Channelmessage');
-
-
-Route::get('/api/v1/Data/channel/{channel}/{message-id}/{metric}/show/{limit}', 'DataController@Channelmessage');
 
 
 Route::get('/api/v1/Data/channel/{channel}/show/{limit}', 'DataController@channel');
 
 
+Route::get('/api/v1/Data/channel/{channel}/messageID/{message-id}/show/{limit}', 'DataController@show');
+
+
+Route::get('/api/v1/Data/channel/{channel}/messageID/{message-id}/metric/{metric}/show/{limit}', 'DataController@ChannelMessageMetric');
+
+
 Route::get('/api/v1/Data/save/', 'DataController@store');
 
 
-// messaging
+// Messaging
 
 
-Route::get('/api/v1/messages/show/{limit}', 'MessagingController@index');
+Route::get('/api/v1/Messages/show/{limit}', 'MessagingController@index');
+
+Route::post('/api/v1/Messages/save/', 'MessagingController@show');
 
 
-Route::post('/api/v1/messages/save/{limit}', 'MessagingController@show');
+Route::post('/api/v1/Messages/save/{limit}', 'MessagingController@show');
 
+
+//Budget
+
+Route::get('/api/v1/Budget/designing/{type}', 'BudgetController@index');
+
+Route::post('/api/v1/Bessages/designing/{type}', 'BudgetController@store');
 
 //Route::get('/api/v1/words/lang/{lang}', 'Words@language');
 /*
@@ -106,4 +110,7 @@ Route::group(['middleware' => 'web'], function () {
     });
 
     Route::get('/home', 'HomeController@index');
+
+
+
 });
