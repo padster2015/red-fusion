@@ -189,13 +189,6 @@ window.setTimeout(function() {
 </script>
 
 <script>
-$(function () {
-     Highcharts.setOptions({
-    colors: ['#1abc9c', '#f1c40f', '#3498db', '#9b59b6', '#34495e', '#2c3e50', 
-             '#e74c3c', '#e74c3c', '#e74c3c']});
-
-
-// Create the chart
 var chart;
 $(document).ready(function() { /*begin chart render*/
     var colors = Highcharts.getOptions().colors,
@@ -425,57 +418,9 @@ $(document).ready(function() { /*begin chart render*/
 
 
 });
+</script>
 
-
-//charts
-options.chart.renderTo = 'container';
-options.chart.type = 'column';
-var chart1 = new Highcharts.Chart(options);
-
-chartfunc = function()
-{
-var column = document.getElementById('column');
-var bar = document.getElementById('bar');
-var pie = document.getElementById('pie');
-var line = document.getElementById('line');
-
-        
-if(column.checked)
-    {
-        
-        options.chart.renderTo = 'container';
-        options.chart.type = 'column';
-        var chart1 = new Highcharts.Chart(options);
-    }
-else if(bar.checked)
-    {
-        options.chart.renderTo = 'container';
-        options.chart.type = 'bar';
-        var chart1 = new Highcharts.Chart(options);
-    }
-else if(pie.checked)
-    {
-        options.chart.renderTo = 'container';
-        options.chart.type = 'pie';
-        var chart1 = new Highcharts.Chart(options);
-    }
-else
-    {
-        options.chart.renderTo = 'container';
-        options.chart.type = 'line';
-        var chart1 = new Highcharts.Chart(options);
-    }
-
-}
-
-$('#change_chart_title').click(function(){
-    options.title.text = $('#chart_title').val();
-    var chart1 = new Highcharts.Chart(options);
-});
-});
-
-//counting up
-
+<script>
 
 
 (function($) {
