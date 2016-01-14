@@ -406,7 +406,7 @@ shadow: false,
             borderWidth: 0,
             pointWidth: 15,
             shadow: false,
-            color: 'white' //Sectors icon
+            color: '#FFF' //Sectors icon
             }],
         exporting: {
             enabled: false
