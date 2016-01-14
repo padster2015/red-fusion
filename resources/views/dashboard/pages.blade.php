@@ -340,20 +340,21 @@ Highcharts.setOptions({
             borderWidth: 0,
             pointWidth: 10,
             shadow: false,
-            backgroundColor: '#e2dfd3'
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
         },
         title: {
-            text: 'Pie Test'
-        },
+            text: 'Fit Award'
         subtitle: {
-            text: 'Pie Chart Triple Breakdown'
+            text: 'Brand Campaign status 2016'
         },
         xAxis: {
             categories: categories
         },
         yAxis: {
             title: {
-                text: 'Total Brand Value',
+                text: 'Measurements',
                 categories: categories
             }
         },
