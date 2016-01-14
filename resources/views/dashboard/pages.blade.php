@@ -330,7 +330,7 @@ $(document).ready(function() { /*begin chart render*/
             renderTo: 'container',
 plotBackgroundColor: null,
             plotBorderWidth: null,
-            plotShadow: false,            
+            plotShadow: false,4            
 type: 'pie',
             /* changes bar size */
             pointPadding: -0.3,
@@ -375,6 +375,9 @@ style: {
             pie: {
                 cursor: 'pointer',
                 allowPointSelect: true,
+style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'White'
+                    },
                 point: {
                     events: {
                         click: function() {
