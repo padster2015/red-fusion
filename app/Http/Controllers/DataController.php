@@ -21,6 +21,13 @@ class DataController extends Controller
         echo json_encode($BrandData,JSON_NUMERIC_CHECK);
     }
 
+    public function channel()
+    {
+        echo "Hello Patrick";
+                     $BrandData = DB::table('ClicksWithDate')->select('Click Date','clicks')->get();
+
+        echo json_encode($BrandData,JSON_NUMERIC_CHECK);
+    }
     /**
      * Show the form for creating a new resource.
      *
