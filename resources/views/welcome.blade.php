@@ -15,7 +15,7 @@
 <p>
 if your a small business or local sports or a international organisation <p> are full digital and omni marketing approach tool will allow you to see whats happening and make the decissions you need to grow your online precsence. In the most cost effective way. </p>
 
-<a href="/register"> register now</a>
+<a href="/register"> register now!!</a>
 
                 </div>
             </div>
