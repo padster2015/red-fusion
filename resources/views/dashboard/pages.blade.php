@@ -187,14 +187,9 @@ window.setTimeout(function() {
     });
 }, 2500);
 </script>
-
 <script>
 var chart;
 $(document).ready(function() { /*begin chart render*/
-
-Highcharts.setOptions({
-    colors: ['#1abc9c', '#f1c40f', '#3498db', '#9b59b6', '#34495e', '#2c3e50', 
-             '#e74c3c', '#e74c3c', '#e74c3c']});
     var colors = Highcharts.getOptions().colors,
         categories = ['The Americas', 'Asia Pacific', 'Europe & Africa'],
         //name = 'Sectors',
@@ -316,7 +311,6 @@ Highcharts.setOptions({
                     }}],
             }},
         ];
-
     function setChart(name, categories, data, color) {
         //chart.xAxis[0].setCategories(categories);
         chart.series[0].remove();
@@ -330,7 +324,6 @@ Highcharts.setOptions({
             color: color || 'white'
         });
     }
-
     chart = new Highcharts.Chart({
         chart: {
             renderTo: 'container',
@@ -339,19 +332,21 @@ Highcharts.setOptions({
             pointPadding: -0.3,
             borderWidth: 0,
             pointWidth: 10,
-            shadow: false
+            shadow: false,
+            backgroundColor: '#e2dfd3'
         },
         title: {
-            text: 'Fit Award'
+            text: 'Pie Test'
+        },
         subtitle: {
-            text: 'Brand Campaign status 2016'
+            text: 'Pie Chart Triple Breakdown'
         },
         xAxis: {
             categories: categories
         },
         yAxis: {
             title: {
-                text: 'Measurements',
+                text: 'Total Brand Value',
                 categories: categories
             }
         },
@@ -374,13 +369,12 @@ Highcharts.setOptions({
                 },
                 dataLabels: {
                     enabled: true,
-                    color: '#fff',
+                    color: '#000',
                     //label colors
-                    connectorColor: '#fff',
+                    connectorColor: '#000',
                     // connector label colors
                     formatter: function() {
                         return '<b>' + this.point.name + '</b>: ' + this.y;
-
                     }
                 }
             }
@@ -417,10 +411,9 @@ Highcharts.setOptions({
             enabled: false
         }
     });
-
-
 });
 </script>
+
 
 <script>
 
