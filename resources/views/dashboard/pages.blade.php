@@ -216,9 +216,11 @@ var options = {
                                'Message':{
                                 name: 'Message',
                                     data:[
-                                         ['New Year New You',100],
-                                          ['Happy New Year',100],
-                                           ['NY Resolution',500],                                          ]}},
+                                         	['New Year New You',100],
+                                         	['Happy New Year',100],
+                                         	['NY Resolution',500]                                          
+										   ]}
+											  },
                                            
                                   'Summer Sale': {
                                     name: 'Summer Sale',
