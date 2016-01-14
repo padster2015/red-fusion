@@ -196,134 +196,238 @@ $(function () {
 
 
 // Create the chart
+var chart;
+$(document).ready(function() { /*begin chart render*/
+    var colors = Highcharts.getOptions().colors,
+        categories = ['The Americas', 'Asia Pacific', 'Europe & Africa'],
+        //name = 'Sectors',
+        data = [{
+            name: 'A-1',
+            y: 55,
+            color: colors[0],
+            drilldown: {
+                //begin alcohol
+                name: 'A-1',
+                color: colors[0],
+                data: [{
+                    y: 33.06,
+                    name: 'A',
+                    drilldown: {
+                        name: 'Budweiser',
+                        data: [
+                            {name:'A', y:10838}
+                            , {name:'B', y:11349}
+                            , {name:'C', y:11894}
+                            , {name:'D', y:11846}
+                            , {name:'E', y:11878}
+                            , {name:'F', y:11662}
+                            , {name:'G', y:11652}
+                        ],
+                        color: colors[0]
+                    }},
+                {
+                    y: 10.85,
+                    name: 'B',
+                    drilldown: {
+                        name: 'Heinekein',
+                        categories: ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
+                        data: [2266, 2396, 2431, 2380, 2357, 3516],
+                        color: colors[0]
+                    }},
+                {
+                    y: 7.35,
+                    name: 'C',
+                    drilldown: {
+                        name: 'Jack Daniels',
+                        categories: ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
+                        data: [1583, 1580, 1612, 4036],
+                        color: colors[0]
+                    }},
+                {
+                    y: 2.41,
+                    name: 'D',
+                    drilldown: {
+                        name: 'Johnnie Walker',
+                        categories: ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
+                        data: [1649, 1654, 1724, 3557],
+                        color: colors[0]
+                    }},
+                {
+                    y: 2.41,
+                    name: 'E',
+                    drilldown: {
+                        name: 'Moet & Chandon',
+                        categories: ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
+                        data: [2470, 2445, 2524, 2861, 2991, 3257, 3739, 3951, 3754, 4021],
+                        color: colors[0]
+                    }},
+                {
+                    y: 2.41,
+                    name: 'F',
+                    drilldown: {
+                        name: 'Smirnoff',
+                        categories: ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
+                        data: [2594, 2723, 5600, 2975, 3097, 3032, 3379, 3590, 7350, 3624],
+                        color: colors[0]
+                    }},
+                {
+                    y: 2.41,
+                    name: 'G',
+                    drilldown: {
+                        name: 'Corona',
+                        categories: ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
+                        data: [3847],
+                        color: colors[0]
+                    }}],
+            }},
+        { 
+            name: 'B-1',
+            y: 11.94,
+            color: colors[2],
+            drilldown: {
+                name: 'B',
+                categories: ['A-2', 'B-2', 'C-2'],
+                color: colors[2],
+                data: [{
+                    y: 33.06,
+                    name: 'A',
+                    drilldown: {
+                        name: 'A',
+                        categories: ['A', 'B'],
+                        data: [4444, 6666],
+                        color: colors[3]
+                    },
+                    },
+                {
+                    name: 'B',
+                    y: 10.85,
+                    drilldown: {
+                        name: 'B',
+                        categories: ['A', 'B'],
+                        data: [22222, 6005],
+                        color: colors[3]
+                    },
+                    },
+                {
+                    name: 'C',
+                    y: 7.35,
+                    drilldown: {
+                        name: 'C',
+                        categories: ['2011'],
+                        data: [3605],
+                        color: colors[3]
+                    }}],
+            }},
+        ];
 
-var options = {
-    chart: {
-       events: {
-            drilldown: function (e) {
-                if (!e.seriesOptions) {
-
-            var chart = this,
-                            drilldowns = {
-                                'New Year': {
-                                    name: 'New Year',
-                                    data: [
-                                        ['Facebook', 2000],
-                                        ['Affiliate', 30000]
-                                    ],
-drilldown:true,
-name:'Message'
-                                },
-                                drilldowns ={
-                               'Message':{
-                                name: 'Message',
-                                    data:[
-                                         	['New Year New You',100],
-                                         	['Happy New Year',100],
-                                         	['NY Resolution',500]                                          
-										   ]}
-											  },
-                                           
-                                  'Summer Sale': {
-                                    name: 'Summer Sale',
-                                    data: [
-                                        ['Click', 390],
-                                        ['Impressions', 13000],
-                                        ['Acquisition', 5]
-                                    ]
-                                },
-                                'Black Friday': {
-                                    name: 'Black Friday',
-                                    data: [
-                                        ['Click', 1500],
-                                        ['Impression', 50000],
-                                        ['Acquisition', 750]
-                                    ]
-                                }
-                            },
-                            series = drilldowns[e.point.name];
-
-                        
-
-                    // Show the loading label
-                    chart.showLoading('Loading ...');
-
-                    setTimeout(function () {
-                        chart.hideLoading();
-                        chart.addSeriesAsDrilldown(e.point, series);
-                    }, 1000); 
-                }
-
-            }
-        },
-        plotBorderWidth: 0
-    },
-
-    title: {
-        text: 'Fit Award Brand',
-    },
-    //
-    
-    //
-    xAxis: {
-            type: 'category',
-    },
-    //
-    yAxis: {
-
-            title: {
-                margin: 10,
-                text: 'No. of Clicks'
-            },      
-    },
-    //
-    legend: {
-        enabled: true,
-    },
-    //
-    plotOptions: {
-        series: {
-            pointPadding: 0.2,
-            dataLabels: {
-                enabled: true
-            }
-        },
-        pie: {
-            plotBorderWidth: 0,
-            allowPointSelect: true,
-            cursor: 'pointer',
-            size: '100%',
-            dataLabels: {
-                enabled: true,
-                format: '{point.name}: <b>{point.y}</b>'
-            }
-        }
-    },
-    //
-     series: [{
-            name: 'Channels',
-            colorByPoint: true,
-            data: [{
-                name: 'New Year',
-                y: 2000,
-                drilldown: true
-            }, {
-                name: 'Summer Sale',
-                y: 390,
-                drilldown: true
-            }, {
-                name: 'Black Friday',
-                y: 1500,
-                drilldown: true
-            }]
-        }],
-    //
-    drilldown: {
-        series: []
+    function setChart(name, categories, data, color) {
+        //chart.xAxis[0].setCategories(categories);
+        chart.series[0].remove();
+        chart.addSeries({
+            name: name,
+            data: data,
+            pointPadding: -0.3,
+            borderWidth: 0,
+            pointWidth: 15,
+            shadow: false,
+            color: color || 'white'
+        });
     }
-};
 
-// Column chart
+    chart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'container',
+            type: 'pie',
+            /* changes bar size */
+            pointPadding: -0.3,
+            borderWidth: 0,
+            pointWidth: 10,
+            shadow: false,
+            backgroundColor: '#e2dfd3'
+        },
+        title: {
+            text: 'Pie Test'
+        },
+        subtitle: {
+            text: 'Pie Chart Triple Breakdown'
+        },
+        xAxis: {
+            categories: categories
+        },
+        yAxis: {
+            title: {
+                text: 'Total Brand Value',
+                categories: categories
+            }
+        },
+        //drilldown plot
+        plotOptions: {
+            pie: {
+                cursor: 'pointer',
+                allowPointSelect: true,
+                point: {
+                    events: {
+                        click: function() {
+                            var drilldown = this.drilldown;
+                            if (drilldown) { // drill down
+                                setChart(drilldown.name, drilldown.categories, drilldown.data, drilldown.color);
+                            } else { // restore
+                                setChart(name, categories, data);
+                            }
+                        }
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                    color: '#000',
+                    //label colors
+                    connectorColor: '#000',
+                    // connector label colors
+                    formatter: function() {
+                        return '<b>' + this.point.name + '</b>: ' + this.y;
+
+                    }
+                }
+            }
+        },
+        //formatting over hover tooltip
+        tooltip: {
+            formatter: function() {
+                var point = this.point,
+                    s = point.name + ':<b>' + this.y + '% market share</b><br/>';
+                if (point.drilldown) {
+                    s = point.name + ':<b>' + this.y + '222</b><br/>';
+                    s += 'Click to view ' + point.name + ' versions';
+                } else {
+                    s = point.name + ':<b>' + this.y + '333</b><br/>';
+                    s += 'Click to return to browser brands';
+                }
+                return s;
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: name,
+            data: data,
+            /* changes bar size */
+            pointPadding: -0.3,
+            borderWidth: 0,
+            pointWidth: 15,
+            shadow: false,
+            color: 'black' //Sectors icon
+            }],
+        exporting: {
+            enabled: false
+        }
+    });
+
+
+});
+
+
+//charts
 options.chart.renderTo = 'container';
 options.chart.type = 'column';
 var chart1 = new Highcharts.Chart(options);
