@@ -347,10 +347,15 @@ style: {
          font: '25px "Work Sans", Helvetica, sans-serif'
       },
 
-            text: 'Pie Test'
+            text: 'Fit Award'
         },
         subtitle: {
-            text: 'Pie Chart Triple Breakdown'
+style: {
+         color: '#FFF',
+         fontweight:'200',
+         font: '25px "Work Sans", Helvetica, sans-serif'
+      }
+            text: 'Omni Marketing Analysis'
         },
         xAxis: {
             categories: categories
