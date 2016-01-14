@@ -321,17 +321,13 @@ $(document).ready(function() { /*begin chart render*/
             borderWidth: 0,
             pointWidth: 15,
             shadow: false,
-
             color: color || 'white'
         });
     }
     chart = new Highcharts.Chart({
         chart: {
             renderTo: 'container',
-plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,4            
-type: 'pie',
+            type: 'pie',
             /* changes bar size */
             pointPadding: -0.3,
             borderWidth: 0,
@@ -350,7 +346,6 @@ style: {
          fontweight:'200',
          font: '25px "Work Sans", Helvetica, sans-serif'
       },
-
             text: 'Fit Award'
         },
         subtitle: {
@@ -375,9 +370,6 @@ style: {
             pie: {
                 cursor: 'pointer',
                 allowPointSelect: true,
-style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'White'
-                    },
                 point: {
                     events: {
                         click: function() {
@@ -391,9 +383,14 @@ style: {
                     }
                 },
                 dataLabels: {
-                    enabled: false,
+                    enabled: true,
                     color: '#FFFFFF',
 shadow: false,
+style: {
+         color: '#FFF',
+         fontweight:'200',
+         font: '16px "Work Sans", Helvetica, sans-serif'
+      },
                     //label colors
                     connectorColor: '#FFFFFF',
                     // connector label colors
@@ -436,8 +433,6 @@ shadow: false,
         }
     });
 });
-</script>
-
 
 <script>
 
