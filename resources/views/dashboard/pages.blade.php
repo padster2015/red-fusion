@@ -333,6 +333,11 @@ $(document).ready(function() { /*begin chart render*/
             borderWidth: 0,
             pointWidth: 10,
             shadow: false,
+style: {
+         color: '#FFF',
+         fontweight:'200',
+         font: '25px "Work Sans", Helvetica, sans-serif'
+      },
             backgroundColor: null
         },
         title: {
