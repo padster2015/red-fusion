@@ -20,7 +20,33 @@
 
 Route::get('/api/v1/Data/show/{limit}', 'DataController@index');
 
-//Route::get('/api/v1/words/lang/{lang}', 'Words@language');
+
+Route::get('/api/v1/Data/{channel}/show/{limit}', 'DataController@channel');
+
+
+Route::get('/api/v1/Data/{channel}/{message-id}/show/{limit}', 'DataController@Channelmessage');
+
+
+Route::get('/api/v1/Data/{channel}/{message-id}/{metric}/show/{limit}', 'DataController@Channelmessage');
+
+
+Route::get('/api/v1/Data/{channel}/show/{limit}', 'DataController@channel');
+
+
+Route::post('/api/v1/Data/save/', 'DataController@store');
+
+
+// messaging
+
+
+Route::get('/api/v1/messages/show/{limit}', 'MessagingController@index');
+
+
+Route::post('/api/v1/messages/save/{limit}', 'MessagingController@index');
+
+
+//Route::get('/api/v1/words/lan
+g/{lang}', 'Words@language');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
