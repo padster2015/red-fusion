@@ -333,7 +333,7 @@ $(document).ready(function() { /*begin chart render*/
             borderWidth: 0,
             pointWidth: 10,
             shadow: false,
-            backgroundColor: '#e2dfd3'
+            backgroundColor: null
         },
         title: {
             text: 'Pie Test'
