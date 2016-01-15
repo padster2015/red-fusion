@@ -194,9 +194,7 @@ $(document).ready(function() {
 
 
   Highcharts.setOptions({
-    colors: ['#1abc9c', '#fff', '#3498db', '#9b59b6', '#34495e', '#2c3e50', 
-             '#e74c3c', '#e74c3c', '#e74c3c']});/*begin chart render*/
-    var colors = Highcharts.getOptions().colors,
+    colors: ['#1abc9c', '#fff', '#3498db', '#9b59b6', '#34495e', '#2c3e50', '#e74c3c', '#e74c3c', '#e74c3c']});/*begin chart render*/
         categories = ['The Americas', 'Asia Pacific', 'Europe & Africa'],
         //name = 'Sectors',
         data = [{
@@ -327,10 +325,18 @@ $(document).ready(function() {
             backgroundColor: null
         },
         title: {
-            text: 'Pie Test'
+            text: 'Fit Awards',
+            style: {
+         color: '#FFF',
+         font: '25px "Work Sans", Helvetica, sans-serif'
+      }
         },
         subtitle: {
-            text: 'Pie Chart Triple Breakdown'
+            text: 'Campaign Breakdown',
+            style: {
+         color: '#FFF',
+         font: '15px "Work Sans", Helvetica, sans-serif'
+      }
         },
         xAxis: {
             categories: categories
