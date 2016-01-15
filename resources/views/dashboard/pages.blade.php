@@ -372,7 +372,7 @@ $(document).ready(function() { /*begin chart render*/
                 },
                 dataLabels: {
                     enabled: true,
-                    color: '#FFF',
+                    color: 'White',
                     //label colors
                     connectorColor: '#FFF',
                     style: {
