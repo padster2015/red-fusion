@@ -189,12 +189,8 @@ window.setTimeout(function() {
 </script>
 <script>
 var chart;
-$(document).ready(function() { 
-
-
-
-  Highcharts.setOptions({
-    colors: ['#1abc9c', '#fff', '#3498db', '#9b59b6', '#34495e', '#2c3e50', '#e74c3c', '#e74c3c', '#e74c3c']});/*begin chart render*/
+$(document).ready(function() { /*begin chart render*/
+    var colors = Highcharts.getOptions().colors,
         categories = ['The Americas', 'Asia Pacific', 'Europe & Africa'],
         //name = 'Sectors',
         data = [{
@@ -325,14 +321,10 @@ $(document).ready(function() {
             backgroundColor: null
         },
         title: {
-            text: 'Fit Awards',
-            style: {
-         color: '#FFF',
-         font: '25px "Work Sans", Helvetica, sans-serif'
-      }
+            text: 'Pie Test'
         },
         subtitle: {
-            text: 'Campaign Breakdown'
+            text: 'Pie Chart Triple Breakdown'
         },
         xAxis: {
             categories: categories
@@ -365,7 +357,7 @@ $(document).ready(function() {
                 },
                 dataLabels: {
                     enabled: false,
-                    color: 'white',
+                    color: '#FFFFFF',
                     shadow: false,
                     //label colors
                     connectorColor: '#000',
