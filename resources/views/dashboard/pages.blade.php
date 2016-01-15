@@ -205,10 +205,10 @@ $(document).ready(function() { /*begin chart render*/
                 color: colors[0],
                 data: [{
                     y: 33.06,
-                    name: 'A',
+                    name: 'New Year New You',
                     drilldown: {
-                        name: 'Budweiser',
-                        categories: ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
+                        name: 'Facebook',
+                        categories: ['Message 1', 'Message 6', 'Message 5', 'Message 4', 'Message 3', 'Message 2', 'Message 1'],
                         data: [10838, 11349, 11894, 11846, 11878, 11662, 11652, 11438, 11833, 12252],
                         color: colors[0]
                     }},
