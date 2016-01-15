@@ -329,7 +329,7 @@ color:'#fff'
 style: {
             fontFamily: 'san-serif',
 color:'#fff'
-        }no
+        }
         },
         subtitle: {
             text: 'Pie Chart Triple Breakdown'
