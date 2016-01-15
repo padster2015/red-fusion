@@ -189,15 +189,14 @@ window.setTimeout(function() {
 </script>
 <script>
 var chart;
-$(document).ready(function() { /*begin chart render*/
+$(document).ready(function() { 
 
- Highcharts.setOptions({
+
+
+  Highcharts.setOptions({
     colors: ['#1abc9c', '#f1c40f', '#3498db', '#9b59b6', '#34495e', '#2c3e50', 
-             '#e74c3c', '#e74c3c', '#e74c3c']});
-
+             '#e74c3c', '#e74c3c', '#e74c3c']});/*begin chart render*/
     var colors = Highcharts.getOptions().colors,
-
-
         categories = ['The Americas', 'Asia Pacific', 'Europe & Africa'],
         //name = 'Sectors',
         data = [{
@@ -320,33 +319,18 @@ $(document).ready(function() { /*begin chart render*/
         chart: {
             renderTo: 'container',
             type: 'pie',
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-
+            /* changes bar size */
             pointPadding: -0.3,
             borderWidth: 0,
             pointWidth: 10,
             shadow: false,
-            style: {
-         color: '#FFF',
-         font: '25px "Work Sans", Helvetica, sans-serif'
-      }
             backgroundColor: null
         },
         title: {
-            text: 'Fit Award',
-            style: {
-         color: '#FFF',
-         font: '25px "Work Sans", Helvetica, sans-serif'
-      }
+            text: 'Pie Test'
         },
         subtitle: {
-            text: 'Campaign Drilldown',
-            style: {
-         color: '#FFF',
-         font: '16px "Work Sans", Helvetica, sans-serif'
-      }
+            text: 'Pie Chart Triple Breakdown'
         },
         xAxis: {
             categories: categories
@@ -378,13 +362,11 @@ $(document).ready(function() { /*begin chart render*/
                     }
                 },
                 dataLabels: {
-                    enabled: true,
-                    color: 'White',
+                    enabled: false,
+                    color: '#FFFFFF',
+                    shadow: false,
                     //label colors
-                    connectorColor: '#FFF',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'White'
-                    },
+                    connectorColor: '#000',
                     // connector label colors
                     formatter: function() {
                         return '<b>' + this.point.name + '</b>: ' + this.y;
@@ -419,7 +401,7 @@ $(document).ready(function() { /*begin chart render*/
             borderWidth: 0,
             pointWidth: 15,
             shadow: false,
-            color: '#FFF' //Sectors icon
+            color: 'black' //Sectors icon
             }],
         exporting: {
             enabled: false
