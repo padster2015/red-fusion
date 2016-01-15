@@ -194,7 +194,7 @@ $(document).ready(function() {
 
 
   Highcharts.setOptions({
-    colors: ['#1abc9c', '#f1c40f', '#3498db', '#9b59b6', '#34495e', '#2c3e50', 
+    colors: ['#1abc9c', '#fff', '#3498db', '#9b59b6', '#34495e', '#2c3e50', 
              '#e74c3c', '#e74c3c', '#e74c3c']});/*begin chart render*/
     var colors = Highcharts.getOptions().colors,
         categories = ['The Americas', 'Asia Pacific', 'Europe & Africa'],
