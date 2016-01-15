@@ -335,7 +335,7 @@ $(document).ready(function() {
             text: 'Campaign Breakdown',
             style: {
          color: '#FFF',
-         font: '15px "Work Sans", Helvetica, sans-serif'
+         font: '25px "Work Sans", Helvetica, sans-serif'
       }
         },
         xAxis: {
