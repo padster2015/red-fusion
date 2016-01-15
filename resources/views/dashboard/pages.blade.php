@@ -191,6 +191,10 @@ window.setTimeout(function() {
 var chart;
 $(document).ready(function() { /*begin chart render*/
     var colors = Highcharts.getOptions().colors,
+Highcharts.setOptions({
+    colors: ['#1abc9c', '#f1c40f', '#3498db', '#9b59b6', '#34495e', '#2c3e50', 
+             '#e74c3c', '#e74c3c', '#e74c3c']});
+    
         categories = ['The Americas', 'Asia Pacific', 'Europe & Africa'],
         //name = 'Sectors',
         data = [{
