@@ -185,7 +185,7 @@ window.setTimeout(function() {
     $(".alert").fadeTo(500, 0).slideUp(500, function(){
         $(this).remove(); 
     });
-}, 2500);
+}, 1500);
 </script>
 
 <script>
@@ -230,8 +230,6 @@ var options = {
                                 }
                             },
                             series = drilldowns[e.point.name];
-
-                        
 
                     // Show the loading label
                     chart.showLoading('Loading ...');

@@ -98,9 +98,19 @@ Route::group(['middleware' => 'web'], function () {
         return view('profile.profile');
     });
 
+            // profile from after login!
+    Route::post('/profile', function () {
+        return view('profile.profileUpdate');
+    });
+
         // profile from after login!
     Route::get('/settings', function () {
         return view('profile.settings');
+    });
+
+            // profile from after login!
+    Route::post('/settings', function () {
+        return view('profile.SettingsUpdate');
     });
 
 
@@ -109,8 +119,10 @@ Route::group(['middleware' => 'web'], function () {
         return view('profile.billings');
     });
 
+            // profile from after login!
+    Route::post('/settings/billing', function () {
+        return view('profile.billingsUpdate');
+    });
+
     Route::get('/home', 'HomeController@index');
-
-
-
 });
