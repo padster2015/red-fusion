@@ -365,12 +365,12 @@ $(document).ready(function() {
                     enabled: true,
                     style: {
                         fontWeight: 'bold'
-                        color:'#FFFFFF'
+                        color:'#FFFFF'
                     }
                     color: 'white',
                     shadow: false,
                     //label colors
-                    connectorColor: '#FFF',
+                    connectorColor: '#000',
                     // connector label colors
                     formatter: function() {
                         return '<b>' + this.point.name + '</b>: ' + this.y;
