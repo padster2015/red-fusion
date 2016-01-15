@@ -362,7 +362,7 @@ $(document).ready(function() {
                     }
                 },
                 dataLabels: {
-                    enabled: false,
+                    enabled: true,
                     color: 'white',
                     shadow: false,
                     //label colors
