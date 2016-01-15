@@ -375,6 +375,9 @@ $(document).ready(function() { /*begin chart render*/
                     color: '#FFF',
                     //label colors
                     connectorColor: '#FFF',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'White'
+                    },
                     // connector label colors
                     formatter: function() {
                         return '<b>' + this.point.name + '</b>: ' + this.y;
