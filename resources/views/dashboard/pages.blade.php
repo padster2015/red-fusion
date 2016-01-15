@@ -312,7 +312,7 @@ $(document).ready(function() { /*begin chart render*/
     window.chart = new Highcharts.Chart({
         chart: {
             renderTo: 'container',
-            type: 'bar',
+            type: 'pie',
             /* changes bar size */
             pointPadding: -0.3,
             borderWidth: 0,
