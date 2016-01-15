@@ -363,7 +363,7 @@ $(document).ready(function() {
                 },
                 dataLabels: {
                     enabled: false,
-                    color: '#FFFFFF',
+                    color: 'white',
                     shadow: false,
                     //label colors
                     connectorColor: '#000',
