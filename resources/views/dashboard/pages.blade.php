@@ -333,7 +333,12 @@ fontsize:'20px'
         }
         },
         subtitle: {
-            text: 'Pie Chart Triple Breakdown'
+            text: 'Pie Chart Triple Breakdown',
+style: {
+            fontFamily: 'san-serif',
+color:'#fff',
+fontsize:'16px'
+        }
         },
         xAxis: {
             categories: categories
