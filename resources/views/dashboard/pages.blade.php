@@ -354,8 +354,7 @@ $(document).ready(function() { /*begin chart render*/
         yAxis: {
             title: {
                 text: 'Total Brand Value',
-                categories: categories,
-                
+                categories: categories
             }
         },
         //drilldown plot
