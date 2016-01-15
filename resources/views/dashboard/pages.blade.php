@@ -320,7 +320,10 @@ $(document).ready(function() { /*begin chart render*/
         chart: {
             renderTo: 'container',
             type: 'pie',
-            /* changes bar size */
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            
             pointPadding: -0.3,
             borderWidth: 0,
             pointWidth: 10,
@@ -412,7 +415,7 @@ $(document).ready(function() { /*begin chart render*/
             borderWidth: 0,
             pointWidth: 15,
             shadow: false,
-            color: 'white' //Sectors icon
+            color: '#FFF' //Sectors icon
             }],
         exporting: {
             enabled: false
