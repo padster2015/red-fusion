@@ -328,7 +328,8 @@ color:'#fff'
             text: 'Fit Award',
 style: {
             fontFamily: 'san-serif',
-color:'#fff'
+color:'#fff',
+fontsize:'20px'
         }
         },
         subtitle: {
@@ -368,7 +369,7 @@ color:'#fff'
                     color: '#FFFFFF',
                     shadow: false,
                     //label colors
-                    connectorColor: '#000',
+                    connectorColor: '#fff',
                     // connector label colors
                     formatter: function() {
                         return '<b>' + this.point.name + '</b>: ' + this.y;
