@@ -355,10 +355,7 @@ $(document).ready(function() { /*begin chart render*/
             title: {
                 text: 'Total Brand Value',
                 categories: categories,
-                style: {
-         color: '#FFF',
-         font: '16px "Work Sans", Helvetica, sans-serif'
-      }
+                
             }
         },
         //drilldown plot
