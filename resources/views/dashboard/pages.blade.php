@@ -370,7 +370,7 @@ $(document).ready(function() {
                     color: 'white',
                     shadow: false,
                     //label colors
-                    connectorColor: '#000',
+                    connectorColor: '#FFF',
                     // connector label colors
                     formatter: function() {
                         return '<b>' + this.point.name + '</b>: ' + this.y;
