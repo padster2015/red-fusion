@@ -335,7 +335,11 @@ $(document).ready(function() { /*begin chart render*/
       }
         },
         subtitle: {
-            text: 'Pie Chart Triple Breakdown'
+            text: 'Campaign Drilldown',
+            style: {
+         color: '#FFF',
+         font: '25px "Work Sans", Helvetica, sans-serif'
+      }
         },
         xAxis: {
             categories: categories
