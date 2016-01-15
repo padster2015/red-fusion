@@ -363,6 +363,10 @@ $(document).ready(function() {
                 },
                 dataLabels: {
                     enabled: true,
+                    style: {
+                        fontWeight: 'bold'
+                        color:'#FFFFFF'
+                    }
                     color: 'white',
                     shadow: false,
                     //label colors
