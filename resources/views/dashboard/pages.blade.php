@@ -338,7 +338,7 @@ $(document).ready(function() { /*begin chart render*/
             text: 'Campaign Drilldown',
             style: {
          color: '#FFF',
-         font: '25px "Work Sans", Helvetica, sans-serif'
+         font: '16px "Work Sans", Helvetica, sans-serif'
       }
         },
         xAxis: {
@@ -372,9 +372,9 @@ $(document).ready(function() { /*begin chart render*/
                 },
                 dataLabels: {
                     enabled: true,
-                    color: '#000',
+                    color: '#FFF',
                     //label colors
-                    connectorColor: '#000',
+                    connectorColor: '#FFF',
                     // connector label colors
                     formatter: function() {
                         return '<b>' + this.point.name + '</b>: ' + this.y;
