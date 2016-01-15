@@ -199,8 +199,8 @@ $(document).ready(function() { /*begin chart render*/
             color: colors[0],
             drilldown: {
                 //begin alcohol
-                name: 'A-1',
-                categories: ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
+                name: 'New Year New You',
+                categories: ['Facebook', 'Twitter', 'Affiliate', 'Email', 'Search', 'Retargeting/Display', 'Facebook'],
                 data: [122252, 3516, 4036, 3557, 4021, 3624, 3847],
                 color: colors[0],
                 data: [{
