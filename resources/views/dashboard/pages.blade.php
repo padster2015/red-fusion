@@ -325,7 +325,11 @@ color:'#fff'
         }
         },
         title: {
-            text: 'Pie Test'
+            text: 'Fit Award',
+style: {
+            fontFamily: 'san-serif',
+color:'#fff'
+        }no
         },
         subtitle: {
             text: 'Pie Chart Triple Breakdown'
