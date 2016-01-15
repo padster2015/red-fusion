@@ -29,7 +29,7 @@ $(document).ready(function() { /*begin chart render*/
         categories = ['The Americas', 'Asia Pacific', 'Europe & Africa'],
         //name = 'Sectors',
         data = [{
-            name: 'A-1',
+            name: 'New Year New You',
             y: 55,
             color: colors[0],
             drilldown: {
