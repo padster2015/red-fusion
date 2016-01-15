@@ -407,7 +407,7 @@ $(document).ready(function() {
             borderWidth: 0,
             pointWidth: 15,
             shadow: false,
-            color: 'white' //Sectors icon
+            color: 'black' //Sectors icon
             }],
         exporting: {
             enabled: false
