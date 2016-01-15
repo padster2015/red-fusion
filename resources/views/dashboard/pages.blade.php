@@ -332,11 +332,7 @@ $(document).ready(function() {
       }
         },
         subtitle: {
-            text: 'Campaign Breakdown',
-            style: {
-         color: '#FFF',
-         font: '25px "Work Sans", Helvetica, sans-serif'
-      }
+            text: 'Campaign Breakdown'
         },
         xAxis: {
             categories: categories
