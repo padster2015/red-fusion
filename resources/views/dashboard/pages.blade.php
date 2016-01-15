@@ -323,11 +323,15 @@ $(document).ready(function() { /*begin chart render*/
             plotBackgroundColor: null,
             plotBorderWidth: null,
             plotShadow: false,
-            
+
             pointPadding: -0.3,
             borderWidth: 0,
             pointWidth: 10,
             shadow: false,
+            style: {
+         color: '#FFF',
+         font: '25px "Work Sans", Helvetica, sans-serif'
+      }
             backgroundColor: null
         },
         title: {
