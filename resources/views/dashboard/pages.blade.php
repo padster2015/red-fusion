@@ -412,7 +412,7 @@ $(document).ready(function() { /*begin chart render*/
             borderWidth: 0,
             pointWidth: 15,
             shadow: false,
-            color: 'black' //Sectors icon
+            color: 'white' //Sectors icon
             }],
         exporting: {
             enabled: false
