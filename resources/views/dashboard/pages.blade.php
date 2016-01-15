@@ -354,7 +354,11 @@ $(document).ready(function() { /*begin chart render*/
         yAxis: {
             title: {
                 text: 'Total Brand Value',
-                categories: categories
+                categories: categories,
+                style: {
+         color: '#FFF',
+         font: '16px "Work Sans", Helvetica, sans-serif'
+      }
             }
         },
         //drilldown plot
