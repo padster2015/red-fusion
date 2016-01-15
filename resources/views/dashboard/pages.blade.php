@@ -362,11 +362,7 @@ $(document).ready(function() {
                     }
                 },
                 dataLabels: {
-                    enabled: true,
-                    style: {
-                        fontWeight: 'bold'
-                        color:'#FFFFF'
-                    }
+                    enabled: false,
                     color: 'white',
                     shadow: false,
                     //label colors
