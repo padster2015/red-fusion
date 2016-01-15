@@ -23,11 +23,8 @@
 <button id="button">Set new data</button>
 
 <script>
-$(function () {
-
 var chart;
-$(document).ready(function() {
- /*begin chart render*/
+$(document).ready(function() { /*begin chart render*/
     var colors = Highcharts.getOptions().colors,
         categories = ['The Americas', 'Asia Pacific', 'Europe & Africa'],
         //name = 'Sectors',
