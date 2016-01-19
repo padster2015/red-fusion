@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,200,700' rel='stylesheet' type='text/css'>    <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
     <style>
@@ -118,14 +117,7 @@ border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:20
     @yield('content')
 
 
-   <script>
-var app = angular.module('myApp', []);
-app.controller('customersCtrl', function($scope, $http) {
-    $http.get("http://www.w3schools.com/angular/customers.php").then(function(response) {
-        $scope.myData = response.data.records;
-    });
-});
-</script> 
+   
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 </body>
 </html>
