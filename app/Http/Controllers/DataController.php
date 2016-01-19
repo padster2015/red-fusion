@@ -32,7 +32,7 @@ class DataController extends Controller
     {
         $DBClicks = DB::table('TotalClicks')->select('Total_Clicks')->get();
 //return View::make('dashboard.pages')->with('data', $DBClicks);
-    return view('dashboard.pages')->with($DBClicks->'Total_Clicks');
+    return view('dashboard.pages')->with($DBClicks->{Total_Clicks});
     }
     /**
      * Show the form for creating a new resource.
