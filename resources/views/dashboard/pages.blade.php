@@ -14,7 +14,7 @@
         <div class="main-view" style="width:80%; margin:0 auto;" ng-app="myApp" ng-controller="customersCtrl">
           <ul>
   <li ng-repeat="x in myData">
-    {{ x.Name + ', ' + x.Country }}
+    @{{ x.Name + ', ' + x.Country }}
   </li>
 </ul>
           <h1>
