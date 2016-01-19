@@ -28,9 +28,9 @@ class DataController extends Controller
         echo json_encode($BrandData,JSON_NUMERIC_CHECK);
     }
 
-        public function Dashboard_Clicks()
+    public function Dashboard_Clicks()
     {
-        $DBClicks = DB::table('Aff Clicks')->sum('no_of_Clicks');
+        $DBClicks = DB::table('Aff Clicks')->sum('no_of_Clicks') ->get();
         echo json_encode($DBClicks,JSON_NUMERIC_CHECK);
     }
     /**
