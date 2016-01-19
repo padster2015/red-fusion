@@ -22,6 +22,8 @@ Route::get('/api/v1/Data/show/{limit}', 'DataController@index');
 
 Route::get('/api/v1/Data/channel/{channel}/show/{limit}', 'DataController@channel');
 
+Route::get('/api/v1/Data/DashboardSummery', 'DataController@Dashboard_Clicks');
+
 
 Route::get('/api/v1/Data/channel/{channel}/messageID/{message-id}/show/{limit}', 'DataController@show');
 
