@@ -194,12 +194,36 @@ window.setTimeout(function() {
 }, 1500);
 </script>
 <script>
-var app = angular.module('myApp', []);
-app.controller('customersCtrl', function($scope, $http) {
-    $http.get("http://api.fit-award.com/users/profile.php?account=info@fit-award.com&pwd=fd6138204c4eb1dd19e63896c1557e27").then(function(response) {
-        $scope.myData = response.data.records;
-    });
-});
+function customersController($scope,$http) {
+
+
+                        $http.get('http://api.fit-award.com/users/profile.php?account=info@fit-award.com&pwd=fd6138204c4eb1dd19e63896c1557e27',
+                        {cache: false}).success(function(data){$scope.names = data;});
+
+                       /* $http.get('http://api.fit-award.com/users/milestones.php?fid=<?php echo $account?>',
+                        {cache: false}).success(function(data){$scope.milestone = data;});
+
+
+                        $http.get('http://api.fit-award.com/users/approve.php?email=<?php echo $account?>',
+                        {cache: false}).success(function(data){$scope.names = data;});
+
+
+                        $http.get('http://api.fit-award.com/goals/goal-types.php',
+                        {cache: false}).success(function(data){$scope.goaltypes = data;});
+
+                        $http.get('http://api.fit-award.com/users/sidebar/GoalsWon.php?fid=<?php echo $account?>',
+                        {cache: false}).success(function(data){$scope.Goalswon = data;});
+
+                        $http.get('http://api.fit-award.com/users/sidebar/status.php?fid=',
+                        {cache: false}).success(function(data){$scope.status = data;});
+
+                        $http.get('http://api.fit-award.com/users/sidebar/GoalsSet.php?fid=<?php echo $account?>',
+                        {cache: false}).success(function(data){$scope.goalset = data;});
+
+
+
+                                $http.get('http://api.fit-award.com/users/countries.php',
+                        {cache: false}).success(function(data){$scope.locations = data;});*/
 </script> 
 <script>
 var chart;
