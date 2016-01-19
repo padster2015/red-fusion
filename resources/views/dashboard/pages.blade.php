@@ -196,7 +196,7 @@ window.setTimeout(function() {
 <script>
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
-    $http.get("http://centos7-php7-laravel5-c0aaf561.padster83.svc.tutum.io:8080/api/v1/Data/DashboardSummary_clicks").then(function(response) {
+    $http.get("http://api.fit-award.com/users/profile.php?account=info@fit-award.com&pwd=fd6138204c4eb1dd19e63896c1557e27").then(function(response) {
         $scope.myData = response.data.records;
     });
 });
