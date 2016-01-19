@@ -13,7 +13,7 @@
         <!--main-->
         <div class="main-view" style="width:80%; margin:0 auto;" ng-app="myApp" ng-controller="customersCtrl">
           <ul>
-  <li ng-repeat="x in myData">
+  <li ng-repeat="x in Data">
     @{{ x.First_Name}}
   </li>
 </ul>
