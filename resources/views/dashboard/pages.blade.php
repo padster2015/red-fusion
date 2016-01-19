@@ -17,11 +17,12 @@
        
           <h1>
           {{ Auth::user()->Business_name }} Charts</h1>
+          {!!$DBClicks!!}
+
 
           <div class="row placeholders chart-highlights" style="text-align=Center;">
             <div class="col-xs-6 col-sm-3 placeholder text-center circlefactsp" style="border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-left:2%; margin-right:7%;">
             <h1 class="clicks"><strong>
-
  </strong> </h1>
               <h4>Clicks</h4>
             </div>
