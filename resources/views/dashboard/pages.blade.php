@@ -70,7 +70,7 @@ window.setTimeout(function() {
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
     $http.get("http://centos7-php7-laravel5-c0aaf561.padster83.svc.tutum.io:8080/api/v1/Data/DashboardSummary_clicks?jsonp")
-    .then(function (response) {$scope.names = response.data.records;});
+    .then(function (response) {$scope.names = response.data.Total_Clicks;});
 });
 </script>
 <script>
