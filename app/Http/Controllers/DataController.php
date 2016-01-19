@@ -34,6 +34,14 @@ class DataController extends Controller
 //return View::make('dashboard.pages')->with('data', $DBClicks);
     return view('dashboard.pages')->with($DBClicks);
     }
+
+
+        public function Dashboard_Clicks_api()
+    {
+        $DBClicksAPI = DB::table('TotalClicks')->select('Total_Clicks')->get();
+            echo json_encode($DBClicksAPI,JSON_NUMERIC_CHECK);
+
+    }
     /**
      * Show the form for creating a new resource.
      *
