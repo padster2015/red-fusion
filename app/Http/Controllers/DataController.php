@@ -31,7 +31,8 @@ class DataController extends Controller
     public function Dashboard_Clicks()
     {
         $DBClicks = DB::table('TotalClicks')->select('Total_Clicks')->get();
-return View::make('dashboard.pages')->with('data', $DBClicks);
+//return View::make('dashboard.pages')->with('data', $DBClicks);
+    return view('dashboard.pages')->with('data', $DBClicks);
     }
     /**
      * Show the form for creating a new resource.
