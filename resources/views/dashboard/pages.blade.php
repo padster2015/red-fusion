@@ -77,6 +77,8 @@ console.log(response);
     $scope.names = response.data.Total_Clicks;
 });
 });
+
+
 </script>
 <script>
 var chart;
