@@ -14,7 +14,7 @@
         <div class="main-view" style="width:80%; margin:0 auto;" ng-app="myApp" ng-controller="customersCtrl">
           <ul>
   <li ng-repeat="x in myData">
-    @{{ x.no_of_Clicks }}
+    @{{ x.Total_Clicks }}
   </li>
 </ul>
           <h1>
