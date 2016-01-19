@@ -18,7 +18,7 @@
             <div class="col-xs-6 col-sm-3 placeholder text-center circlefactsp" style="border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-left:2%; margin-right:7%;">
             <h1 class="clicks"><strong>
  </strong> </h1>
-              <h4 ng-repeat="x in names">Clicks @{{ names }}</h4>
+              <h4>Clicks @{{ names }}</h4>
             </div>
              <div class="col-xs-6 col-sm-3 placeholder text-center positive  " style="border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:7%;">
             <h1 class="impressions"><strong>#5000</strong> </h1>
