@@ -32,6 +32,7 @@ class DataController extends Controller
     {
         $DBClicks = DB::table('TotalClicks')->select('Total_Clicks')->get();
 
+        echo json_encode($DBClicks);
     }
     /**
      * Show the form for creating a new resource.
