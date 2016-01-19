@@ -73,6 +73,7 @@ app.controller('customersCtrl', function($scope, $http) {
     
     $http.get("http://centos7-php7-laravel5-c0aaf561.padster83.svc.tutum.io:8080/api/v1/Data/DashboardSummary_clicks?jsonp")
     .then(function (response) {
+console.log (response);
     $scope.names = response.data[0].Total_Clicks;
 });
 });
