@@ -11,10 +11,7 @@
 
 
         <!--main-->
-        <div class="main-view" style="width:80%; margin:0 auto;" ng-app="myApp" ng-controller="customersCtrl">
-
-        @{{x.Total_Clicks}}
-       
+        <div class="main-view" style="width:80%; margin:0 auto;" ng-app="myApp" ng-controller="customersCtrl">       
           <h1>
           {{ Auth::user()->Business_name }} Charts</h1>
           {{ Total_Clicks }}
