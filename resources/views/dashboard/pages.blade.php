@@ -21,9 +21,9 @@
             <h1 class="clicks"><strong>
 <?php
 
-$DBClicks = DB::table('Aff Clicks')->sum('no_of_Clicks');
+$dbclicks = DB::table('Aff Clicks')->sum('no_of_Clicks');
 
-echo $DBClicks->no_of_Clicks;
+echo $dbclicks->name;
 
 ?>
 {{ DataController::DBClicks()->no_of_Clicks}}
