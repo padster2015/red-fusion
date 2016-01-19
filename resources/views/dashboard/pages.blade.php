@@ -19,7 +19,13 @@
           <div class="row placeholders chart-highlights" style="text-align=Center;">
             <div class="col-xs-6 col-sm-3 placeholder text-center circlefactsp" style="border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-left:2%; margin-right:7%;">
             <h1 class="clicks"><strong>
+<?php
 
+$DBClicks = DB::table('Aff Clicks')->sum('no_of_Clicks') ->get();
+
+echo $DBClicks->no_of_Clicks;
+
+?>
 {{ DataController::DBClicks()->no_of_Clicks}}
 
  </strong> </h1>
