@@ -18,7 +18,7 @@
             <div class="col-xs-6 col-sm-3 placeholder text-center circlefactsp" style="border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-left:2%; margin-right:7%;">
             <h1 class="clicks"><strong>
  </strong> </h1>
-              <h4 ng-repeat="x in names">Clicks @{{ x.Total_Clicks }}</h4>
+              <h4 ng-repeat="x in names">Clicks @{{ names }}</h4>
             </div>
              <div class="col-xs-6 col-sm-3 placeholder text-center positive  " style="border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:7%;">
             <h1 class="impressions"><strong>#5000</strong> </h1>
@@ -73,11 +73,10 @@ app.controller('customersCtrl', function($scope, $http) {
     
     $http.get("http://centos7-php7-laravel5-c0aaf561.padster83.svc.tutum.io:8080/api/v1/Data/DashboardSummary_clicks?jsonp")
     .then(function (response) {
-console.log(response);
     $scope.names = response.data[0].Total_Clicks;
 });
 });
-
+//angel
 </script>
 <script>
 var chart;
