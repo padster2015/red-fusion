@@ -28,7 +28,6 @@
             "tests/TestCase.php"
         ]
     },
-    "barryvdh/laravel-debugbar": "1.*"
     "scripts": {
         "post-root-package-install": [
             "php -r \"copy('.env.example', '.env');\""
