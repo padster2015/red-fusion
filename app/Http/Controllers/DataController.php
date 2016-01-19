@@ -32,7 +32,6 @@ class DataController extends Controller
     {
         $DBClicks = DB::table('TotalClicks')->select('Total_Clicks')->get();
 
-        echo json_encode($DBClicks,JSON_NUMERIC_CHECK);
     }
     /**
      * Show the form for creating a new resource.
