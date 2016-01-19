@@ -11,7 +11,7 @@
 
 
         <!--main-->
-        <div class="main-view" style="width:80%; margin:0 auto;">
+        <div class="main-view" style="width:80%; margin:0 auto;" ng-app="myApp" ng-controller="customersCtrl">
           
           <h1>
           {{ Auth::user()->Business_name }} Charts</h1>
@@ -189,6 +189,14 @@ window.setTimeout(function() {
     });
 }, 1500);
 </script>
+<script>
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+    $http.get("http://www.w3schools.com/angular/customers.php").then(function(response) {
+        $scope.myData = response.data.records;
+    });
+});
+</script> 
 <script>
 var chart;
 $(document).ready(function() { /*begin chart render*/
