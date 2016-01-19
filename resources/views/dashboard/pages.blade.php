@@ -53,8 +53,7 @@
           <div class="table-responsive">
         <!-- <table class="table-striped table">
   <tr ng-repeat="x in names">
-    <td>@{{ x.Name }}</td>
-    <td>@{{ x.Country }}</td>
+    <td>@{{ x.Total_Clicks }}</td>
   </tr>
 </table>-->
           </div><!--/main-->
