@@ -30,7 +30,7 @@ class DataController extends Controller
 
     public function Dashboard_Clicks()
     {
-        $DBClicks = DB::table('Aff Clicks')->select('no_of_Clicks')->get();
+        $DBClicks = DB::table('TotalClicks')->select('Total_Clicks')->get();
 
         echo json_encode($DBClicks,JSON_NUMERIC_CHECK);
     }
