@@ -12,6 +12,8 @@
 
         <!--main-->
         <div class="main-view" style="width:80%; margin:0 auto;" ng-app="myApp" ng-controller="customersCtrl">
+
+        @{{x.Total_Clicks}}
        
           <h1>
           {{ Auth::user()->Business_name }} Charts</h1>
@@ -54,12 +56,12 @@
 
           <h2 class="sub-header">{{ Auth::user()->Business_name }} Data</h2>
           <div class="table-responsive">
-         <table class="table-striped table">
+        <!-- <table class="table-striped table">
   <tr ng-repeat="x in names">
     <td>@{{ x.Name }}</td>
     <td>@{{ x.Country }}</td>
   </tr>
-</table>
+</table>-->
           </div><!--/main-->
 
 
@@ -73,7 +75,7 @@ window.setTimeout(function() {
 <script>
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
-    $http.get("http://www.w3schools.com/angular/customers.php")
+    $http.get("http://centos7-php7-laravel5-c0aaf561.padster83.svc.tutum.io:8080/api/v1/Data/DashboardSummary_clicks")
     .then(function (response) {$scope.names = response.data.records;});
 });
 </script>
