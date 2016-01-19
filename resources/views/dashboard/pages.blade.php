@@ -199,7 +199,7 @@ function customersController($scope,$http) {
 
                         $http.get('http://api.fit-award.com/users/profile.php?account=info@fit-award.com&pwd=fd6138204c4eb1dd19e63896c1557e27',
                         {cache: false}).success(function(data){$scope.names = data;});
-
+}
                        
 </script> 
 <script>
