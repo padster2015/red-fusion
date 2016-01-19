@@ -400,7 +400,7 @@ fontsize:'16px'
 jQuery(function($) {
         $('.clicks').countTo({
             from: 0,
-            to: 500,
+            to: {{ names }},
             speed: 1000,
             refreshInterval: 50,
             onComplete: function(value) {
