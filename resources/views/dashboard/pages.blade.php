@@ -17,9 +17,7 @@
        
           <h1>
           {{ Auth::user()->Business_name }} Charts</h1>
-          @foreach($DBClicks as $DBClick)
           {{ $DBClicks->Total_Clicks }}
-@endforeach
 
           <div class="row placeholders chart-highlights" style="text-align=Center;">
             <div class="col-xs-6 col-sm-3 placeholder text-center circlefactsp" style="border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-left:2%; margin-right:7%;">
