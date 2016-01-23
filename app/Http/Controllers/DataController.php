@@ -34,17 +34,25 @@ class DataController extends Controller
                     $data= json_encode($DBClicks,JSON_NUMERIC_CHECK);
 
     return view('dashboard.pages')->with('$data', Total_Clicks);
-
-
     }
 
 
-        public function Dashboard_Clicks_api()
+    public function Dashboard_Clicks_api()
     {
         $DBClicksAPI = DB::table('TotalClicks')->select('Total_Clicks')->get();
             echo json_encode($DBClicksAPI,JSON_NUMERIC_CHECK);
-
     }
+
+    public function Dashboard_impression_api()
+    {
+        $DBimpressionAPI = DB::table('Totalimpression')->select('Total_Impression')->get();
+            echo json_encode($DBimpressionAPI,JSON_NUMERIC_CHECK);
+    }
+
+
+
+
+
     /**
      * Show the form for creating a new resource.
      *
