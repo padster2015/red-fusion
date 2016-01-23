@@ -11,7 +11,13 @@
 
 
         <!--main-->
-        <div class="main-view" style="width:80%; margin:0 auto;" ng-app="myApp" ng-controller="customersCtrl">       
+        <div class="main-view" style="width:80%; margin:0 auto;" ng-app="myApp" ng-controller="customersCtrl">  
+
+<script>
+var clicktotal = @{{ names }};
+console.log(clicktotal);
+</script>
+
           <h1>
           {{ Auth::user()->Business_name }} Charts</h1>
           <div class="row placeholders chart-highlights" style="text-align=Center;">
