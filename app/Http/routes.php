@@ -74,7 +74,7 @@ Route::get('/api/v1/Budget/designing/{type}', 'BudgetController@index');
 
 Route::post('/api/v1/Budget/designing/{type}', 'BudgetController@store');
 
-Route::get('/api/v1/Budget/DashboardSummary_SPTD/{type}', 'DataController@SPTD');
+Route::get('/api/v1/Budget/DashboardSummary_SPTD/', 'DataController@SPTD');
 
 
 
