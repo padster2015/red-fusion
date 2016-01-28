@@ -72,7 +72,11 @@ Route::post('/api/v1/Messages/save/{limit}', 'MessagingController@show');
 
 Route::get('/api/v1/Budget/designing/{type}', 'BudgetController@index');
 
-Route::post('/api/v1/Bessages/designing/{type}', 'BudgetController@store');
+Route::post('/api/v1/Budget/designing/{type}', 'BudgetController@store');
+
+Route::get('/api/v1/Budget/DashboardSummary_SPTD/{type}', 'DataController@SPTD');
+
+
 
 //Route::get('/api/v1/words/lang/{lang}', 'Words@language');
 /*
