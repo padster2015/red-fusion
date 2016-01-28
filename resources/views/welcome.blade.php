@@ -15,6 +15,9 @@
 <p>
 if your a small business or local sports or a international organisation <p> are full digital and omni marketing approach tool will allow you to see whats happening and make the decissions you need to grow your online precsence. In the most cost effective way. </p>
 
+<h2> if you are from peek.usertesting.com please click login and use the provided info to login :) </h2>
+this app is in development and not all functiionality is finished.
+
 <a href="/register"> register now!!</a>
 
                 </div>
