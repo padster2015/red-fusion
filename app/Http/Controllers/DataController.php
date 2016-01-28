@@ -53,7 +53,7 @@ class DataController extends Controller
 
     public function SPTD()
     {
-        $SPTD_Value = DB::table('CustomerBudget')->sum('Feb + Jan')->get();
+        $SPTD_Value = DB::table('CustomerBudget')->sum('Feb '+ 'Jan')->get();
             echo json_encode($SPTD_Value,JSON_NUMERIC_CHECK);
     }
 
