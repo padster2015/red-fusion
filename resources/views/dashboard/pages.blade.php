@@ -29,7 +29,7 @@ console.log(clicktotal);
             <h1 class="impressions"><strong>#5000</strong> </h1>
               <h4>Impressions</h4>
             </div>
-             <div class="col-xs-6 col-sm-3 placeholder text-center negative" style="border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:7%;"><h1 class="spend2date">4400</h1></strong> </h1>
+             <div class="col-xs-6 col-sm-3 placeholder text-center negative" style="border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:7%;"><h1 class="spend2date">@{{ sptddata }}</h1></strong> </h1>
               <h4>Spend to Date</h4>
             </div>
              <div class="col-xs-6 col-sm-3 placeholder text-center positive" style="border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:10%;">
@@ -81,6 +81,16 @@ app.controller('customersCtrl', function($scope, $http) {
 console.log (response);
     $scope.names = response.data[0].Total_Clicks;
 });
+
+
+$http.get("http://centos7-php7-laravel5-c0aaf561.padster83.svc.tutum.io:8080/api/v1/Budget/DashboardSummary_SPTD?jsonp")
+    .then(function (SPTDResponse) {
+console.log (SPTDResponse);
+    $scope.sptddata = response.data[0].SPTD;
+});
+
+
+
 });
 //angel
 </script>
