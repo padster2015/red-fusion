@@ -15,7 +15,7 @@
                             <label class="col-md-4 control-label">E-Mail Address</label>
 
                             <div class="col-md-6">
-<p> username: demo@redfusion.com </p>
+<p> username: demo@red-fusion.com </p>
                                 <input type="email" class="form-control" name="email" value="{{ old('email') }}">
 
                                 @if ($errors->has('email'))
