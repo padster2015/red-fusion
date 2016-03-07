@@ -59,8 +59,8 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', '172.17.0.2'),
-            'database'  => env('DB_DATABASE', 'redfusion_auth'),
+            'host'      => env('DB_HOST', '54.64.61.236'),
+            'database'  => env('DB_DATABASE', 'Redfusion_auth'),
             'username'  => env('DB_USERNAME', 'maindb'),
             'password'  => env('DB_PASSWORD', 'H097729422a!'),
             'charset'   => 'utf8',
