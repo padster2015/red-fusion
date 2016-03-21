@@ -38,15 +38,24 @@ console.log(clicktotal);
               <h4>ROI</h4>
             </div>
           </div>
-          
-          <hr>
+          <p>
+ <hr>
 
 <br>
-
-<input type="radio" name="mychart" class="mychart" id= "column" value="column" onclick= "chartfunc()" checked>Column data
-<input type="radio" name="mychart" class="mychart" id= "bar" value="bar" onclick= "chartfunc()">Bar
-<input type="radio" name="mychart" class="mychart" id= "pie" value="pie" onclick= "chartfunc()">Pie
-<input type="radio" name="mychart" class="mychart" id= "line" value="line" onclick= "chartfunc()">Line
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary active">
+<input type="radio" name="mychart" class="mychart" id= "column" value="column" onclick= "chartfunc()" autocomplete="off" checked>Column data
+ </label>
+  <label class="btn btn-primary">
+<input type="radio" name="mychart" class="mychart" id= "bar" value="bar" onclick= "chartfunc()" autocomplete="off">Bar
+ </label>
+  <label class="btn btn-primary">
+<input type="radio" name="mychart" class="mychart" id= "pie" value="pie" onclick= "chartfunc()" autocomplete="off">Pie
+ </label>
+  <label class="btn btn-primary">
+<input type="radio" name="mychart" class="mychart" id= "line" value="line" onclick= "chartfunc()" autocomplete="off">Line
+<label></label>
+</div>
 
 
             <div class="row">
@@ -65,6 +74,86 @@ console.log(clicktotal);
           </div><!--/main-->
 
 
+<table width="626" class="table-responsive table table-inverse">
+<tbody>
+<tr style="height: 28px;">
+<th style="height: 28px;" width="155" class="thead-default">METRIC</th>
+<th style="height: 28px;" width="87" class="thead-default">THIS YEAR (2016)</th>
+<th style="height: 28px;" width="87" class="thead-default">LAST YEAR (2015)</th>
+<th style="height: 28px;" width="117" class="thead-default">% CHANGE</th>
+<th style="height: 28px;" width="180" class="thead-default">5 YEAR TREND</th>
+</tr>
+<tr style="height: 14px;">
+<th style="height: 14px;">REVENUES</th>
+<td style="height: 14px;">180583.8848</td>
+<td style="height: 14px;" class="currency">180026.6391</td>
+<td style="height: 14px;">0</td>
+<td style="height: 14px;"><i style="color: green" class="fa fa-arrow-up"></i>
+</td>
+</tr>
+<tr style="height: 14px;">
+<th style="height: 14px;">OPERATING EXPENSES</th>
+<td style="height: 14px;">94419.45803</td>
+<td style="height: 14px;">80883.33095</td>
+<td style="height: 14px;">17</td>
+<td style="height: 14px;"><i style="color: green" class="fa fa-arrow-up"></i>
+</td>
+</tr>
+<tr style="height: 14px;">
+<th style="height: 14px;">OPERATING PROFIT</th>
+<td style="height: 14px;">73425.99598</td>
+<td style="height: 14px;">77317.83649</td>
+<td style="height: 14px;">5</td>
+<td style="height: 14px;"><i style="color: red" class="fa fa-arrow-down"></i>
+</td>
+</tr>
+<tr style="height: 14px;">
+<th style="height: 14px;">DEPRECIATION</th>
+<td style="height: 14px;">5546.885548</td>
+<td style="height: 14px;">5068.423486</td>
+<td style="height: 14px;">9</td>
+<td style="height: 14px;"><i style="color: green" class="fa fa-arrow-up"></i>
+</td>
+</tr>
+<tr style="height: 14px;">
+<th style="height: 14px;">INTEREST</th>
+<td style="height: 14px;">3789.473391</td>
+<td style="height: 14px;">3338.30743</td>
+<td style="height: 14px;">14</td>
+<td style="height: 14px;"><i style="color: green" class="fa fa-arrow-up"></i>
+</td>
+</tr>
+<tr style="height: 14px;">
+<th style="height: 14px;">NET PROFIT</th>
+<td style="height: 14px;">67474.85858</td>
+<td style="height: 14px;">66272.10184</td>
+<td style="height: 14px;">2</td>
+<td style="height: 14px;"><i style="color: red" class="fa fa-arrow-down"></i>
+</td>
+</tr>
+<tr style="height: 14px;">
+<th style="height: 14px;">TAX</th>
+<td style="height: 14px;">31408.25564</td>
+<td style="height: 14px;">29424.53193</td>
+<td style="height: 14px;">7</td>
+<td style="height: 14px;"><i style="color: green" class="fa fa-arrow-up"></i>
+</td>
+</tr>
+<tr style="height: 14px;">
+<th style="height: 14px;">PROFIT AFTER TAX</th>
+<td style="height: 14px;">50247.68427</td>
+<td style="height: 14px;">42438.20421</td>
+<td style="height: 14px;">18</td>
+<td style="height: 14px;"><i style="color: green" class="fa fa-arrow-up"></i>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+
+
+
 <script>
 window.setTimeout(function() {
     $(".alert").fadeTo(500, 0).slideUp(500, function(){
@@ -77,13 +166,13 @@ window.setTimeout(function() {
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
     
-    $http.get("http://centos7-php7-laravel5-c0aaf561.padster83.svc.tutum.io:8080/api/v1/Data/DashboardSummary_clicks?jsonp")
+    $http.get("http://web.redfusionstackwebndb.165b10a6.svc.dockerapp.io:8081/api/v1/Data/DashboardSummary_clicks?jsonp")
     .then(function (response) {
     $scope.names = response.data[0].Total_Clicks;
 });
 
 
-$http.get("http://centos7-php7-laravel5-c0aaf561.padster83.svc.tutum.io:8080/api/v1/Budget/DashboardSummary_SPTD?jsonp")
+$http.get("http://web.redfusionstackwebndb.165b10a6.svc.dockerapp.io:8081/api/v1/Budget/DashboardSummary_SPTD?jsonp")
     .then(function (SPTDResponse) {
     $scope.sptddata = SPTDResponse.data[0].SPTD;
 });
@@ -225,23 +314,24 @@ $(document).ready(function() { /*begin chart render*/
             pointWidth: 10,
             shadow: false,
             backgroundColor: null,
+
+
+
+
+
+
 style: {
-            fontFamily: 'serif',
+            fontFamily: 'Arial',
 color:'#fff'
         }
         },
-        title: {
-            text: 'Fit Award',
-style: {
-            fontFamily: 'san-serif',
-color:'#fff',
-fontsize:'20px'
-        }
-        },
+        
+
+
         subtitle: {
             text: 'Pie Chart Triple Breakdown',
 style: {
-            fontFamily: 'san-serif',
+            fontFamily: 'Arial',
 color:'#fff',
 fontsize:'16px'
         }
@@ -314,6 +404,7 @@ fontsize:'16px'
             pointPadding: -0.3,
             borderWidth: 0,
             pointWidth: 15,
+innerSize: '96%',
             shadow: false,
             color: 'black' //Sectors icon
             }],
@@ -465,4 +556,3 @@ jQuery(function($) {
 
 </script>
 @endsection
-
