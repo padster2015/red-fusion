@@ -191,7 +191,6 @@ $(document).ready(function() { /*begin chart render*/
         data = [{
             name: 'New Year New You',
             y: 55,
-            color: colors[0],
             drilldown: {
                 //begin alcohol
                 name: 'New Year New You',
@@ -366,9 +365,9 @@ fontsize:'16px'
                 
                 
                 
-                dataLabels: {
-                    enabled: true,
-                    color: 'red'
+ dataLabels: {
+            enabled: true,
+            color: 'red'
 }
 }
              
