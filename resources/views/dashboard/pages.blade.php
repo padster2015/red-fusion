@@ -367,20 +367,24 @@ fontsize:'16px'
                         }
                     }
                 },
+                
+                
+                
                 dataLabels: {
-                    enabled: false,
+                    enabled: true,
                     color: '#FFFFFF',
                     shadow: false,
                     //label colors
                     connectorColor: '#fff',
                     // connector label colors
-                    formatter: function() {
-                        return '<b>' + this.point.name + '</b>: ' + this.y;
+                   format: '<b>{point.name}</b>: {point.percentage:.1f} %'
 
-                    }
                 }
             }
         },
+        
+        
+       
         //formatting over hover tooltip
         tooltip: {
             formatter: function() {
