@@ -367,7 +367,10 @@ fontsize:'16px'
                 
  dataLabels: {
             enabled: true,
-            color: 'red'
+            style: {
+                    fontWeight:'bold',
+                    color: "#FFF"
+                }
 }
 }
              
