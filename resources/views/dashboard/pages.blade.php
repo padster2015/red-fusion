@@ -355,7 +355,8 @@ fontsize:'16px'
                 pointPadding: -0.3,
                 borderWidth: 0,
                 pointWidth: 15,
-                shadow: false,
+                color: 'white',
+                shadow: true,
                 point: {
                     events: {
                         click: function() {
