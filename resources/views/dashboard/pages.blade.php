@@ -166,13 +166,13 @@ window.setTimeout(function() {
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
     
-    $http.get("http://web-1.redfusionstackwebndb.fe1444a6.cont.dockerapp.io:8081/api/v1/Data/DashboardSummary_clicks?jsonp")
+    $http.get("http://web.redfusionstackwebndb.165b10a6.svc.dockerapp.io:8081/api/v1/Data/DashboardSummary_clicks?jsonp")
     .then(function (response) {
     $scope.names = response.data[0].Total_Clicks;
 });
 
 
-$http.get("http://web-1.redfusionstackwebndb.fe1444a6.cont.dockerapp.io:8081/api/v1/Budget/DashboardSummary_SPTD?jsonp")
+$http.get("http://web.redfusionstackwebndb.165b10a6.svc.dockerapp.io:8081/api/v1/Budget/DashboardSummary_SPTD?jsonp")
     .then(function (SPTDResponse) {
     $scope.sptddata = SPTDResponse.data[0].SPTD;
 });
@@ -185,10 +185,7 @@ $http.get("http://web-1.redfusionstackwebndb.fe1444a6.cont.dockerapp.io:8081/api
 <script>
 var chart;
 $(document).ready(function() { /*begin chart render*/
-Highcharts.setOptions({
-    colors: ['#1abc9c', '#f1c40f', '#3498db', '#9b59b6', '#34495e', '#2c3e50', 
-             '#e74c3c', '#e74c3c', '#e74c3c']});
-
+    var colors = Highcharts.getOptions().colors,
         categories = ['The Americas', 'Asia Pacific', 'Europe & Africa'],
         //name = 'Sectors',
         data = [{
