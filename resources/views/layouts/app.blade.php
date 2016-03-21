@@ -29,6 +29,9 @@ color:#FFF;
 font-weight:200 !important;
 
         }
+        text{
+            color:#FFF;
+        }
 
         .fa-btn {
             margin-right: 6px;
