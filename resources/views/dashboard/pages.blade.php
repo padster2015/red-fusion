@@ -326,7 +326,9 @@ color:'#fff'
         }
         },
  
-
+title: {
+    text: ''
+},
 
         subtitle: {
             text: 'Pie Chart Triple Breakdown',
