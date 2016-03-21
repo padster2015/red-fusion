@@ -367,7 +367,7 @@ fontsize:'16px'
                 
                 
                 dataLabels: {
-                    enabled: true,
+                    enabled: false,
                     color: 'white',
                     shadow: false,
                     //label colors
