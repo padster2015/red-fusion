@@ -331,7 +331,7 @@ title: {
 },
 
         subtitle: {
-            text: 'Pie Chart Triple Breakdown',
+            text: '',
 style: {
             fontFamily: 'Arial',
 color:'#fff',
