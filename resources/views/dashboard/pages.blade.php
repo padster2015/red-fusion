@@ -315,13 +315,8 @@ $(document).ready(function() { /*begin chart render*/
             shadow: false,
             backgroundColor: null,
 
-
-
-
-
-
 style: {
-            fontFamily: 'Arial',
+   fontFamily: 'Arial',
 color:'white'
         }
         },
@@ -373,7 +368,7 @@ fontsize:'16px'
                 
                 dataLabels: {
                     enabled: true,
-                    color: '#FFFFFF',
+                    color: 'white',
                     shadow: false,
                     //label colors
                     connectorColor: '#fff',
@@ -413,7 +408,7 @@ fontsize:'16px'
             pointWidth: 15,
 innerSize: '96%',
             shadow: false,
-            color: 'black' //Sectors icon
+            color: 'white' //Sectors icon
             }],
         exporting: {
             enabled: false
