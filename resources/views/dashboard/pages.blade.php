@@ -367,12 +367,12 @@ fontsize:'16px'
                 
                 
                 dataLabels: {
-                    enabled: false,
+                    enabled: true,
                     color: 'white',
                     shadow: false,
                     //label colors
                     connectorColor: '#fff',
-                                            color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                                            color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || '#FFF',
 
                     // connector label colors
                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
