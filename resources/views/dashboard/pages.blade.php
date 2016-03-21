@@ -371,7 +371,7 @@ fontsize:'16px'
                     shadow: false,
                     //label colors
                     connectorColor: '#fff',
-                    color: '#ff69b4',
+                    color: '#FFF',
                     // connector label colors
                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
 
