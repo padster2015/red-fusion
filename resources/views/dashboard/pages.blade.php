@@ -322,7 +322,7 @@ $(document).ready(function() { /*begin chart render*/
 
 style: {
             fontFamily: 'Arial',
-color:'#fff'
+color:'white'
         }
         },
  
@@ -334,7 +334,7 @@ title: {
             text: '',
 style: {
             fontFamily: 'Arial',
-color:'#fff',
+color:'white',
 fontsize:'16px'
         }
         },
@@ -356,7 +356,7 @@ fontsize:'16px'
                 borderWidth: 0,
                 pointWidth: 15,
                 color: 'white',
-                shadow: true,
+                shadow: false,
                 point: {
                     events: {
                         click: function() {
