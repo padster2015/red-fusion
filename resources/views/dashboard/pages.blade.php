@@ -166,7 +166,7 @@ window.setTimeout(function() {
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
     
-    $http.get("http://web.redfusionstackwebndb.165b10a6.svc.dockerapp.io:8081/api/v1/Data/DashboardSummary_clicks?jsonp")
+    $http.get("./api/v1/Data/DashboardSummary_clicks?jsonp")
     .then(function (response) {
     $scope.names = response.data[0].Total_Clicks;
 });
