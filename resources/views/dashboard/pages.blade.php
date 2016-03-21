@@ -325,7 +325,7 @@ style: {
 color:'#fff'
         }
         },
-        title:{ ''},
+ 
 
 
         subtitle: {
