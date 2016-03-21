@@ -185,13 +185,11 @@ $http.get("./api/v1/Budget/DashboardSummary_SPTD?jsonp")
 <script>
 var chart;
 $(document).ready(function() { /*begin chart render*/
-    var colors = Highcharts.getOptions().colors,
         categories = ['The Americas', 'Asia Pacific', 'Europe & Africa'],
         //name = 'Sectors',
         data = [{
             name: 'New Year New You',
             y: 55,
-            color: colors[0],
             drilldown: {
                 //begin alcohol
                 name: 'New Year New You',
