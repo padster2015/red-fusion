@@ -324,25 +324,25 @@ title: {
     text: ''
 },
 
-        subtitle: {
+subtitle: {
             text: '',
-style: {
+    style: {
             fontFamily: 'Arial',
-color:'white',
-fontsize:'16px'
-        }
-        },
-        xAxis: {
+            color:'white',
+           fontsize:'16px'
+           }
+         },
+xAxis: {
             categories: categories
         },
-        yAxis: {
+yAxis: {
             title: {
                 text: 'Total Brand Value',
                 categories: categories
             }
         },
         //drilldown plot
-        plotOptions: {
+plotOptions: {
             pie: {
                 cursor: 'pointer',
                 allowPointSelect: true,
@@ -365,7 +365,7 @@ fontsize:'16px'
                 
                 
                 
- dataLabels: {
+dataLabels: {
             enabled: true,
             style: {
                     fontWeight:'bold',
@@ -379,7 +379,7 @@ fontsize:'16px'
         
        
         //formatting over hover tooltip
-        tooltip: {
+tooltip: {
             formatter: function() {
                 var point = this.point,
                     s = point.name + ':<b>' + this.y + '% market share</b><br/>';
@@ -393,21 +393,21 @@ fontsize:'16px'
                 return s;
             }
         },
-        credits: {
+credits: {
             enabled: false
         },
-        series: [{
+series: [{
             name: name,
             data: data,
             /* changes bar size */
             pointPadding: -0.3,
             borderWidth: 0,
             pointWidth: 15,
-innerSize: '96%',
+            innerSize: '96%',
             shadow: false,
             color: 'white' //Sectors icon
             }],
-        exporting: {
+exporting: {
             enabled: false
         }
     }, function(chart){
