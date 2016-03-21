@@ -368,15 +368,9 @@ fontsize:'16px'
                 
                 dataLabels: {
                     enabled: true,
-                    shadow: false,
-                    //label colors
-                    connectorColor: '#fff',
-                    color: '#FFF',
-                    // connector label colors
-                   format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                    color: 'red'
 
-                }
-            }
+             
         },
         
         
