@@ -191,7 +191,6 @@ $(document).ready(function() { /*begin chart render*/
         data = [{
             name: 'New Year New You',
             y: 55,
-            color: colors[0],
             drilldown: {
                 //begin alcohol
                 name: 'New Year New You',
@@ -315,12 +314,6 @@ $(document).ready(function() { /*begin chart render*/
             shadow: false,
             backgroundColor: null,
 
-style: {
-   fontFamily: 'Arial',
-color:'white'
-        }
-        },
- 
 title: {
     text: ''
 },
@@ -333,17 +326,18 @@ color:'white',
 fontsize:'16px'
         }
         },
-        xAxis: {
+        
+xAxis: {
             categories: categories
         },
-        yAxis: {
+yAxis: {
             title: {
                 text: 'Total Brand Value',
                 categories: categories
             }
         },
         //drilldown plot
-        plotOptions: {
+plotOptions: {
             pie: {
                 cursor: 'pointer',
                 allowPointSelect: true,
@@ -366,14 +360,14 @@ fontsize:'16px'
                 
                 
                 
-                dataLabels: {
-                    enabled: true,
-                    shadow: false,
-                    //label colors
-                    connectorColor: '#fff',
-                    color: '#ff69b4',
-                    // connector label colors
-                   format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+dataLabels: {
+            enabled: true,
+            shadow: false,
+            //label colors
+            connectorColor: '#fff',
+            color: '#ff69b4',
+            // connector label colors
+            format: '<b>{point.name}</b>: {point.percentage:.1f} %'
 
                 }
             }
@@ -382,7 +376,7 @@ fontsize:'16px'
         
        
         //formatting over hover tooltip
-        tooltip: {
+tooltip: {
             formatter: function() {
                 var point = this.point,
                     s = point.name + ':<b>' + this.y + '% market share</b><br/>';
@@ -396,10 +390,10 @@ fontsize:'16px'
                 return s;
             }
         },
-        credits: {
+credits: {
             enabled: false
         },
-        series: [{
+series: [{
             name: name,
             data: data,
             /* changes bar size */
@@ -410,16 +404,17 @@ innerSize: '96%',
             shadow: false,
             color: 'white' //Sectors icon
             }],
-        exporting: {
+exporting: {
             enabled: false
         }
-    }, function(chart){
+    }, 
+function(chart){
         
         chart.upper = [];
         
         var up = false;
         
-        chart.setChart = function(name, categories, data, color) {
+        chart.setChart = function(name, categories, data) {
             //chart.xAxis[0].setCategories(categories);
             if (name === true && chart.upper.length) {
                 chart.series[0].remove();
@@ -443,7 +438,6 @@ innerSize: '96%',
             chart.addSeries({
                 name: name,
                 data: data,
-                color: color || 'white'
             });
         }
 
