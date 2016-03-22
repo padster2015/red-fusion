@@ -5,4 +5,6 @@ mkdir /root/.config
 mkdir /root/.config/git
 mkdir /root/.config/git/attributes
 mkdir /root/.config/git/ignore
+git config --global user.email "git@patrickhenry.co.uk"
+git config --global user.name "patrick"
 chmod 777 -R /root/.config
