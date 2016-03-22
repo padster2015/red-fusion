@@ -8,4 +8,5 @@ mkdir /root/.config/git/ignore
 git config --global user.email "git@patrickhenry.co.uk"
 git config --global user.name "patrick"
 chmod 777 -R /root/.config
+chown apache:apache /root/.config/git/ignore
 chmod 777 -R .git/FETCH_HEAD
