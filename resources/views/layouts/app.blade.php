@@ -100,6 +100,13 @@ border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:20
                 </a>
             </div>
 
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+
             <div class="collapse navbar-collapse" id="spark-navbar-collapse">
                 <!-- Left Side Of Navbar -->
     <ul class="nav navbar-nav">
