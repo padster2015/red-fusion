@@ -17,7 +17,15 @@
       <li><i class="fa fa-link"></i> &nbsp; <strong>Affiliate Api Key:</strong><textarea class="api-edits" contenteditable="true"> {{ Auth::user()->Affiliate_api }} </textarea></li>
       <li><i class="fa fa-money"></i> &nbsp; <strong>Deals Api Key:</strong> <textarea class="api-edits" contenteditable="true"> {{ Auth::user()->Deals_api }}</textarea> </li>
       <li><i class="fa fa-envelope-o"> &nbsp; </i><strong>Email Api Key:</strong> <textarea class="api-edits" contenteditable="true"> {{ Auth::user()->Email_api }} </textarea></li>
-      <li><i class="fa fa-facebook-official"></i> &nbsp; <strong>Facebook Api Key:</strong> <textarea class="api-edits"  contenteditable="true"> {{ Auth::user()->Facebook_api }}</textarea> </li>
+      <li><i class="fa fa-facebook-official"></i> &nbsp; <strong>Facebook Api Key:</strong> <textarea class="api-edits"  contenteditable="true"> {{ Auth::user()->Facebook_api }}</textarea> 
+
+  
+    
+    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+
+
+</li>
       <li><i class="fa fa-google"></i> &nbsp; <strong>Google Analytics Api Key:</strong> <textarea class="api-edits" contenteditable="true"> {{ Auth::user()->GA_api }}</textarea> </li>
       <li><i class="fa fa-google-plus"></i> &nbsp; <strong>Googleplus Api Key:</strong><textarea class="api-edits" contenteditable="true">  {{ Auth::user()->Googleplus_api }}</textarea> </li>
       <li><i class="fa fa-linkedin"></i> &nbsp; <strong>linkedin Api Key:</strong> <textarea class="api-edits" contenteditable="true"> {{ Auth::user()->linkedin_api }} </textarea></li>

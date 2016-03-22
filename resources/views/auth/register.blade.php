@@ -22,6 +22,15 @@
                 </li>
                 <li>
                  <input type="text" class="form-control" name="Facebook_api" placeholder="Facebook Api" value="{{ old('Facebook_api') }}">
+
+
+
+ 
+    
+    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+
+
                  <input type="text" class="form-control" name="Twitter_api" placeholder="Twitter Api" value="{{ old('Twitter_api') }}">
                                 <input type="text" class="form-control" placeholder="Google+ Api" name="Googleplus_api" value="{{ old('Googleplus_api') }}">
                                 <input type="text" class="form-control" name="linkedin_api" placeholder="Linkedin Api" value="{{ old('linkedin_api') }}">
