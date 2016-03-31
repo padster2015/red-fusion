@@ -426,7 +426,7 @@ font-weight:200 !important;
                 </a>
             </div>
 
-            <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+            <fb:login-button scope="public_profile,email,user_birthday,publish_actions,read_insights,publish_pages,publish_pages" onlogin="checkLoginState();">
 </fb:login-button>
 
             <div class="collapse navbar-collapse" id="spark-navbar-collapse">
