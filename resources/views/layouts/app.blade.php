@@ -238,8 +238,8 @@ border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:20
    
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
     
-     <fb:login-button scope="public_profile,email,user_birthday,publish_actions,read_insights,publish_pages,publish_pages" onlogin="checkLoginState();">
-</fb:login-button>
+     <fb:login-button scope="public_profile,email,user_birthday,user_friends,publish_actions,read_insights,publish_pages,publish_pages" onlogin="checkLoginState();">
+</fb:login-button>  
     
 </body>
 </html>
