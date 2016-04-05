@@ -12,7 +12,15 @@ class CreateMessageQTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('MessageQ', function (Blueprint $table) {
+            $table->increments('id');
+            $table->text('message');
+            $table->string('platform');
+            $table->dateTime('Createdat');
+			$table->dateTime('Sentat');
+			$table->integer('platform_id');
+			$table->integer('sent');
+        });
     }
 
     /**
@@ -22,6 +30,6 @@ class CreateMessageQTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('MessageQ');
     }
 }

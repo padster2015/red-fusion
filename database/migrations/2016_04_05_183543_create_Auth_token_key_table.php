@@ -12,7 +12,15 @@ class CreateAuthTokenKeyTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('AuthNToken', function (Blueprint $table) {
+            $table->increments('id');
+            $table->longtext('token');
+            $table->longtext('appID');
+            $table->longtext('key');
+			$table->integer('platform_id');
+			$table->dateTime('added');
+			$table->longtext('user');
+        });
     }
 
     /**
@@ -22,6 +30,6 @@ class CreateAuthTokenKeyTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('MessageQ');
     }
 }
