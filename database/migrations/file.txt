@@ -1,0 +1,55 @@
+    1  ls
+    2  cd red-fusion
+    3  ls
+    4  chmod 777 -R setup.sh
+    5  git pull
+    6  ./setup.sh
+    7  chmod 777 setup.sh
+    8  ./setup.sh
+    9  ls
+   10  chmod 777 -R red-fusion
+   11  chown apache:apache -R red-fusion
+   12  ls
+   13  cd red
+   14  ls
+   15  cd red-fusion
+   16  ls
+   17  php artisan make:migration create_messageQ_table
+   18  ls
+   19  git add .
+   20  cd ..
+   21  ls
+   22  cd red
+   23  cd red-fusion
+   24  ls
+   25  git init
+   26  git add .
+   27  rm -rf /root/.config/git/ignore
+   28  git init
+   29  git add .
+   30  git commit -m "migration"
+   31  git push
+   32  ls
+   33  history
+   34  php artisan make:migration create_Auth_token_key_table
+   35  ls
+   36  ls
+   37  cd data
+   38  cd database
+   39  ls
+   40  cd migrations
+   41  ls
+   42  cd ..
+   43  ls
+   44  cd ..
+   45  ls
+   46  history
+   47  php artisan make:migration create_Auth_token_key_table
+   48  ls
+   49  cd database
+   50  ls
+   51  cd migrations
+   52  ls
+   53  history
+   54  less history
+   55  history > file.txt
