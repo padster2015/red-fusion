@@ -26,7 +26,15 @@ class MessagingController extends Controller
      */
     public function create()
     {
-        //
+        
+$Insertmessage = DB::table('messageQ')->insert(
+         ['message' => $mesagein]);
+         ['date' => $datenow]);
+         ['Platform' => $PlatformIn]);
+       
+echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
+
+    }
     }
 
     /**
@@ -46,9 +54,13 @@ class MessagingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        $showmesaage = DB::table('messageQ')->select(*);
+
+echo json_encode($showmessage,JSON_NUMERIC_CHECK);
+
+
     }
 
     /**
