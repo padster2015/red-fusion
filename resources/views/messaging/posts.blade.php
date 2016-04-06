@@ -132,44 +132,30 @@ $(document).ready(function() {
 
 <script>
 <!--send data to api -->
-// save word
-function addWord() {
-          	
-            var contentword = phrase;
-			var language = document.getElementById("languageID").innerHtml
-			var platform = 'Affiliate'
-			var product = document.getElementById("productID").innerhtml
-         
-        $.post("/api/v1/words/add/",
-        {  
-        AddWord: contentword,
-platforms: platform,
-		products: product,
-languages: language
-        },
-        function(data,status){
-        });
+// save message
+ <script>
+            function AddUser(FirstName,LastName)
+            {
+                
+                
+                  var messagein = document.getElementById('message').value;
+                  var platformin = document.getElementById('platform').value;
+                  
 
 
+                $.ajax({
+                       type : 'POST',
+                       url : '/api/v1/Message/save',
+                       data: {'message':messagein, 'platform':platformin success : function (d)
+                       {
+                       alert(myNewTitle);
+                       },
+                       })
+                
+            }
+        
+         </script>
 
-
-// edit
-  function editword() {
-          	var wordID = document.getElementById("wordID").innerHTML
-            var contentword = Wordcell;
-			var language = document.getElementById("languageID").innerHtml
-			var platform = 'Affiliate'
-			var product = document.getElementById("productID").innerhtml
-         
-        $.post("/api/v1/Messages/save/",
-        {
-        id: wordID,  
-        EditWord: contentword,
-		platforms: platform,
-		products: product
-        },
-        function(data,status){
-        });
 
 </script>
 
