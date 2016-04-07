@@ -60,7 +60,7 @@ $(document).ready(function() {
 
 
 
-<div class="app-content" id="data-items" ng-app="" ng-controller="customersController"> 
+<div class="app-content" id="data-items" > 
        <div class="grid" >   
          <div class="col-sm-10">
           <!-- Language Flag -->  
