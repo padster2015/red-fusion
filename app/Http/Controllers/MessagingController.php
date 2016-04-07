@@ -62,7 +62,7 @@ echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
      */
     public function show()
     {
-        $showmesaage = DB::table('messageQ')->select(*);
+        $showmesaage = DB::table('messageQ')->get();
 
 echo json_encode($showmessage,JSON_NUMERIC_CHECK);
 
