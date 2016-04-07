@@ -149,8 +149,7 @@
                 </a>
             </div>
 
-            <fb:login-button scope="public_profile,email,user_birthday,publish_actions,read_insights,publish_pages,publish_pages" onlogin="checkLoginState();">
-</fb:login-button>
+            
 
             <div class="collapse navbar-collapse" id="spark-navbar-collapse">
                 <!-- Left Side Of Navbar -->
