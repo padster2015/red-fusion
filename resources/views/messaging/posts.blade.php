@@ -6,7 +6,7 @@
   <div class="row">
     <div class="col-sm-12">
 <form action="javascript:AddMessage()">
-<SELECT NAME="Network" MULTIPLE SIZE=6> 
+<SELECT id="Network" MULTIPLE SIZE=6> 
 <OPTION VALUE="Facebook">Facebook 
 <OPTION VALUE="LinkedIn">LinkedIn
  <OPTION VALUE="Twitter">Twitter 
