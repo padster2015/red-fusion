@@ -41,7 +41,7 @@ $Insertmessage = DB::table('messageQ')->insert(
 echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
 
     }
-    }
+    
 
     /**
      * Store a newly created resource in storage.
