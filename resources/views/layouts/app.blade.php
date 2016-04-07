@@ -31,7 +31,7 @@
 <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
 
-<!--<link href="app/css/bootstrap.css" type="text/css" rel="stylesheet">-->
+<link href="app/css/bootstrap.css" type="text/css" rel="stylesheet">
 
 <!--<link href="http://cdn.fit-award.com/css/animate.css" type="text/css" rel="stylesheet">-->
  <link rel="stylesheet" href="//rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/css/bootstrap-editable.css">
