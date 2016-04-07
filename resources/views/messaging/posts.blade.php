@@ -20,7 +20,7 @@
 <textarea editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="50"></textarea>
 <br># 
 <i class="fa fa-hashtag"></i>
-<Select name="HashTags" id="HashTags">
+<Select id="HashTags">
 <option value="Sale">Sale
 <option value="Summer">Summer
 <option value="LGRW">LGRW
@@ -70,7 +70,6 @@ $(document).ready(function() {
     Here is the result of success or fail
 </div>-->
 
-<button id="btn-add" class="btn btn-primary btn-xs">Add New Word</button>
 <table id="example2-grid" data-toggle="table"
  data-sort-name="ID"
        data-sort-order="asc"
