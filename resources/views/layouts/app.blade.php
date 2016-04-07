@@ -16,7 +16,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
 <script src="app/js/count-to.js"></script>
- <link href="css/style.css" rel="stylesheet">
+ <link href="app/css/style.css" rel="stylesheet">
 
     
 <!-- JavaScripts -->
