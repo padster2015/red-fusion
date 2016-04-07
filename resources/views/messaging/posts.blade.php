@@ -126,7 +126,6 @@ if( $('#Network :selected').length > 0){
         var selectednumbers = [];
         $('#Network :selected').each(function(i, selected) {
             selectednumbers[i] = $(selected).val();
-},
         });
 
 
