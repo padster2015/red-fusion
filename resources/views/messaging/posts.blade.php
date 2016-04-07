@@ -84,14 +84,16 @@ $(document).ready(function() {
        data-query-params="queryParams"
         data-mobile-responsive="true"
               data-pagination="true"
-       data-url="/api/v1/Messages/show/50">
+       data-url="api/v1/Messages/show/50">
     <thead>
     <tr>
-        <th data-field="ID" data-sortable="true" data-switchable="false"><strong>ID</strong></th>
-        <th data-field="message">English Word</th>
-                <th data-field="platform" data-editable="true">Brazilian Portuguese</th>
-        <th data-field="created at" data-editable="true">French</th>
-        <th data-field="sent at" data-editable="true">German</th>
+        <th data-field="id" data-sortable="true" data-switchable="false"><strong>ID</strong></th>
+        <th data-field="message">Message</th>
+                <th data-field="platform" data-editable="false">Platform</th>
+        <th data-field="Createdat" data-editable="false">Created At</th>
+        <th data-field="Sentat" data-editable="false">Sent at</th>
+         <th data-field="sent" data-editable="false">Sent at</th>
+            <th data-field="Hashtag" data-editable="false">Hashtag</th>
        
     </tr>
     </thead>
