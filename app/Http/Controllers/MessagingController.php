@@ -29,7 +29,7 @@ class MessagingController extends Controller
         $now = new DateTime();
     $mesagein = $request_Message->input('message');
         $PlatformIn = $request_Message->input('NetworkIn');
-            $HashtagsIn = $request_Message->input('HashtagIn');
+            $HashtagsIn = $request_Message->input('Hashtag');
 
 $Insertmessage = DB::table('MessageQ')->insert(
          ['message' => $mesagein,
