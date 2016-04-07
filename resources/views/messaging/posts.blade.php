@@ -11,8 +11,8 @@
 <OPTION VALUE="LinkedIn">LinkedIn
  <OPTION VALUE="Twitter">Twitter 
  <OPTION VALUE="Pinterst">Pinterst 
- <OPTION VALUE="olives">SnapChat
- <OPTION VALUE="olives">All
+ <OPTION VALUE="SnapChat">SnapChat
+ <OPTION VALUE="All">All
 
  </SELECT>
 <br>
@@ -36,25 +36,9 @@
 
 
 <div id="textarea_feedback"></div>
-<script>
-
-$(document).ready(function() {
-    var text_max = 144;
-    $('#textarea_feedback').html(text_max + ' characters remaining');
-
-    $('#Craft_Post').keyup(function() {
-        var text_length = $('#Craft_Post').val().length;
-        var text_remaining = text_max - text_length;
-
-        $('#textarea_feedback').html(text_remaining + ' characters remaining');
-    });
-});
-
-</script>
-
 
     </div>
-  </div><!--/row-->
+  </div>
   <hr>
   
 
@@ -67,11 +51,11 @@ $(document).ready(function() {
           <!-- Language Flag -->  
             </div>
             
-<!--<div class="alert alert-success" id="eventsResult">
+<!-- <div class="alert alert-success" id="eventsResult">
     Here is the result of success or fail
-</div>-->
+</div> -->
 
-<table id="example2-grid" data-toggle="table"
+<table id="messages-grid" data-toggle="table"
  data-sort-name="ID"
        data-sort-order="asc"
        data-search="true"
@@ -99,34 +83,6 @@ $(document).ready(function() {
     </thead>
 </table>
 
-            <!-- End of Table-to-load-the-data Part -->
-            <!-- Modal (Pop up when detail button clicked) -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Add new translation</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form name="frmEmployees" class="form-horizontal" action="" id='addwordmodal'>
-
-                                        <textarea autofocus wrap="hard" rows="4" cols="75"  id="word" name="word" required placeholder="Describe yourself here..."> </textarea>
-                                    
-                                                                
-                                        <input type="dropdown" class="form-control" id="platform" name="platform" placeholder="Enter Platform " value="1" >
-                                                                        
-                                        <input type="dropdown" class="form-control" id="product" name="product" placeholder="Product Name" value="1" >
-                                  
-                                        <input type="submit" class="btn btn-primary" id="btn-save" value="Add Word">
-                            </form>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-      
   </div>
  </div>
  </div>
@@ -135,7 +91,23 @@ $(document).ready(function() {
  <!--send data to api -->
 
 
+
 <script>
+
+$(document).ready(function() {
+    var text_max = 144;
+    $('#textarea_feedback').html(text_max + ' characters remaining');
+
+    $('#Craft_Post').keyup(function() {
+        var text_length = $('#Craft_Post').val().length;
+        var text_remaining = text_max - text_length;
+
+        $('#textarea_feedback').html(text_remaining + ' characters remaining');
+    });
+});
+
+
+
 $( "#btn-save" ).click(function() {
   $( "#response" ).toggle("slow");
 });
@@ -143,10 +115,9 @@ $( "#btn-save" ).click(function() {
 $(".alert-message").alert();
 window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
 
-</script>
 
 
-<script>
+
             function AddMessage(FirstName,LastName)
             {
                 
