@@ -164,9 +164,8 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
                        data: {'message':CraftPostIn, 'NetworkIn':NetworkRequest, 'Hashtag':HashtagIn},
                        success : function (d)
                        {
-
-    $('#grid2-example').bootstrapTable("load");
-                      },
+                       alert(CraftPostIn);
+                       },
                        })
                 
             }
