@@ -31,16 +31,16 @@
 <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
 
-<link href="app/css/bootstrap.css" type="text/css" rel="stylesheet">
+<!--<link href="app/css/bootstrap.css" type="text/css" rel="stylesheet">-->
 
-<link href="http://cdn.fit-award.com/css/animate.css" type="text/css" rel="stylesheet">
+<!--<link href="http://cdn.fit-award.com/css/animate.css" type="text/css" rel="stylesheet">-->
  <link rel="stylesheet" href="//rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/css/bootstrap-editable.css">
         <!-- CSS code from Bootply.com editor -->
 
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="app/css/bootstrap-table.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.0/animate.min.css" type="text/css" rel="stylesheet">
+<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.0/animate.min.css" type="text/css" rel="stylesheet">-->
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="app/js/bootstrap-table.js"></script>
