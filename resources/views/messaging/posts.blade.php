@@ -156,9 +156,6 @@ $(document).ready(function() {
         
          </script>
 
-
-</script>
-
 <script>
 $( "#btn-save" ).click(function() {
   $( "#response" ).toggle("slow");
