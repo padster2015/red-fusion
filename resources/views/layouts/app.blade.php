@@ -26,6 +26,30 @@
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="http://code.highcharts.com/modules/drilldown.js"></script>
 
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+
+<link href="app/css/bootstrap.css" type="text/css" rel="stylesheet">
+
+<link href="http://cdn.fit-award.com/css/animate.css" type="text/css" rel="stylesheet">
+ <link rel="stylesheet" href="//rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/css/bootstrap-editable.css">
+        <!-- CSS code from Bootply.com editor -->
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="app/css/bootstrap-table.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.0/animate.min.css" type="text/css" rel="stylesheet">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="app/js/bootstrap-table.js"></script>
+
+<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+
 
 
 
