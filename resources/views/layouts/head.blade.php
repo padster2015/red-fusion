@@ -19,26 +19,7 @@
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
     <style>
-        body {
-            font-family: 'Lato';
-        }
-
-        .fa-btn {
-            margin-right: 6px;
-        }
-
-        .api-edits{
-            width:500px;
-            background-color:#fffdbf;
-            padding:4px 4px 4px 20px;
-            border-radius:5px;
-        }
-
-
-        li
-{
-    list-style-type: none;
-}
+      
     </style>
 <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
