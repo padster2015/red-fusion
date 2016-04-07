@@ -16,44 +16,9 @@
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
 <script src="app/js/count-to.js"></script>
+ <link href="css/style.css" rel="stylesheet">
 
-    <style>
-        body {
-font-family: 'Work Sans' , sans-serif;
-font-weight: 200 !important;
-background-color:#22313F;
-color:#FFF;
-        }
-        h1{
-            font-family: 'Work Sans' , sans-serif !important;
-font-weight:200 !important;
-
-        }
-        text{
-            color:#FFF;
-        }
-
-        .fa-btn {
-            margin-right: 6px;
-        }
-
-        .api-edits{
-            width:500px;
-            background-color:#fffdbf;
-            padding:4px 4px 4px 20px;
-            border-radius:5px;
-        }
-.circlefacts{
-
-border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-left:2%; margin-right:10%
-
-}
-
-        li
-{
-    list-style-type: none;
-}
-    </style>
+    
 <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
