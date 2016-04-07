@@ -130,7 +130,6 @@ $(document).ready(function() {
  </div>
  </div>
 
-<script>
 <!--send data to api -->
 // save message
  <script>
