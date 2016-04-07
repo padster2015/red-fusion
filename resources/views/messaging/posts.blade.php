@@ -124,7 +124,7 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
 
 
                 
-                var idrequest = document.getElementById('id').value;
+                  var IdRequest = document.getElementById('id').value;
                   var CraftPostIn = document.getElementById('Craft_Post').value;
                   var NetworkRequest = document.getElementById('Network').value;
                   var HashtagIn = document.getElementById('HashTags').value;
@@ -136,7 +136,7 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
                 $.ajax({
                        type : 'POST',
                        url : 'api/v1/Messages/save',
-                       data: {'message':CraftPostIn, 'NetworkIn':NetworkRequest, 'Hashtag':HashtagIn},
+                       data: {'message':CraftPostIn, 'NetworkIn':NetworkRequest, 'Hashtag':HashtagIn,'userID':IdRequest},
                        success : function (d)
                        {
                        alert(CraftPostIn);
