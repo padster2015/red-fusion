@@ -120,10 +120,25 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
 
             function AddMessage(FirstName,LastName)
             {
+
+if( $('#Network :selected').length > 0){
+        //build an array of selected values
+        var selectednumbers = [];
+        $('#Network :selected').each(function(i, selected) {
+            selectednumbers[i] = $(selected).val();
+        });
+
+
+
+
+
+
+
+
                 
                 var idrequest = document.getElementById('id').value;
                   var CraftPostIn = document.getElementById('Craft_Post').value;
-                  var NetworkRequest = document.getElementById('Network').value;
+                  var NetworkRequest = document.getElementById('selectednumbers').value;
                   var HashtagIn = document.getElementById('HashTags').value;
 
                 //var FirstNameInput=document.getElementById("FirstName");
