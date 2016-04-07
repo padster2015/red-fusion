@@ -20,7 +20,7 @@
 <textarea editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="50"></textarea>
 <br># 
 <i class="fa fa-hashtag"></i>
-<Select NAME="HashTags">
+<Select name="HashTags" id="HashTags">
 <option value="Sale">Sale
 <option value="Summer">Summer
 <option value="LGRW">LGRW
