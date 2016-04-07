@@ -126,7 +126,7 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
                 
                 var idrequest = document.getElementById('id').value;
                   var CraftPostIn = document.getElementById('Craft_Post').value;
-                  var NetworkRequest = document.getElementById('selectednumbers').value;
+                  var NetworkRequest = document.getElementById('Network').value;
                   var HashtagIn = document.getElementById('HashTags').value;
 
                 //var FirstNameInput=document.getElementById("FirstName");
