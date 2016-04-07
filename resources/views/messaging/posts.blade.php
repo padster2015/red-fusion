@@ -161,7 +161,7 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
 
                 $.ajax({
                        type : 'POST',
-                       url : 'http://10.133.65.84/api/v1/office/user/add',
+                       url : 'api/v1/Messages/save',
                        data: {'message':CraftPostIn, 'NetworkIn':NetworkRequest, 'Hashtag':HashtagIn},
                        success : function (d)
                        {
