@@ -5,7 +5,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
-<form action="deliver()">
+<form action="javascript:AddMessage()">
 <SELECT NAME="Network" MULTIPLE SIZE=6> 
 <OPTION VALUE="Facebook">Facebook 
 <OPTION VALUE="LinkedIn">LinkedIn
@@ -17,7 +17,7 @@
  </SELECT>
 <br>
 
-<textarea id="textpost" editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="50"></textarea>
+<textarea editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="50"></textarea>
 <br># 
 <i class="fa fa-hashtag"></i>
 <Select NAME="HashTags">
@@ -41,8 +41,8 @@ $(document).ready(function() {
     var text_max = 144;
     $('#textarea_feedback').html(text_max + ' characters remaining');
 
-    $('#textpost').keyup(function() {
-        var text_length = $('#textpost').val().length;
+    $('#Craft_Post').keyup(function() {
+        var text_length = $('#Craft_Post').val().length;
         var text_remaining = text_max - text_length;
 
         $('#textarea_feedback').html(text_remaining + ' characters remaining');
@@ -144,7 +144,33 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
 </script>
 
 
+<script>
+            function AddMessage(FirstName,LastName)
+            {
+                
+                
+                  var CraftPostIn = document.getElementById('Craft_Post').value;
+                  var NetworkIn = document.getElementById('Network').value;
+                  var HashtagIn = document.getElementById('HashTags').value;
 
+                //var FirstNameInput=document.getElementById("FirstName");
+                //var FamilyNameInput=document.getElementById("LastName");
+
+
+                $.ajax({
+                       type : 'POST',
+                       url : 'http://10.133.65.84/api/v1/office/user/add',
+                       data: {'message':CraftPostIn, 'platform':NetworkIn, 'Hashtag':HashtagIn},
+                       success : function (d)
+                       {
+                       alert(CraftPostIn);
+                       },
+                       })
+                
+            }
+        
+         </script>
+        
 
 
 

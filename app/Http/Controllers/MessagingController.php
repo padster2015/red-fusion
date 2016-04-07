@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use DateTime;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -26,11 +26,17 @@ class MessagingController extends Controller
      */
     public function create()
     {
-        
+        $now = new DateTime();
+    $mesagein = $request_User->input('message');
+        $PlatformIn = $request_User->input('NetworkIn');
+            $HashtagsIn = $request_User->input('HashtagIn');
+
 $Insertmessage = DB::table('messageQ')->insert(
          ['message' => $mesagein]);
-         ['date' => $datenow]);
-         ['Platform' => $PlatformIn]);
+         ['platform' => $PlatformIn]);
+         ['Hashtag' => $HashtagsIn]);
+         ['Createdat' => $now]);
+
        
 echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
 
