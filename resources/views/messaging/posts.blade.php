@@ -150,7 +150,7 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
                 
                 
                   var CraftPostIn = document.getElementById('Craft_Post').value;
-                  var NetworkIn = document.getElementById('Network').value;
+                  var NetworkRequest = document.getElementById('Network').value;
                   var HashtagIn = document.getElementById('HashTags').value;
 
                 //var FirstNameInput=document.getElementById("FirstName");
@@ -160,7 +160,7 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
                 $.ajax({
                        type : 'POST',
                        url : 'http://10.133.65.84/api/v1/office/user/add',
-                       data: {'message':CraftPostIn, 'platform':NetworkIn, 'Hashtag':HashtagIn},
+                       data: {'message':CraftPostIn, 'NetworkIn':NetworkRequest, 'Hashtag':HashtagIn},
                        success : function (d)
                        {
                        alert(CraftPostIn);

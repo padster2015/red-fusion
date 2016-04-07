@@ -60,7 +60,7 @@ Route::get('api', function() {
 // Messaging
 
 
-Route::get('/api/v1/Messages/show/{limit}', 'MessagingController@index');
+Route::get('/api/v1/Messages/show/{limit}', 'MessagingController@show');
 
 Route::post('/api/v1/Messages/save/', 'MessagingController@create');
 
