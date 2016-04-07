@@ -130,30 +130,8 @@ $(document).ready(function() {
  </div>
  </div>
 
-<!--send data to api -->
-// save message
- <script>
-            function AddUser(FirstName,LastName)
-            {
-                
-                
-                  var messagein = document.getElementById('message').value;
-                  var platformin = document.getElementById('platform').value;
-                  
+ <!--send data to api -->
 
-
-                $.ajax({
-                       type : 'POST',
-                       url : '/api/v1/Message/save',
-                       data: {'message':messagein, 'platform':platformin success : function (d)
-                       {
-                       alert(myNewTitle);
-                       },
-                       })
-                
-            }
-        
-         </script>
 
 <script>
 $( "#btn-save" ).click(function() {
