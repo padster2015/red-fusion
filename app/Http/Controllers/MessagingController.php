@@ -31,7 +31,7 @@ class MessagingController extends Controller
         $PlatformIn = $request_Message->input('NetworkIn');
             $HashtagsIn = $request_Message->input('HashtagIn');
 
-$Insertmessage = DB::table('messageQ')->insert(
+$Insertmessage = DB::table('MessageQ')->insert(
          ['message' => $mesagein,
          'platform' => $PlatformIn,
          'Hashtag' => $HashtagsIn,
