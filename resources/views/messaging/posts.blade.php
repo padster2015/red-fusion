@@ -29,6 +29,7 @@
 <option value="JimmyWHo">JimmyWho
 </Select>
 <br>
+<input type="hidden" value="{{ Auth::user()->id }}">
 
 <button>Send</button>
 </form>
@@ -149,7 +150,7 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
             function AddMessage(FirstName,LastName)
             {
                 
-                
+                var idrequest = document.getElementById('id').value;
                   var CraftPostIn = document.getElementById('Craft_Post').value;
                   var NetworkRequest = document.getElementById('Network').value;
                   var HashtagIn = document.getElementById('HashTags').value;
