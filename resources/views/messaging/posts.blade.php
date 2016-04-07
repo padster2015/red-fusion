@@ -29,7 +29,7 @@
 <option value="JimmyWHo">JimmyWho
 </Select>
 <br>
-<input type="hidden" value="{{ Auth::user()->id }}">
+<input type="hidden" id="id" value="{{ Auth::user()->id }}">
 
 <button>Send</button>
 </form>
