@@ -68,6 +68,7 @@
        data-query-params="queryParams"
         data-mobile-responsive="true"
               data-pagination="true"
+                          stickyHeader="true"
 
        data-url="api/v1/Messages/?user={{ Auth::user()->id }}&show=50">
     <thead>

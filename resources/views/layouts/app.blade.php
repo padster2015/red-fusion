@@ -47,7 +47,7 @@
     <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="http://code.highcharts.com/modules/drilldown.js"></script>
-
+<script src="app/js/extensions/sticky-header/bootstrap-table-sticky-header.js"></script>
 </head>
 <body id="app-layout">
     <script>
