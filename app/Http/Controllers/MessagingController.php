@@ -68,7 +68,7 @@ echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
             $userIDS = $showbyid->input('userid');
 
 
-        $showmessage = DB::table('MessageQ')->where('Acc_id', '=', $AccRequest)->get();
+        $showmessage = DB::table('MessageQ')->where('Acc_id', '=', $userIDS)->get();
 
 echo json_encode($showmessage,JSON_NUMERIC_CHECK);
 
