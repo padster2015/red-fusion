@@ -70,7 +70,7 @@ echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
        $limits = Input::get('show');
 
 
-        $showmessage = DB::table('MessageQ')->where('Acc_id', '=', $userIDS)->skip($limits) ->get();
+        $showmessage = DB::table('MessageQ')->where('Acc_id', '=', $userIDS)->skip('$limits') ->get();
 echo json_encode($showmessage,JSON_NUMERIC_CHECK);
 
 
