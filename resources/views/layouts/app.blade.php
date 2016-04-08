@@ -23,7 +23,6 @@
 <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.0/animate.min.css" type="text/css" rel="stylesheet">-->
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="app/js/bootstrap-table.js"></script>
 
 
 
@@ -41,6 +40,7 @@
 
 <script src="app/js/count-to.js"></script>
  <link href="app/css/style.css" rel="stylesheet">
+<script src="app/js/bootstrap-table.js"></script>
 
 
 
