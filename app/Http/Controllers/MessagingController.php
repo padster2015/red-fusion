@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use DB;
-use Input;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 use DateTime;
 use App\Http\Requests;
