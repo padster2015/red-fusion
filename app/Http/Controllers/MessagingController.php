@@ -65,7 +65,7 @@ echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
      */
     public function show()
     {
-        $showmessage = DB::table('MessageQ')->get();
+        $showmessage = DB::table('MessageQ')->where('Acc_id', '=', $AccRequest)->get();
 
 echo json_encode($showmessage,JSON_NUMERIC_CHECK);
 
