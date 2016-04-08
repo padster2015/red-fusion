@@ -68,7 +68,7 @@
        data-query-params="queryParams"
         data-mobile-responsive="true"
               data-pagination="true"
-       data-url="api/v1/Messages/show/user/{{ Auth::user()->id }}/show/50">
+       data-url="api/v1/Messages/show/user/show/50">
     <thead>
     <tr>
         <th data-field="id" data-sortable="true" data-switchable="false"><strong>ID</strong></th>
@@ -120,18 +120,10 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
 
             function AddMessage(FirstName,LastName)
             {
-
-
-
-                
                   var IdRequest = document.getElementById('id').value;
                   var CraftPostIn = document.getElementById('Craft_Post').value;
                   var NetworkRequest = document.getElementById('Network').value;
                   var HashtagIn = document.getElementById('HashTags').value;
-
-                //var FirstNameInput=document.getElementById("FirstName");
-                //var FamilyNameInput=document.getElementById("LastName");
-
 
                 $.ajax({
                        type : 'POST',

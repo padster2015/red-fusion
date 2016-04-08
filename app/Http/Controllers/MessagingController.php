@@ -27,15 +27,18 @@ class MessagingController extends Controller
     public function create(Request $request_Message)
     {
         $now = new DateTime();
-    $mesagein = $request_Message->input('message');
-        $PlatformIn = $request_Message->input('NetworkIn');
-            $HashtagsIn = $request_Message->input('Hashtag');
+            $mesagein = $request_Message->input('message');
+                $PlatformIn = $request_Message->input('NetworkIn');
+                    $HashtagsIn = $request_Message->input('Hashtag');
+                        $AccRequest = $request_Message->input('userID');
 
-$Insertmessage = DB::table('MessageQ')->insert(
-         ['message' => $mesagein,
-         'platform' => $PlatformIn,
-         'Hashtag' => $HashtagsIn,
-             'Createdat' => $now]);
+                $Insertmessage = DB::table('MessageQ')->insert(
+                    ['message' => $mesagein,
+                        'Acc_id' => $AccRequest,
+                              'platform' => $PlatformIn,
+                                    'Hashtag' => $HashtagsIn,
+                                        'Createdat' => $now]
+    );
 
        
 echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
