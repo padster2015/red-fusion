@@ -5,6 +5,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
+    <h2>{{ Auth::user()->Business_name }}</h2>
     	<h3>{{ Auth::user()->name }} Charts</h3>  
       <ul>
       <li><strong>ID :</strong> {{ Auth::user()->id }} </li>
