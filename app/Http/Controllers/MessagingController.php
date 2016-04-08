@@ -67,10 +67,10 @@ echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
     public function show( Request $showbyid)
     {
        $userIDS = Input::get('user');
+       $limits = Input::get('show');
 
 
-        $showmessage = DB::table('MessageQ')->where('Acc_id', '=', $userIDS)->get();
-echo $userIDS;
+        $showmessage = DB::table('MessageQ')->where('Acc_id', '=', $userIDS)->skip($limits) ->get();
 echo json_encode($showmessage,JSON_NUMERIC_CHECK);
 
 
