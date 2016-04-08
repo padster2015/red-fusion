@@ -61,7 +61,7 @@ Route::get('api', function() {
 
 
 Route::get('/api/v1/Messages/show/{limit}', 'MessagingController@show');
-Route::get('api/v1/Messages/show/user/show/{limit}', 'MessagingController@show');
+Route::get('api/v1/Messages/show/user/{userid}/show/{limit}', 'MessagingController@show');
 
 
 
