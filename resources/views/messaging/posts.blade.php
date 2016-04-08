@@ -68,7 +68,8 @@
        data-query-params="queryParams"
         data-mobile-responsive="true"
               data-pagination="true"
-       data-url="api/v1/Messages/show/user/{{ Auth::user()->id }}show/50">
+
+       data-url="api/v1/Messages/?user={{ Auth::user()->id }}&show=50">
     <thead>
     <tr>
         <th data-field="id" data-sortable="true" data-switchable="false"><strong>ID</strong></th>
