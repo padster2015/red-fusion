@@ -69,7 +69,7 @@ echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
 
 
         $showmessage = DB::table('MessageQ')->where('Acc_id', '=', $userIDS)->get();
-
+echo $userIDS;
 echo json_encode($showmessage,JSON_NUMERIC_CHECK);
 
 
