@@ -5,6 +5,15 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
+
+
+<div class="alert alert-success" role="alert">
+  <a href="#" class="alert-link">...</a>
+</div>
+
+
+
+    
 <form action="javascript:AddMessage()" class="form-horizontal">
 
 
