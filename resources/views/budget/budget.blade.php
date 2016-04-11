@@ -14,7 +14,7 @@
  <OPTION VALUE="advisory">advisory</OPTION>
  </SELECT>
 
-<button style="color:#000;" class="btn btn-links"><i class="fa fa-arrow-circle-o-right"></i></button>
+<button style="color:#000;" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
 </form>
     </div>
 
