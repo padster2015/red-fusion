@@ -44,7 +44,7 @@
 <option value="LGRW">LGRW
 </select>
 
-<li <li ng-repeat="x in Hashtags">>@{{ HashTag }} <span class="badge">@{{ TagCount }}</span></li>
+<li ng-repeat="x in Hashtags">>@{{ HashTag }}> <span class="badge">@{{ TagCount }}</span></li>
 
 
 
