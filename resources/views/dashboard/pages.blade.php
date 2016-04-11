@@ -21,7 +21,7 @@ console.log(clicktotal);
           <h1>
           {{ Auth::user()->Business_name }} Charts</h1>
           <div class="row placeholders chart-highlights" style="text-align=Center;">
-            <div class="col-xs-6 col-sm-3 placeholder text-center circlefactsp" style="border-radius:50px 50px 50px 0px; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-left:2%; margin-right:7%;">
+            <div class="col-xs-6 col-sm-3 placeholder text-center circlefactsp" style="border-radius:100px 100px 100px 0px; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-left:2%; margin-right:7%;">
             <h1 class="clicks"><strong>@{{ names }}  </strong> </h1>
               <h4>Clicks</h4>
             </div>
