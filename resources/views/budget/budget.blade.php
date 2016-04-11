@@ -14,13 +14,13 @@
  <OPTION VALUE="advisory">advisory</OPTION>
  </SELECT>
 
-<button style="color:#000;"><i class="fa fa-arrow-circle-o-right"></i></button>
+<button style="color:#000;" class="btn btn-links"><i class="fa fa-arrow-circle-o-right"></i></button>
 </form>
     </div>
 
 <h1> Current Budget</h1>
 <div id="Current" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
-<button id="button" style="color:#000;">Set new budgets</button>
+<button id="button" style="color:#000;" class="btn btn-links">Set new budgets</button>
 
 <script>
 $(function () {
