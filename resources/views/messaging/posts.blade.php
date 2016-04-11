@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container-fluid" ng-app="myApp" ng-controller="customersCtrl">
+<div class="container-fluid" >
   <div class="row">
     <div class="col-sm-12">
 
@@ -43,10 +43,11 @@
 <option value="Summer">Summer
 <option value="LGRW">LGRW
 </select>
-
-<li ng-repeat="x in Hashtags">>@{{ HashTag }}> <span class="badge">@{{ TagCount }}</span></li>
-
-
+<div ng-app="myApp" ng-controller="customersCtrl">
+<li ng-repeat="x in Hashtags">>@{{ HashTag }}>
+ <span class="badge">@{{ TagCount }}</span>
+ </li>
+</div>
 
 
 <input type="hidden" id="id" value="{{ Auth::user()->id }}">
