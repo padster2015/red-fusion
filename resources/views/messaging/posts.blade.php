@@ -15,10 +15,9 @@
  <OPTION VALUE="All">All
 
  </SELECT>
-<br>
 
 <textarea editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="50"></textarea>
-<br># 
+# 
 <i class="fa fa-hashtag"></i>
 <Select id="HashTags">
 <option value="Sale">Sale
@@ -31,7 +30,7 @@
 <br>
 <input type="hidden" id="id" value="{{ Auth::user()->id }}">
 
-<button>Send</button>
+<button class="btn btn-lin">Send</button>
 </form>
 
 
