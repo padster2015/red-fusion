@@ -26,7 +26,7 @@
 
 <h1> Current Budget</h1>
 <div id="Current" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
-<button id="button" style="color:#000;" class="btn btn-default" onclick="SetBudget()">Set new budgets</button>
+<form action="SetBudget()" <button id="button" style="color:#000;" class="btn btn-default" onclick="SetBudget()">Set new budgets</button></form>
 <script>
 function SetBudget()
             {
