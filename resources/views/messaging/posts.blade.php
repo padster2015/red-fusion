@@ -191,7 +191,7 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
     
-    $http.get(".api/v1/Messages/hashtags?user={{ Auth::user()->id }}")
+    $http.get("api/v1/Messages/hashtags?user={{ Auth::user()->id }}")
     .then(function (response) {
     $scope.names = response.data[0].Hashtag;
 });
