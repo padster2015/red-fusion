@@ -23,17 +23,6 @@
   </ul>
 </div>
 
-
-
-<select id="Network" class="form-control"> 
-<option VALUE="">Choose Channel/network 
-<option VALUE="Facebook">Facebook 
-<option VALUE="LinkedIn">LinkedIn
- <option VALUE="Twitter">Twitter 
- <option VALUE="Pinterst">Pinterst 
- <option VALUE="SnapChat">SnapChat
- <option VALUE="All">All
- </select>
  <br><strong>#</strong>
 
 
