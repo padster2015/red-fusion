@@ -18,8 +18,12 @@
     <li><a href="#">Twitter</a></li>
     <li><a href="#">Pinterst</a></li>
     <li><a href="#">SnapChat</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
+      <li role="separator" class="divider"></li>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Affilate</a></li>
+        <li><a href="#">Display</a></li>
+        <li><a href="#">Google Ad word</a></li>
+
   </ul>
 </div>
 
