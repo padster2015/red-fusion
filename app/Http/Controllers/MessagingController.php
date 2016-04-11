@@ -64,6 +64,20 @@ echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+//HashTag
+    public function Hashtags( Request $showbyid)
+    {
+       $userIDS = Input::get('user');
+
+        $showmessage = DB::table('MessageQ')->where([]
+            ['Acc_id', '=', $userIDS],
+            ['Hashtag', '!=', ''],])->groupBy('Hashtag')
+                ->orderBy('Createdat', 'desc')->get();
+echo json_encode($showmessage,JSON_NUMERIC_CHECK);
+    }
+//
+
     public function show( Request $showbyid)
     {
        $userIDS = Input::get('user');
@@ -72,9 +86,11 @@ echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
 
         $showmessage = DB::table('MessageQ')->where('Acc_id', '=', $userIDS)->orderBy('Createdat', 'desc')->get();
 echo json_encode($showmessage,JSON_NUMERIC_CHECK);
-
-
     }
+
+    //
+
+
 
     /**
      * Show the form for editing the specified resource.

@@ -62,6 +62,7 @@ Route::get('api', function() {
 
 Route::get('/api/v1/Messages/show/{limit}', 'MessagingController@show');
 Route::get('api/v1/Messages/', 'MessagingController@show');
+Route::get('api/v1/Messages/hashtags', 'MessagingController@Hashtags');
 
 
 
