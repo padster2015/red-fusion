@@ -18,6 +18,9 @@
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
   <link href="app/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="app/css/bootstrap-table.css">
+<script src="app/js/bootstrap-table.js"></script>
+
 
 <!-- JavaScripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -33,6 +36,11 @@
  <link href="app/css/style.css" rel="stylesheet">
 
 
+<script src="app/js/extensions/sticky-header/bootstrap-table-sticky-header.js"></script>
+ <!-- Latest compiled and minified CSS -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
 
     <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
