@@ -44,7 +44,7 @@
 <option value="LGRW">LGRW
 </select>
 
-<li <li ng-repeat="x in names">>@{{ HashTag }} <span class="badge">@{{ TagCount }}</span></li>
+<li <li ng-repeat="x in Hashtags">>@{{ HashTag }} <span class="badge">@{{ TagCount }}</span></li>
 
 
 
@@ -193,7 +193,7 @@ app.controller('customersCtrl', function($scope, $http) {
     
     $http.get("api/v1/Messages/hashtags?user={{ Auth::user()->id }}")
     .then(function (response) {
-    $scope.names = response.data[0].Hashtag;
+    $scope.names = response.data[0].Hashtags;
 });
 
 
