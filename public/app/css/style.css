@@ -303,16 +303,6 @@ background-color:#22313F;
 color:#FFF;
         }
 
-.nav{
-border-radius:0px 0px 0px 0px;
-position:static;
-z-index:100000;
-width:100%;
-
-}
-
-
-
 /*  bounce effect animation  */
  @-webkit-keyframes bounce_btn {
     0% {
