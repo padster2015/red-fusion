@@ -54,7 +54,7 @@
 
 
 <div class="input-group">
-      <input type="text" placeholder="Craft Post" id="textarea_feedback" class="form-control" aria-label="..." style="width:200px">
+      <input type="text" placeholder="Craft Post" id="textarea_feedback" class="form-control" aria-label="..." style="width:498px">
       <div class="input-group-btn">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
         <ul class="dropdown-menu dropdown-menu-right">
