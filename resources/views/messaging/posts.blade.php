@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container-fluid">
+<div class="container-fluid" ng-app="myApp" ng-controller="customersCtrl">
   <div class="row">
     <div class="col-sm-12">
 
@@ -43,6 +43,8 @@
 <option value="Summer">Summer
 <option value="LGRW">LGRW
 </select>
+
+<li ng-repeat>@{{ HashTag }} <span class="badge">@{{ TagCount }}</span></li>
 
 
 
@@ -183,6 +185,21 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
         
          </script>
         
+
+        <script>
+
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+    
+    $http.get(".api/v1/Messages/hashtags?user={{ Auth::user()->id }}")
+    .then(function (response) {
+    $scope.names = response.data[0].Hashtag;
+});
+
+
+});
+//angel
+</script>
 
 
 
