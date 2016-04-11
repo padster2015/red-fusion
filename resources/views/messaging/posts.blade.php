@@ -16,9 +16,9 @@
 <div ng-app="myApp" ng-controller="customersCtrl">
 <ul>
   <li ng-repeat="x in HashTags">
-    @{{ HashTag }}
+Summer Sale
     <span class="badge">
-     @{{ TagCount }}
+     6
     </span>
   </li>
 </ul>
