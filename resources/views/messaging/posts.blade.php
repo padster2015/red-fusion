@@ -61,7 +61,7 @@
       <div class="input-group-btn">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
         <ul class="dropdown-menu dropdown-menu-right" id="Craft_Post">
-          <li><a href="#">Post</a></li>
+          <li><a onclick="AddMessage()" href="#">Post</a></li>
           <li><a href="#">Schedule</a></li>
           <li><a href="#">Save</a></li>
           <li role="separator" class="divider"></li>
