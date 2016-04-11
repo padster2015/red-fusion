@@ -15,7 +15,7 @@
 
 
 
-<form action="javascript:AddMessage()" class="form-horizontal">
+<form  role="form" class="form-inline" action="javascript:AddMessage()" class="form-horizontal">
 
 
 <select id="Network" class="selectpicker" multiple> 
