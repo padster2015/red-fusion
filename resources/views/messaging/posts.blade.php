@@ -171,7 +171,7 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
                        data: {'message':CraftPostIn, 'NetworkIn':NetworkRequest, 'Hashtag':HashtagIn,'userID':IdRequest},
                        success : function (d)
                        {
-                       $( "#save_alert" ).toggle( display );
+                        $( "#save_alert" ).toggle();
                        $('#messages-grid').bootstrapTable('refresh');
                        },
                        })
