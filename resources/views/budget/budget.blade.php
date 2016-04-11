@@ -11,7 +11,7 @@
 
   <div class="row">
     <div class="col-sm-12">
-<form action="deliver()">
+<form action="BudgetUpdate()">
 <SELECT NAME="Options" id="options" class="selectpicker" data-header="Choose your budget"> 
 <OPTION VALUE="Small">Small</OPTION> 
 <OPTION VALUE="medium">medium</OPTION>
@@ -28,7 +28,7 @@
 <div id="Current" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
 <form action="SetBudget()" <button id="button" style="color:#000;" class="btn btn-default" onclick="SetBudget()">Set new budgets</button></form>
 <script>
-function SetBudget()
+function BudgetUpdate()
             {
 $("#save_alert" ).toggle();
                   setTimeout(function() {
@@ -42,7 +42,20 @@ $("#save_alert" ).toggle();
 </script>
 
 
+<script>
 
+function SetBudget()
+            {
+$("#save_alert" ).toggle();
+                  setTimeout(function() {
+                          $('#save_alert').fadeOut('fast');
+                                  }, 1500);    
+                                  
+                       },
+                       
+                
+            }
+</script>
 <script>
 $(function () {
 
