@@ -12,6 +12,7 @@
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <strong>Minions have saved and processing your message</strong> :)
 </div>
+</div>
 
 
 
