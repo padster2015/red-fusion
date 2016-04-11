@@ -49,7 +49,7 @@
 
 
 <br>
-<textarea editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="50"></textarea>
+<textarea editable="true" placeholder="Craft Post"   rows="4" cols="50"></textarea>
 
 <br>
 <input type="hidden" id="id" value="{{ Auth::user()->id }}">
@@ -57,7 +57,7 @@
 
 
 <div class="input-group">
-      <input type="text" class="form-control" aria-label="...">
+      <input type="text" id="Craft_Post" class="form-control" aria-label="...">
       <div class="input-group-btn">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
         <ul class="dropdown-menu dropdown-menu-right" id="Craft_Post">
