@@ -12,19 +12,21 @@
     Choose Channel/network 
     <span class="caret"></span>
   </button>
-  <ul id="Network" class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Facebook</a></li>
-    <li><a href="#">LinkedIn</a></li>
-    <li><a href="#">Twitter</a></li>
-    <li><a href="#">Pinterst</a></li>
-    <li><a href="#">SnapChat</a></li>
-      <li role="separator" class="divider"></li>
-        <li><a href="#">Email</a></li>
-        <li><a href="#">Affilate</a></li>
-        <li><a href="#">Display</a></li>
-        <li><a href="#">Google Ad word</a></li>
 
-  </ul>
+<select id="Network" class="dropdown-menu" aria-labelledby="dropdownMenu1"> 
+<option VALUE="">Choose Channel/network 
+<option VALUE="Facebook">Facebook 
+<option VALUE="LinkedIn">LinkedIn
+ <option VALUE="Twitter">Twitter 
+ <option VALUE="SnapChat">SnapChat
+      <option value="" role="separator" class="divider"> ------
+<option VALUE="Email">Email 
+<option VALUE="Affilate">Affilate
+ <option VALUE="Display">Display 
+ <option VALUE="Google Ad word">Google Ad word
+ <option VALUE="All">All
+
+ </select>
 </div>
 
 <div class="dropdown">
@@ -32,7 +34,7 @@
     Choose Hashtag
     <span class="caret"></span>
   </button>
-  <ul id="HashTags" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+  <ul id="Network" class="dropdown-menu" aria-labelledby="dropdownMenu1">
     <li><a href="#">NY Year</a></li>
     <li><a href="#">Happy Easter</a></li>
     <li><a href="#">Summer Sale</a></li>
@@ -60,7 +62,7 @@
 
 
 <div id="textarea_feedback">
-</div>
+<
 
 
 </form>
