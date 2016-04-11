@@ -13,7 +13,11 @@
 </div>
 
 
-
+<div ng-app="myApp" ng-controller="customersCtrl">
+<li ng-repeat="x in Hashtags">>@{{ HashTag }}>
+ <span class="badge">@{{ TagCount }}</span>
+ </li>
+</div>
 
 <form  role="form" class="form-inline" action="javascript:AddMessage()" class="form-horizontal">
 
@@ -43,11 +47,7 @@
 <option value="Summer">Summer
 <option value="LGRW">LGRW
 </select>
-<div ng-app="myApp" ng-controller="customersCtrl">
-<li ng-repeat="x in Hashtags">>@{{ HashTag }}>
- <span class="badge">@{{ TagCount }}</span>
- </li>
-</div>
+
 
 
 <input type="hidden" id="id" value="{{ Auth::user()->id }}">
