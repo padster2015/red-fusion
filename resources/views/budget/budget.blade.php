@@ -6,7 +6,7 @@
   <div class="row">
     <div class="col-sm-12">
 <form action="deliver()">
-<SELECT NAME="Options" id="options"> 
+<SELECT NAME="Options" id="options" class="selectpicker" data-header="Choose your budget"> 
 <OPTION VALUE="Small">Small</OPTION> 
 <OPTION VALUE="medium">medium</OPTION>
  <OPTION VALUE="large">large</OPTION>
@@ -20,7 +20,7 @@
 
 <h1> Current Budget</h1>
 <div id="Current" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
-<button id="button" style="color:#000;" class="btn btn-links">Set new budgets</button>
+<button id="button" style="color:#000;" class="btn btn-default">Set new budgets</button>
 
 <script>
 $(function () {
