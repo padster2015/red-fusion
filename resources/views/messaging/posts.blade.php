@@ -54,7 +54,7 @@
 
 
 <br>
-<textarea editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="50"></textarea>
+
 
 <br>
 <input type="hidden" id="id" value="{{ Auth::user()->id }}">
@@ -62,13 +62,13 @@
 
 
 <div class="input-group">
-      <input type="text" class="form-control" aria-label="...">
+      <input type="text" placeholder="Craft Post" id="textarea_feedback" class="form-control" aria-label="...">
       <div class="input-group-btn">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
         <ul class="dropdown-menu dropdown-menu-right">
           <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
+          <li><a href="#">Post</a></li>
+          <li><a href="#">Schedule</a></li>
           <li role="separator" class="divider"></li>
           <li><a href="#">Separated link</a></li>
         </ul>
@@ -78,9 +78,6 @@
 
 
 </form>
-
-
-<div id="textarea_feedback"></div>
 
     </div>
   </div>
