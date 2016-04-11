@@ -115,7 +115,7 @@
     
     
     
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" data-spy="affix" data-offset-top="197">
         <div class="container">
             <div class="navbar-header">
 
