@@ -8,6 +8,8 @@
 <form action="javascript:AddMessage()">
 
 <select id="Network"> 
+<option VALUE="">Choose Channel/network 
+
 <option VALUE="Facebook">Facebook 
 <option VALUE="LinkedIn">LinkedIn
  <option VALUE="Twitter">Twitter 
@@ -15,9 +17,7 @@
  <option VALUE="SnapChat">SnapChat
  <option VALUE="All">All
  </select>
-
-<textarea editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="50"></textarea>
-# 
+ # 
 <i class="fa fa-hashtag"></i>
 <Select id="HashTags">
 <option value="Sale">Sale
@@ -27,6 +27,9 @@
 <option value="NewYear">NewYear
 <option value="JimmyWHo">JimmyWho
 </Select>
+
+<textarea editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="50"></textarea>
+
 <br>
 <input type="hidden" id="id" value="{{ Auth::user()->id }}">
 
