@@ -17,7 +17,7 @@
  <option VALUE="SnapChat">SnapChat
  <option VALUE="All">All
  </select>
- # 
+ <br># 
 <i class="fa fa-hashtag"></i>
 <Select id="HashTags">
 <option value="Sale">Sale
