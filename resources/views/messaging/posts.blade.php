@@ -9,7 +9,6 @@
 
 <select id="Network"> 
 <option VALUE="">Choose Channel/network 
-
 <option VALUE="Facebook">Facebook 
 <option VALUE="LinkedIn">LinkedIn
  <option VALUE="Twitter">Twitter 
@@ -17,7 +16,9 @@
  <option VALUE="SnapChat">SnapChat
  <option VALUE="All">All
  </select>
- <br># 
+ <br>#
+
+
 <i class="fa fa-hashtag"></i>
 <Select id="HashTags">
 <option value="Sale">Sale
@@ -27,7 +28,7 @@
 <option value="NewYear">NewYear
 <option value="JimmyWHo">JimmyWho
 </Select>
-
+<br>
 <textarea editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="50"></textarea>
 
 <br>
