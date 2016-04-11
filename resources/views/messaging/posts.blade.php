@@ -56,8 +56,7 @@ Summer Sale
 
 <input type="hidden" id="id" value="{{ Auth::user()->id }}">
 
-<br>
-<br>
+
 <br>
 
 <div class="input-group">
