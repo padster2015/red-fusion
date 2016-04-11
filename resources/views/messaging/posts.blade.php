@@ -31,6 +31,8 @@
 <input type="hidden" id="id" value="{{ Auth::user()->id }}">
 
 <br>
+<br>
+<br>
 
 <div class="input-group">
       <input type="text" id="Craft_Post" class="form-control" aria-label="...">
