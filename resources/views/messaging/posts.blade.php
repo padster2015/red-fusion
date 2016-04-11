@@ -8,23 +8,32 @@
 <form action="javascript:AddMessage()" class="form-horizontal">
 
 <div class="dropdown">
-  
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Choose Channel/network 
+    <span class="caret"></span>
+  </button>
+  <ul id="Network" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Facebook</a></li>
+    <li><a href="#">LinkedIn</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">Pinterst</a></li>
+    <li><a href="#">SnapChat</a></li>
+      <li role="separator" class="divider"></li>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Affilate</a></li>
+        <li><a href="#">Display</a></li>
+        <li><a href="#">Google Ad word</a></li>
 
-<select id="Network" class="dropdown-menu" aria-labelledby="dropdownMenu1"> 
-<option VALUE="">Choose Channel/network 
-<option VALUE="Facebook">Facebook 
-<option VALUE="LinkedIn">LinkedIn
- <option VALUE="Twitter">Twitter 
- <option VALUE="SnapChat">SnapChat
-      <option value="" role="separator" class="divider"> ------
-<option VALUE="Email">Email 
-<option VALUE="Affilate">Affilate
- <option VALUE="Display">Display 
- <option VALUE="Google Ad word">Google Ad word
- <option VALUE="All">All
-
- </select>
+  </ul>
 </div>
+
+ <br><strong>#</strong>
+
+
+
+<i class="fa fa-hashtag"></i>
+
+
 
 <div class="dropdown">
   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -41,16 +50,25 @@
   </ul>
 </div>
 
+
+
+
+<br>
+<textarea editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="50"></textarea>
+
+<br>
 <input type="hidden" id="id" value="{{ Auth::user()->id }}">
 
+
+
 <div class="input-group">
-      <input type="text" id="Craft_Post" placeholder="Craft Post"  class="form-control" aria-label="..." >
+      <input type="text" class="form-control" aria-label="...">
       <div class="input-group-btn">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
         <ul class="dropdown-menu dropdown-menu-right">
           <li><a href="#">Action</a></li>
-          <li><a href="#" onclick="javascript:AddMessage()">Post</a></li>
-          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
           <li role="separator" class="divider"></li>
           <li><a href="#">Separated link</a></li>
         </ul>
@@ -58,16 +76,18 @@
     </div><!-- /input-group -->
 
 
-<div id="textarea_feedback">
-<
-
 
 </form>
+
+
+<div id="textarea_feedback"></div>
 
     </div>
   </div>
   <hr>
   
+
+
 
 
 <div class="app-content" id="data-items" > 
