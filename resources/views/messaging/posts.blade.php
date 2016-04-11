@@ -172,7 +172,7 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
                         $("#save_alert" ).toggle();
                           setTimeout(function() {
                              $('#save_alert').fadeOut('fast');
-                                  }, 3000);     
+                                  }, 1500);     
                                    $('#messages-grid').bootstrapTable('refresh');
                        },
                        })
