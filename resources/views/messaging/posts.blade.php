@@ -13,7 +13,6 @@
 </div>
 
 
-<div ng-app="myApp" ng-controller="customersCtrl">
 <ul>
   <li ng-repeat="x in HashTags">
 Summer Sale
@@ -22,7 +21,6 @@ Summer Sale
     </span>
   </li>
 </ul>
-</div>
 
 <form  role="form" class="form-inline" action="javascript:AddMessage()" class="form-horizontal">
 
