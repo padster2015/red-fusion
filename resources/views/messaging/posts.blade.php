@@ -10,7 +10,7 @@
 <div class="dropdown">
   
 
-<select id="Network" class="dropdown-menu" aria-labelledby="dropdownMenu1"> 
+<select id="Network" aria-labelledby="dropdownMenu1"> 
 <option VALUE="">Choose Channel/network 
 <option VALUE="Facebook">Facebook 
 <option VALUE="LinkedIn">LinkedIn
