@@ -8,7 +8,7 @@
 <form action="javascript:AddMessage()" class="form-horizontal">
 
 
-<select id="Network" class="form-control"> 
+<select id="Network" class="selectpicker"> 
 <option VALUE="">Choose Channel/network 
 <option VALUE="Facebook">Facebook 
 <option VALUE="LinkedIn">LinkedIn
@@ -21,7 +21,7 @@
 
  <br><strong>#</strong>
 
-<select id="HashTags" class="form-control">
+<select id="HashTags" class="selectpicker">
 <option value="Sale">Sale
 <option value="Summer">Summer
 <option value="LGRW">LGRW
@@ -29,10 +29,7 @@
 
 
 
-<br>
-<textarea editable="true" placeholder="Craft Post"   rows="4" cols="50"></textarea>
 
-<br>
 <input type="hidden" id="id" value="{{ Auth::user()->id }}">
 
 
