@@ -73,7 +73,6 @@ echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
     $showmessage = DB::table('MessageQ')
         ->select(DB::raw('Hashtag, count(HashTag) as Tag Count'))
           ->where('Acc_id', '=', $userRequest)
-             ->groupBy('Hashtag')
                     ->get();
 echo json_encode($showmessage,JSON_NUMERIC_CHECK);
     }
