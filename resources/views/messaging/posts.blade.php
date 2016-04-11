@@ -13,14 +13,6 @@
 </div>
 
 
-<ul>
-  <li ng-repeat="x in HashTags">
-Summer Sale
-    <span class="badge">
-     6
-    </span>
-  </li>
-</ul>
 
 <form  role="form" class="form-inline" action="javascript:AddMessage()" class="form-horizontal">
 
@@ -51,6 +43,15 @@ Summer Sale
 <option value="LGRW">LGRW
 </select>
 
+
+<ul>
+  <li ng-repeat="x in HashTags">
+Summer Sale
+    <span class="badge">
+     6
+    </span>
+  </li>
+</ul>
 
 
 <input type="hidden" id="id" value="{{ Auth::user()->id }}">
