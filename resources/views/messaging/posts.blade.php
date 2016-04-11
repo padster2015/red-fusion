@@ -6,15 +6,15 @@
   <div class="row">
     <div class="col-sm-12">
 <form action="javascript:AddMessage()">
-<SELECT id="Network" MULTIPLE SIZE=6> 
-<OPTION VALUE="Facebook">Facebook 
-<OPTION VALUE="LinkedIn">LinkedIn
- <OPTION VALUE="Twitter">Twitter 
- <OPTION VALUE="Pinterst">Pinterst 
- <OPTION VALUE="SnapChat">SnapChat
- <OPTION VALUE="All">All
 
- </SELECT>
+<select id="Network"> 
+<option VALUE="Facebook">Facebook 
+<option VALUE="LinkedIn">LinkedIn
+ <option VALUE="Twitter">Twitter 
+ <option VALUE="Pinterst">Pinterst 
+ <option VALUE="SnapChat">SnapChat
+ <option VALUE="All">All
+ </select>
 
 <textarea editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="50"></textarea>
 # 
