@@ -32,7 +32,7 @@
     Choose Hashtag
     <span class="caret"></span>
   </button>
-  <ul id="Network" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+  <ul id="HashTags" class="dropdown-menu" aria-labelledby="dropdownMenu1">
     <li><a href="#">NY Year</a></li>
     <li><a href="#">Happy Easter</a></li>
     <li><a href="#">Summer Sale</a></li>
