@@ -19,7 +19,7 @@
     <option VALUE="Affiliate">Affiliate
     <option VALUE="Display">Display
     <option VALUE="Email">Email
-    <option VALUE="Youtube">Youtbue
+    <option VALUE="Youtube">Youtube
     <option VALUE="Paid Search">Paid Search
     <option VALUE="Deals">Deals
      <option VALUE="All">All
@@ -103,8 +103,8 @@
         <th data-field="message">Message</th>
                 <th data-field="platform" data-editable="false">Platform</th>
         <th data-field="Createdat" data-editable="false">Created At</th>
-        <th data-field="Sentat" data-editable="false">Sent at</th>
-         <th data-field="sent" data-editable="false">Sent at</th>
+        <th data-field="Sentat" data-sortable="true" data-editable="false">Sent at</th>
+         <th data-field="sent"  data-sortable="true" data-editable="false">Sent at</th>
             <th data-field="Hashtag" data-editable="false">Hashtag</th>
        
     </tr>
