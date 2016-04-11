@@ -1,5 +1,3 @@
-
-    
 <!DOCTYPE html>
 <!--testing git push and pulls using exec over prev-->
 <html lang="en">
@@ -18,8 +16,14 @@
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
   <link href="app/css/style.css" rel="stylesheet">
+
 <link rel="stylesheet" href="app/css/bootstrap-table.css">
-<script src="app/js/bootstrap-table.js"></script>
+<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.0/animate.min.css" type="text/css" rel="stylesheet">-->
+
+<!-- Latest compiled and minified JavaScript -->
+
+
+
 
 
 <!-- JavaScripts -->
@@ -34,17 +38,34 @@
 
 <script src="app/js/count-to.js"></script>
  <link href="app/css/style.css" rel="stylesheet">
+<script src="app/js/bootstrap-table.js"></script>
 
 
-<script src="app/js/extensions/sticky-header/bootstrap-table-sticky-header.js"></script>
- <!-- Latest compiled and minified CSS -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
 
     <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="http://code.highcharts.com/modules/drilldown.js"></script>
+<script src="app/js/extensions/sticky-header/bootstrap-table-sticky-header.js"></script>
+
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </head>
 <body id="app-layout">
@@ -56,7 +77,6 @@
       version    : 'v2.5'
     });
   };
-
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
      if (d.getElementById(id)) {return;}
