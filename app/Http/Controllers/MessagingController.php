@@ -70,12 +70,12 @@ echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
     {
        $userRequest = Input::get('user');
 
-        $showmessage = DB::table('MessageQ')
-    ->select(DB::raw('count(HashTag) as Tag Count'))
-        ->where(
-            'Acc_id', '=', $userRequest)
-                            ->groupBy('Hashtag')
-                ->orderBy('Createdat', 'desc')->get();
+    $showmessage = DB::table('MessageQ')
+        ->select(DB::raw('Hashtag',count(HashTag) as Tag Count'))
+          ->where('Acc_id', '=', $userRequest)
+             ->groupBy('Hashtag')
+                ->orderBy('Createdat', 'desc')
+                    ->get();
 echo json_encode($showmessage,JSON_NUMERIC_CHECK);
     }
 //
