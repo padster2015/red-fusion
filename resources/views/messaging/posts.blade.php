@@ -7,42 +7,25 @@
     <div class="col-sm-12">
 <form action="javascript:AddMessage()" class="form-horizontal">
 
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Choose Channel/network 
-    <span class="caret"></span>
-  </button>
-  <ul id="Network" class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Facebook</a></li>
-    <li><a href="#">LinkedIn</a></li>
-    <li><a href="#">Twitter</a></li>
-    <li><a href="#">Pinterst</a></li>
-    <li><a href="#">SnapChat</a></li>
-      <li role="separator" class="divider"></li>
-        <li><a href="#">Email</a></li>
-        <li><a href="#">Affilate</a></li>
-        <li><a href="#">Display</a></li>
-        <li><a href="#">Google Ad word</a></li>
 
-  </ul>
-</div>
+<select id="Network" class="form-control"> 
+<option VALUE="">Choose Channel/network 
+<option VALUE="Facebook">Facebook 
+<option VALUE="LinkedIn">LinkedIn
+ <option VALUE="Twitter">Twitter 
+ <option VALUE="Pinterst">Pinterst 
+ <option VALUE="SnapChat">SnapChat
+ <option VALUE="All">All
+ </select>
+
 
  <br><strong>#</strong>
 
-
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Dropdown
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
+<select id="HashTags" class="form-control">
+<option value="Sale">Sale
+<option value="Summer">Summer
+<option value="LGRW">LGRW
+</select>
 
 
 
