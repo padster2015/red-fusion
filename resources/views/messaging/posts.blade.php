@@ -15,7 +15,7 @@
 
 <div ng-app="myApp" ng-controller="customersCtrl">
 <ul>
-<li ng-repeat="x in names">
+<li ng-repeat="x in hashtags">
     @{{ HashTag }}
 <span class="badge">
   @{{ TagCount }}
@@ -195,14 +195,11 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
         <script>
 
 var app = angular.module('myApp', []);
-app.controller('customersCtrl', function($scope, $http) {
-    
-    $http.get("api/v1/Messages/hashtags?user={{ Auth::user()->id }}")
-    .then(function (response) {
-    $scope.names = response.data[0].Hashtags;
-});
-
-
+app.controller('myCtrl', function($scope, $http) {
+    $http.get("http://web.redfusionstackwebndb.165b10a6.svc.dockerapp.io/api/v1/Messages/hashtags?user=6")
+    .then(function(response) {
+        $scope.hashtags = response.data;
+    });
 });
 //angel
 </script>
