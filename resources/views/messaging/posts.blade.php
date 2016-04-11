@@ -42,16 +42,7 @@
   </ul>
 </div>
 
-
-
-
-<br>
-
-
-<br>
 <input type="hidden" id="id" value="{{ Auth::user()->id }}">
-
-
 
 <div class="input-group">
       <input type="text" placeholder="Craft Post" id="textarea_feedback" class="form-control" aria-label="..." >
