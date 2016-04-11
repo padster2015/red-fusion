@@ -9,7 +9,7 @@
 
 <div class="alert alert-success" id="save_alert" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Minions have saved and processing your message</strong> :)
+  Minions have saved and processing your message :)
 </div>
 
 
@@ -169,8 +169,11 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
                        data: {'message':CraftPostIn, 'NetworkIn':NetworkRequest, 'Hashtag':HashtagIn,'userID':IdRequest},
                        success : function (d)
                        {
-                        $( "#save_alert" ).toggle();
-                       $('#messages-grid').bootstrapTable('refresh');
+                        $("#save_alert" ).toggle();
+                          setTimeout(function() {
+                             $('#save_alert').fadeOut('fast');
+                                  }, 3000);     
+                                   $('#messages-grid').bootstrapTable('refresh');
                        },
                        })
                 
