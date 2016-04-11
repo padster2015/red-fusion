@@ -15,7 +15,7 @@
 
 <div ng-app="myApp" ng-controller="customersCtrl">
 <ul>
-<li ng-repeat="x in Hashtags">
+<li ng-repeat="x in names">
     @{{ HashTag }}
 <span class="badge">
   @{{ TagCount }}
