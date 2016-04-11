@@ -8,14 +8,21 @@
 <form action="javascript:AddMessage()" class="form-horizontal">
 
 
-<select id="Network" class="selectpicker"> 
+<select id="Network" class="selectpicker" multiple> 
 <option VALUE="">Choose Channel/network 
 <option VALUE="Facebook">Facebook 
 <option VALUE="LinkedIn">LinkedIn
  <option VALUE="Twitter">Twitter 
  <option VALUE="Pinterst">Pinterst 
  <option VALUE="SnapChat">SnapChat
- <option VALUE="All">All
+   <option data-divider="true"></option>
+    <option VALUE="Affiliate">Affiliate
+    <option VALUE="Display">Display
+    <option VALUE="Email">Email
+    <option VALUE="Youtube">Youtbue
+    <option VALUE="Paid Search">Paid Search
+    <option VALUE="Deals">Deals
+     <option VALUE="All">All
  </select>
 
 
