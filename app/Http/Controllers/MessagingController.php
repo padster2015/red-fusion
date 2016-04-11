@@ -68,11 +68,10 @@ echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
 //HashTag
     public function Hashtags( Request $showbyid)
     {
-       $userIDS = Input::get('user');
+       $userRequest = Input::get('user');
 
         $showmessage = DB::table('MessageQ')->where([
-            ['Acc_id', '=', $userIDS],
-            ['Hashtag', '!=', ''],])->groupBy('Hashtag')
+            ['Acc_id', '=', $userRequest],])->groupBy('Hashtag')
                 ->orderBy('Createdat', 'desc')->get();
 echo json_encode($showmessage,JSON_NUMERIC_CHECK);
     }
