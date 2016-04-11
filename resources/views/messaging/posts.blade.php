@@ -8,10 +8,7 @@
 <form action="javascript:AddMessage()" class="form-horizontal">
 
 <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Choose Channel/network 
-    <span class="caret"></span>
-  </button>
+  
 
 <select id="Network" class="dropdown-menu" aria-labelledby="dropdownMenu1"> 
 <option VALUE="">Choose Channel/network 
