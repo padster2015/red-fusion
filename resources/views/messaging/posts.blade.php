@@ -5,7 +5,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
-<form action="javascript:AddMessage()">
+<form action="javascript:AddMessage()" class="form-horizontal">
 
 <select id="Network" class="form-control"> 
 <option VALUE="">Choose Channel/network 
