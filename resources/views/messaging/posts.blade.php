@@ -19,8 +19,6 @@
  </select>
 
 
- <br><strong>#</strong>
-
 <select id="HashTags" class="selectpicker">
 <option value="Sale">Sale
 <option value="Summer">Summer
