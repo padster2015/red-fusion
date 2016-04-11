@@ -30,17 +30,12 @@
  <br><strong>#</strong>
 
 
-
-<i class="fa fa-hashtag"></i>
-
-
-
 <div class="dropdown">
   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     Choose Hashtag
     <span class="caret"></span>
   </button>
-  <ul id="Network" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+  <ul id="HashTags" class="dropdown-menu" aria-labelledby="dropdownMenu1">
     <li><a href="#">NY Year</a></li>
     <li><a href="#">Happy Easter</a></li>
     <li><a href="#">Summer Sale</a></li>
@@ -65,12 +60,11 @@
       <input type="text" class="form-control" aria-label="...">
       <div class="input-group-btn">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-        <ul class="dropdown-menu dropdown-menu-right">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
+        <ul class="dropdown-menu dropdown-menu-right" id="Craft_Post">
+          <li><a href="#">Post</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Save</a></li>
           <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
         </ul>
       </div><!-- /btn-group -->
     </div><!-- /input-group -->
