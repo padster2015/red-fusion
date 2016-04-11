@@ -7,7 +7,7 @@
     <div class="col-sm-12">
 <form action="javascript:AddMessage()">
 
-<select id="Network"> 
+<select id="Network" class="form-control"> 
 <option VALUE="">Choose Channel/network 
 <option VALUE="Facebook">Facebook 
 <option VALUE="LinkedIn">LinkedIn
@@ -20,7 +20,7 @@
 
 
 <i class="fa fa-hashtag"></i>
-<Select id="HashTags">
+<Select id="HashTags" class="form-control">
 <option value="Sale">Sale
 <option value="Summer">Summer
 <option value="LGRW">LGRW
