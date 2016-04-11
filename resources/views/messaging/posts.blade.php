@@ -54,7 +54,7 @@
 <br>
 
 <div class="input-group">
-      <input type="text" id="Craft_Post" class="form-control" aria-label="..." placeholder="Craft your message here">
+      <input type="textarea" size="70" cols="3" id="Craft_Post" class="form-control" aria-label="..." placeholder="Craft your message here">
       <div class="input-group-btn">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
         <ul class="dropdown-menu dropdown-menu-right" id="Craft_Post">
