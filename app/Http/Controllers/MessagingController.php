@@ -75,7 +75,7 @@ $showmessage = DB::table('MessageQ')
                      ->select(DB::raw('HashTag, count(HashTag) as TagCount'))
                     ->where([
                             ['Acc_id', '=', 6],
-                            ['HashTag','!=',''],
+                            ['HashTag','>','0'],
                            ])
                      ->groupBy('HashTag')
                      ->get();
