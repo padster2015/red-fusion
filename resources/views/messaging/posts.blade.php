@@ -53,30 +53,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<Select id="HashTags" class="form-control">
-<option value="Sale">Sale
-<option value="Summer">Summer
-<option value="LGRW">LGRW
-<option value="BlackFriday">BlackFriday
-<option value="NewYear">NewYear
-<option value="JimmyWHo">JimmyWho
-</Select>
 <br>
 <textarea editable="true" placeholder="Craft Post" id="Craft_Post"  rows="4" cols="50"></textarea>
 
