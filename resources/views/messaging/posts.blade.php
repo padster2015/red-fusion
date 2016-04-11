@@ -20,6 +20,8 @@
 
 
 <select id="HashTags" class="selectpicker">
+<option VALUE="">Choose tag
+
 <option value="Sale">Sale
 <option value="Summer">Summer
 <option value="LGRW">LGRW
