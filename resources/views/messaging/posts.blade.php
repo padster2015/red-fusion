@@ -45,7 +45,7 @@
 <input type="hidden" id="id" value="{{ Auth::user()->id }}">
 
 <div class="input-group">
-      <input type="text" placeholder="Craft Post" id="textarea_feedback" class="form-control" aria-label="..." >
+      <input type="text" id="Craft_Post" placeholder="Craft Post"  class="form-control" aria-label="..." >
       <div class="input-group-btn">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
         <ul class="dropdown-menu dropdown-menu-right">
@@ -58,6 +58,9 @@
       </div><!-- /btn-group -->
     </div><!-- /input-group -->
 
+
+<div id="textarea_feedback">
+</div>
 
 
 </form>
