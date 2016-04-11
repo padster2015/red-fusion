@@ -288,6 +288,15 @@ font-weight:200 !important;
     -o-border-radius: 100px;
     border-radius: 100px;
 }
+
+#save_alert{
+    display:none;
+}
+
+
+
+
+
 /*  bounce effect animation  */
  @-webkit-keyframes bounce_btn {
     0% {

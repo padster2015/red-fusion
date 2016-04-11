@@ -7,13 +7,15 @@
     <div class="col-sm-12">
 
 
-<div class="alert alert-success" role="alert">
-  <a href="#" class="alert-link">...</a>
+<div class="alert alert-success" id="save_alert" role="alert">
+  <div class="alert alert-warning alert-success" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Minions have saved and processing your message</strong> :)
 </div>
 
 
 
-    
+
 <form action="javascript:AddMessage()" class="form-horizontal">
 
 
@@ -168,7 +170,7 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
                        data: {'message':CraftPostIn, 'NetworkIn':NetworkRequest, 'Hashtag':HashtagIn,'userID':IdRequest},
                        success : function (d)
                        {
-                       alert(CraftPostIn);
+                       $( "#save_alert" ).toggle( display );
                        $('#messages-grid').bootstrapTable('refresh');
                        },
                        })
