@@ -61,7 +61,7 @@
           <li><a onclick="AddMessage()" href="#">Post</a></li>
           <li><a href="#">Schedule</a></li>
           <li><a href="#">Save</a></li>
-          <li role="separator" class="divider"></li>
+          <!-- <li role="separator" class="divider"></li> -->
         </ul>
       </div><!-- /btn-group -->
     </div><!-- /input-group -->
