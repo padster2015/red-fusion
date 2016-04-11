@@ -70,8 +70,8 @@ echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
     {
        $userRequest = Input::get('user');
 
-        $showmessage = DB::table('MessageQ')->where([
-            ['Acc_id', '=', $userRequest],])->groupBy('Hashtag')
+        $showmessage = DB::table('MessageQ')->where(
+            'Acc_id', '=', $userRequest)->groupBy('Hashtag')
                 ->orderBy('Createdat', 'desc')->get();
 echo json_encode($showmessage,JSON_NUMERIC_CHECK);
     }
