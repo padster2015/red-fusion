@@ -25,15 +25,15 @@ console.log(clicktotal);
             <h1 class="clicks"><strong>@{{ names }}  </strong> </h1>
               <h4>Clicks</h4>
             </div>
-             <div class="col-xs-6 col-sm-3 placeholder text-center positive  " style="border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:7%;">
+             <div class="col-xs-6 col-sm-3 placeholder text-center positive  " style="border-radius:100px 100px 100px 0px; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:7%;">
             <h1 class="impressions"><strong>#5000</strong> </h1>
               <h4>Impressions</h4>
             </div>
-             <div class="col-xs-6 col-sm-3 placeholder text-center negative" style="border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:7%;">
+             <div class="col-xs-6 col-sm-3 placeholder text-center negative" style="border-radius:100px 100px 100px 0px; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:7%;">
              <h1 class="spend2date"><strong>$@{{ sptddata }}</h1></strong> </h1>
               <h4>Spend to Date</h4>
             </div>
-             <div class="col-xs-6 col-sm-3 placeholder text-center positive" style="border-radius:100%; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:10%;">
+             <div class="col-xs-6 col-sm-3 placeholder text-center positive" style="border-radius:100px 100px 100px 0px; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:10%;">
             <h1 class="roi"><strong>$20,000 </strong></h1>
               <h4>ROI</h4>
             </div>
