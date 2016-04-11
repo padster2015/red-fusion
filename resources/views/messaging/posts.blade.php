@@ -14,9 +14,14 @@
 
 
 <div ng-app="myApp" ng-controller="customersCtrl">
-<li ng-repeat="x in Hashtags">>@{{ HashTag }}>
- <span class="badge">@{{ TagCount }}</span>
+<ul>
+<li ng-repeat="x in Hashtags">
+    @{{ HashTag }}
+<span class="badge">
+  @{{ TagCount }}
+</span>
  </li>
+ </ul>
 </div>
 
 <form  role="form" class="form-inline" action="javascript:AddMessage()" class="form-horizontal">
