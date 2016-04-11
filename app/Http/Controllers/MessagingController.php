@@ -73,7 +73,7 @@ echo json_encode($Insertmessage,JSON_NUMERIC_CHECK);
 
 $showmessage = DB::table('MessageQ')
                      ->select(DB::raw('HashTag, count(HashTag) as user_count'))
-                     ->where('Acc_id', '=', 6)
+                     ->where('Acc_id', '=', 6)->whereNotNull('HashTag')
                      ->groupBy('HashTag')
                      ->get();
 
