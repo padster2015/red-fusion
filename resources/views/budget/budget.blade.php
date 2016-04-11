@@ -3,6 +3,12 @@
 @section('content')
 
 <div class="container-fluid">
+<div class="alert alert-success" id="save_alert" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  Minions have saved and processing your message :)
+</div>
+
+
   <div class="row">
     <div class="col-sm-12">
 <form action="deliver()">
@@ -20,7 +26,22 @@
 
 <h1> Current Budget</h1>
 <div id="Current" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
-<button id="button" style="color:#000;" class="btn btn-default">Set new budgets</button>
+<button id="button" style="color:#000;" class="btn btn-default" onclick="SetBudget()">Set new budgets</button>
+<script>
+function SetBudget()
+            {
+$("#save_alert" ).toggle();
+                  setTimeout(function() {
+                          $('#save_alert').fadeOut('fast');
+                                  }, 1500);    
+                                  
+                       },
+                       
+                
+            }
+</script>
+
+
 
 <script>
 $(function () {
