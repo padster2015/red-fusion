@@ -18,8 +18,8 @@
 <form  role="form" class="form-inline" action="javascript:AddMessage()" class="form-horizontal">
 
 
-<select id="Network" class="selectpicker" multiple> 
-<option VALUE="">Choose Channel/network 
+<select id="Network" class="selectpicker" data-header="Choose Channel/network" multiple> 
+<option VALUE=""> 
 <option VALUE="Facebook">Facebook 
 <option VALUE="LinkedIn">LinkedIn
  <option VALUE="Twitter">Twitter 
@@ -36,7 +36,7 @@
  </select>
 
 
-<select id="HashTags" class="selectpicker">
+<select id="HashTags" class="selectpicker" data-header="Choose tag" >
 <option VALUE="">Choose tag
 
 <option value="Sale">Sale
@@ -54,7 +54,9 @@
 <br>
 
 <div class="input-group">
-      <input type="textarea" size="70" cols="3" id="Craft_Post" class="form-control" aria-label="..." placeholder="Craft your message here">
+      <input type="textarea" size="70" cols="3" id="Craft_Post" class="form-control" aria-label="..." placeholder="Craft your message here" minlength="3" >
+
+
       <div class="input-group-btn">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
         <ul class="dropdown-menu dropdown-menu-right" id="Craft_Post">
