@@ -497,7 +497,7 @@ exporting: {
     };
 })(jQuery);
 
-jQuery(function($) {
+/*jQuery(function($) {
         $('.clicks').countTo({
             from: 0,
             to: @{{ names }},
@@ -507,7 +507,7 @@ jQuery(function($) {
                 console.debug(this);
             }
         });
-    });
+    });*/
 
 
 
