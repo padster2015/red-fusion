@@ -16,7 +16,7 @@
  <option VALUE="SnapChat">SnapChat
  <option VALUE="All">All
  </select>
- <br>#
+ <br><strong>#</strong>
 
 
 <i class="fa fa-hashtag"></i>
