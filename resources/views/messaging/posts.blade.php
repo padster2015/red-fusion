@@ -15,13 +15,13 @@
 
 <div ng-app="myApp" ng-controller="customersCtrl">
 <ul>
-<li ng-repeat="x in hashtags">
+  <li ng-repeat="x in HashTags">
     @{{ HashTag }}
-<span class="badge">
-  @{{ TagCount }}
-</span>
- </li>
- </ul>
+    <span class="badge">
+     @{{ TagCount }}
+    </span>
+  </li>
+</ul>
 </div>
 
 <form  role="form" class="form-inline" action="javascript:AddMessage()" class="form-horizontal">
@@ -195,13 +195,11 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
         <script>
 
 var app = angular.module('myApp', []);
-app.controller('myCtrl', function($scope, $http) {
-    $http.get("http://web.redfusionstackwebndb.165b10a6.svc.dockerapp.io/api/v1/Messages/hashtags?user=6")
-    .then(function(response) {
-        $scope.hashtags = response.data;
+app.controller('customersCtrl', function($scope, $http) {
+    $http.get("api/v1/Messages/hashtags?user=6").then(function(response) {
+        $scope.HashTags = response.data.records;
     });
 });
-//angel
 </script>
 
 
