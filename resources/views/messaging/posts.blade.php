@@ -7,6 +7,24 @@
     <div class="col-sm-12">
 <form action="javascript:AddMessage()" class="form-horizontal">
 
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Choose Channel/network 
+    <span class="caret"></span>
+  </button>
+  <ul id="Network" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Facebook</a></li>
+    <li><a href="#">LinkedIn</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">Pinterst</a></li>
+    <li><a href="#">SnapChat</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+
+
 <select id="Network" class="form-control"> 
 <option VALUE="">Choose Channel/network 
 <option VALUE="Facebook">Facebook 
@@ -34,7 +52,24 @@
 <br>
 <input type="hidden" id="id" value="{{ Auth::user()->id }}">
 
-<button class="btn btn-lin">Send</button>
+
+
+<div class="input-group">
+      <input type="text" class="form-control" aria-label="...">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div><!-- /input-group -->
+
+
+
 </form>
 
 
