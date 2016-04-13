@@ -3,7 +3,7 @@
 @section('content')
 
 
-<?php
+{{
 session_start();
 
 require './src/config.php';
@@ -17,7 +17,8 @@ $facebook = new Facebook(array(
 
 ini_set("display_errors",1);
 
-if(isset($_POST['status']))
+
+@if(isset($_POST['status']))
 {
         $publish = $facebook->api('/me/feed', 'post',
         array('access_token' => $_SESSION['token'],'message'=>$_POST['status'],
@@ -41,15 +42,15 @@ if(isset($_POST['status']))
     $login_content .= '<a href="index.php?logout=1&tocken='.$params['access_token'].'"><button type="submit" class="templatemo-blue-button width-100">Logout</button></a>';
     $login_content .= '</div>';
 }
-elseif(isset($_GET['fbTrue']))
+@elseif(isset($_GET['fbTrue']))
 {
-    if($_GET['fbTrue'] == 'true11' )
+   @if($_GET['fbTrue'] == 'true11' )
     {
         $token_url = "https://graph.facebook.com/oauth/access_token?"
         . "client_id=".$config['App_ID']."&redirect_uri=" . urlencode($config['callback_url'])
         . "11&client_secret=".$config['App_Secret']."&code=" . $_GET['code'];
     }
-    else
+    @else
     {
         $token_url = "https://graph.facebook.com/oauth/access_token?"
         . "client_id=".$config['App_ID']."&redirect_uri=" . urlencode($config['callback_url'])
@@ -64,7 +65,7 @@ elseif(isset($_GET['fbTrue']))
         . $params['access_token'];
         $_SESSION['token'] = $params['access_token'];
     $user = json_decode(file_get_contents($graph_url));
-?>
+}}
 
 
 
@@ -78,10 +79,9 @@ elseif(isset($_GET['fbTrue']))
   Minions have saved and processing your message :)
 </div>
 
-<?php
-<a href="https://www.facebook.com/dialog/oauth?client_id='.$config['App_ID'].'&redirect_uri='.$config['callback_url'].'11&scope=email,user_likes,publish_actions'.'">login></a>
+{{<a href="https://www.facebook.com/dialog/oauth?client_id='.$config['App_ID'].'&redirect_uri='.$config['callback_url'].'11&scope=email,user_likes,publish_actions'.'">login></a>
 
-?>
+}}
 <button type="submit" class="templatemo-blue-button width-100">Facebook Login</button></a>
 
 
