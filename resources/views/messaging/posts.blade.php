@@ -2,6 +2,74 @@
 
 @section('content')
 
+
+
+<?php
+
+session_start();
+
+require './src/config.php';
+require './src/facebook.php';
+// Create our Application instance (replace this with your appId and secret).
+$facebook = new Facebook(array(
+  'appId'  => $config['App_ID'],
+  'secret' => $config['App_Secret'],
+  'cookie' => true
+));
+
+ini_set("display_errors",1);
+
+if(isset($_POST['status']))
+{
+        $publish = $facebook->api('/me/feed', 'post',
+        array('access_token' => $_SESSION['token'],'message'=>$_POST['status'],
+        'from' => $config['App_ID']
+        ));
+        $message = 'Status updated.<br>';
+        $extra = "<a href='index.php?logout=1&tocken=".$params['access_token']."'>Logout</a><br>";
+    $form_content = '<form action="index.php" method="post" class="templatemo-login-form">';
+    $form_content .= '<div class="form-group">';
+    $form_content .= '<div class="input-group">';
+    $form_content .= '<div class="input-group-addon"><i class="fa fa-envelope fa-fw" style="font-size: 18px;"></i></div>';
+    $form_content .= '<textarea id="status" name="status" class="form-control" placeholder="Write your status here....." rows="6"></textarea>';
+    $form_content .= '</div>';
+    $form_content .= '</div>';
+    $form_content .= '<div class="form-group">';
+    $form_content .= '<button type="submit" class="templatemo-blue-button width-100">Upload Status</button>';
+    $form_content .= '</div>';
+    $form_content .= '</form>';
+  
+    $login_content = '<div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">';
+    $login_content .= '<a href="index.php?logout=1&tocken='.$params['access_token'].'"><button type="submit" class="templatemo-blue-button width-100">Logout</button></a>';
+    $login_content .= '</div>';
+}
+elseif(isset($_GET['fbTrue']))
+{
+    if($_GET['fbTrue'] == 'true11' )
+    {
+        $token_url = "https://graph.facebook.com/oauth/access_token?"
+        . "client_id=".$config['App_ID']."&redirect_uri=" . urlencode($config['callback_url'])
+        . "11&client_secret=".$config['App_Secret']."&code=" . $_GET['code'];
+    }
+    else
+    {
+        $token_url = "https://graph.facebook.com/oauth/access_token?"
+        . "client_id=".$config['App_ID']."&redirect_uri=" . urlencode($config['callback_url'])
+        . "&client_secret=".$config['App_Secret']."&code=" . $_GET['code'];
+    }
+    
+    $response = file_get_contents($token_url);
+    $params = null;
+    parse_str($response, $params);
+
+    $graph_url = "https://graph.facebook.com/me?access_token=" 
+        . $params['access_token'];
+        $_SESSION['token'] = $params['access_token'];
+    $user = json_decode(file_get_contents($graph_url));
+?>
+
+
+
 <div class="container-fluid" >
   <div class="row">
     <div class="col-sm-12">
@@ -12,9 +80,14 @@
   Minions have saved and processing your message :)
 </div>
 
+<?php
+<a href="https://www.facebook.com/dialog/oauth?client_id='.$config['App_ID'].'&redirect_uri='.$config['callback_url'].'11&scope=email,user_likes,publish_actions'.'">
+?>
+
+<button type="submit" class="templatemo-blue-button width-100">Facebook Login</button></a>
 
 
-<form  role="form" class="form-inline" action="javascript:AddMessage()" class="form-horizontal">
+<form  role="form" class="form-inline" action="index.php" method="post" class="form-horizontal">
 
 
 <select id="Network" class="selectpicker" data-header="Choose Channel/network" multiple> 
@@ -60,7 +133,7 @@ Summer Sale
 <br>
 
 <div class="input-group">
-      <input type="textarea" size="70" cols="3" id="Craft_Post" class="form-control" aria-label="..." placeholder="Craft your message here" minlength="3" >
+      <input type="textarea" size="70" cols="3" id="status" name="status"  class="form-control" aria-label="..." placeholder="Craft your message here" minlength="3" >
 
 
       <div class="input-group-btn">
@@ -144,8 +217,8 @@ $(document).ready(function() {
     var text_max = 144;
     $('#textarea_feedback').html(text_max + ' characters remaining');
 
-    $('#Craft_Post').keyup(function() {
-        var text_length = $('#Craft_Post').val().length;
+    $('#status').keyup(function() {
+        var text_length = $('#status').val().length;
         var text_remaining = text_max - text_length;
 
         $('#textarea_feedback').html(text_remaining + ' characters remaining');
@@ -167,7 +240,7 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
             function AddMessage(FirstName,LastName)
             {
                   var IdRequest = document.getElementById('id').value;
-                  var CraftPostIn = document.getElementById('Craft_Post').value;
+                  var CraftPostIn = document.getElementById('status').value;
                   var NetworkRequest = document.getElementById('Network').value;
                   var HashtagIn = document.getElementById('HashTags').value;
 
