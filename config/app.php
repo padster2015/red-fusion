@@ -126,7 +126,6 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
-        AdamWathan\EloquentOAuthL5\EloquentOAuthServiceProvider,
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
@@ -170,7 +169,7 @@ return [
     */
 
     'aliases' => [
-        'SocialAuth' => AdamWathan\EloquentOAuth\Facades\OAuth,
+
         'App'       => Illuminate\Support\Facades\App::class,
         'Artisan'   => Illuminate\Support\Facades\Artisan::class,
         'Auth'      => Illuminate\Support\Facades\Auth::class,
