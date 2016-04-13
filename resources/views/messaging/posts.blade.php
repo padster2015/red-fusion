@@ -15,21 +15,6 @@ include './src/facebook.php'
         ));
         $message = 'Status updated.<br>';
         $extra = "<a href='index.php?logout=1&tocken=".$params['access_token']."'>Logout</a><br>";
-    $form_content = '<form action="index.php" method="post" class="templatemo-login-form">';
-    $form_content .= '<div class="form-group">';
-    $form_content .= '<div class="input-group">';
-    $form_content .= '<div class="input-group-addon"><i class="fa fa-envelope fa-fw" style="font-size: 18px;"></i></div>';
-    $form_content .= '<textarea id="status" name="status" class="form-control" placeholder="Write your status here....." rows="6"></textarea>';
-    $form_content .= '</div>';
-    $form_content .= '</div>';
-    $form_content .= '<div class="form-group">';
-    $form_content .= '<button type="submit" class="templatemo-blue-button width-100">Upload Status</button>';
-    $form_content .= '</div>';
-    $form_content .= '</form>';
-  
-    $login_content = '<div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">';
-    $login_content .= '<a href="index.php?logout=1&tocken='.$params['access_token'].'"><button type="submit" class="templatemo-blue-button width-100">Logout</button></a>';
-    $login_content .= '</div>';
 }
 @elseif(isset($_GET['fbTrue']))
 {
