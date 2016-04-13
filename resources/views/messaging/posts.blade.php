@@ -5,11 +5,7 @@
 include './src/config.php',
 include './src/facebook.php'
 // Create our Application instance (replace this with your appId and secret).
-$facebook = new Facebook(array(
-  'appId'  => $config['App_ID'],
-  'secret' => $config['App_Secret'],
-  'cookie' => true
-));
+
 
 ini_set("display_errors",1);
 
