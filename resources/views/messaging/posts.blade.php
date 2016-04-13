@@ -4,8 +4,6 @@
 
 include './src/config.php',
 include './src/facebook.php'
-// Create our Application instance (replace this with your appId and secret).
-
 
 @if(isset($_POST['status']))
 {
@@ -14,7 +12,7 @@ include './src/facebook.php'
         'from' => $config['App_ID']
         ));
         $message = 'Status updated.<br>';
-        $extra = "<a href='index.php?logout=1&tocken=".$params['access_token']."'>Logout</a><br>";
+        $extra = "<a href='index.php?logout=1&tocken=".$params['access_token']."'>Logout</a><br>";    
 }
 @elseif(isset($_GET['fbTrue']))
 {
