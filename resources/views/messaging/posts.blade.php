@@ -15,8 +15,7 @@ $config['App_Secret']  ='f42af1b8213f429457e50cbfc16ce118',
         array('access_token' => $_SESSION['token'],'message'=>$_POST['status'],
         'from' => $config['App_ID']
         ));
-        $message = 'Status updated.<br>';
-        $extra = "<a href='index.php?logout=1&tocken=".$params['access_token']."'>Logout</a><br>";    
+           
 }
 @elseif(isset($_GET['fbTrue']))
 {
