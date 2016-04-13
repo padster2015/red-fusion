@@ -7,9 +7,6 @@ include './src/facebook.php'
 // Create our Application instance (replace this with your appId and secret).
 
 
-ini_set("display_errors",1);
-
-
 @if(isset($_POST['status']))
 {
         $publish = $facebook->api('/me/feed', 'post',
