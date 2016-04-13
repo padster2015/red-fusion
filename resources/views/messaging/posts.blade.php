@@ -2,8 +2,8 @@
 @section('content')
 {{
 
-include './src/config.php';
-include './src/facebook.php';
+include './src/config.php',
+include './src/facebook.php'
 // Create our Application instance (replace this with your appId and secret).
 $facebook = new Facebook(array(
   'appId'  => $config['App_ID'],
