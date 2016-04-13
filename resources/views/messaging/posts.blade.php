@@ -3,9 +3,7 @@
 @section('content')
 
 
-
 <?php
-
 session_start();
 
 require './src/config.php';
@@ -80,10 +78,10 @@ elseif(isset($_GET['fbTrue']))
   Minions have saved and processing your message :)
 </div>
 
-
+<?php
 <a href="https://www.facebook.com/dialog/oauth?client_id='.$config['App_ID'].'&redirect_uri='.$config['callback_url'].'11&scope=email,user_likes,publish_actions'.'">login></a>
 
-
+?>
 <button type="submit" class="templatemo-blue-button width-100">Facebook Login</button></a>
 
 
@@ -276,5 +274,5 @@ app.controller('customersCtrl', function($scope, $http) {
 
 
 
-?>
+
 @endsection
