@@ -81,7 +81,8 @@ elseif(isset($_GET['fbTrue']))
 </div>
 
 <?php
-<a href="https://www.facebook.com/dialog/oauth?client_id='.$config['App_ID'].'&redirect_uri='.$config['callback_url'].'11&scope=email,user_likes,publish_actions'.'">
+
+<a href="https://www.facebook.com/dialog/oauth?client_id='.$config['App_ID'].'&redirect_uri='.$config['callback_url'].'11&scope=email,user_likes,publish_actions'.'">login></a>
 ?>
 
 <button type="submit" class="templatemo-blue-button width-100">Facebook Login</button></a>
