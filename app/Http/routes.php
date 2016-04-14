@@ -16,17 +16,17 @@
 // });
 
 
-Route::get('github/authorize',function(){
+Route::get('github/authorize', function () {
 
-return OAuth::authorize('github');
+    return OAuth::authorize('github');
 
 });
 
 
 Route::get('github/login',function(){
 
-OAuth::login('github');
-return 'done';
+    OAuth::login('github');
+    return 'done';
 });
 
 
