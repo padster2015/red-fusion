@@ -61,6 +61,8 @@
 <hr>
 
           <h2 class="sub-header">{{ Auth::user()->Business_name }} Data</h2>
+
+          <a href="./facebook/authorize">Facebook Auth</a>
           <div class="table-responsive">
         <!-- <table class="table-striped table">
   <tr ng-repeat="x in names">
