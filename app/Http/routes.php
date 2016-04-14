@@ -123,8 +123,13 @@ Route::get('/api/v1/Budget/DashboardSummary_SPTD/', 'DataController@SPTD');
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //just testing with ipad prod3w
+Route::get('github/authorize', function() {
+    return OAuth::authorize('github');
+});
+
+Route::get('github/login', function(){
+    OAuth::login('github');
+    return 'done';
 });
 
 Route::group(['middleware' => 'web'], function () {
@@ -195,32 +200,7 @@ Route::group(['middleware' => 'web'], function () {
 });
 
 
-    Route::get('auth/authorize/{provider}',  function($provider) {
-        return SocialAuth::authorize($provider);
-    });
-    Route::get('auth/login/{provider}',  function($provider) {
-        try {
-            SocialAuth::login($provider, function($user, $details) {
-                $user->username = $details->nickname;
-                $user->name = $details->full_name;
-                $user->save();
-            });
-        } catch (ApplicationRejectedException $e) {
-            // User rejected application
-            dd('error1');
-        } catch (InvalidAuthorizationCodeException $e) {
-            // Authorization was attempted with invalid
-            // code,likely forgery attempt
-            print_r($provider);
-            dd($e);
-        }
-
-        // Current user is now available via Auth facade
-        $user = Auth::user();
-        dd($user);
-
-        return $user;
-    });
+    
 
 
 
