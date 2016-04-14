@@ -131,24 +131,7 @@ Route::group(['middleware' => 'web'], function () {
 // facebook maybe.....
 
 
-    // Redirect to Facebook for authorization
-Route::get('facebook/authorize', function() {
-    return SocialAuth::authorize('facebook');
-});
-
-// Facebook redirects here after authorization
-Route::get('facebook/login', function() {
-
-    // Automatically log in existing users
-    // or create a new user if necessary.
-    SocialAuth::login('facebook');
-
-    // Current user is now available via Auth facade
-    $user = Auth::user();
-
-    return Redirect::intended();
-});
-
+    
 // we will see
 
 
