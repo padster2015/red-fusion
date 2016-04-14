@@ -2,19 +2,14 @@
 
 /*
 |--------------------------------------------------------------------------
-| Routes File
+| Application Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you will register all of the routes in an application.
+| Here is where you can register all of the routes for an application.
 | It's a breeze. Simply tell Laravel the URIs it should respond to
 | and give it the controller to call when that URI is requested.
 |
 */
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 
 
 
@@ -38,6 +33,19 @@ Route::get('/api/v1/Data/channel/{channel}/messageID/{message-id}/metric/{metric
 
 Route::get('/api/v1/Data/save/', 'DataController@store');
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 //API - routes
 
 Route::get('api', function() {
@@ -58,7 +66,6 @@ Route::get('api', function() {
     }
     echo "</table>";
 });
-
 
 // Messaging
 
@@ -95,12 +102,6 @@ Route::get('/api/v1/Budget/DashboardSummary_SPTD/', 'DataController@SPTD');
 |
 */
 
-
-Route::group(['middleware' => ['web']], function () {
-
-    
-
-
 Route::group(['middleware' => ['web']], function () {
     //just testing with ipad prod3w
 });
@@ -114,16 +115,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/', function () {
         return view('welcome');
     });
-
-
-// facebook maybe.....
-
-
-    
-// we will see
-
-
-
 
 
     // dashboard from after login!
@@ -181,4 +172,15 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('/home', 'HomeController@index');
 });
-}
+
+
+
+
+
+
+
+
+
+Route::get('/', function () {
+    return view('welcome');
+});
