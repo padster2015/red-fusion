@@ -17,6 +17,26 @@
 
 //Analyitcs Data Dashboard
 
+// Redirect to Facebook for authorization
+Route::get('facebook/authorize', function() {
+    return SocialAuth::authorize('facebook');
+});
+
+// Facebook redirects here after authorization
+Route::get('facebook/login', function() {
+
+    // Automatically log in existing users
+    // or create a new user if necessary.
+    SocialAuth::login('facebook');
+
+    // Current user is now available via Auth facade
+    $user = Auth::user();
+
+    return Redirect::intended();
+});
+
+
+
 Route::get('/api/v1/Data/show/{limit}', 'DataController@index');
 
 
