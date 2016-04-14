@@ -124,11 +124,11 @@ Route::get('/api/v1/Budget/DashboardSummary_SPTD/', 'DataController@SPTD');
 */
 
 Route::get('github/authorize', function() {
-    return OAuth::authorize('github');
+    return SocialAuth::authorize('github');
 });
 
 Route::get('github/login', function(){
-    OAuth::login('github');
+    SocialAuth::login('github');
     return 'done';
 });
 
