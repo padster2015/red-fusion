@@ -27,7 +27,7 @@ Route::get('github/login',function(){
 
 OAuth::login('github');
 return 'done';
-}
+});
 
 
 //Analyitcs Data Dashboard
