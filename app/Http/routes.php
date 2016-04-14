@@ -17,7 +17,10 @@
 
 //Analyitcs Data Dashboard
 
-Route::get('/api/v1/Data/show/{limit}', 'DataController@index');
+Route::get('/api/v1/Data/show/', 'DataController@index');
+
+
+
 
 
 Route::get('/api/v1/Data/channel/{channel}/show/{limit}', 'DataController@channel');
@@ -159,6 +162,15 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('/settings/billing', function () {
         return view('profile.billingsUpdate');
     });
+
+
+Route::get('/api/v1/Data/show/{aid}', 'DataController@aid');
+Route::get('/api/v1/Data/show/{aid}/{campaign}', 'DataController@aid_campaign');
+Route::get('/api/v1/Data/show/{aid}/{campaign}/{channel}', 'DataController@aid_campaign_channel');
+Route::get('/api/v1/Data/show/{aid}/{campaign}/{channel}/{message}', 'DataController@aid_campaign_channel_message');
+Route::get('/api/v1/Data/show/{aid}/{campaign}/{channel}/{message}/{type}', 'DataController@aid_campaign_channel_type');
+
+    
 
     Route::get('/home', 'HomeController@index');
 });
