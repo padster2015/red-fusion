@@ -16,18 +16,6 @@
 // });
 
 
-Route::get('github/authorize', function () {
-
-    return OAuth::authorize('github');
-
-});
-
-
-Route::get('github/login',function(){
-
-    OAuth::login('github');
-    return 'done';
-});
 
 
 //Analyitcs Data Dashboard
