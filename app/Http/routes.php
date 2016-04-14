@@ -37,6 +37,8 @@ Route::get('facebook/login', function() {
 
 
 
+
+
 Route::get('/api/v1/Data/show/{limit}', 'DataController@index');
 
 
