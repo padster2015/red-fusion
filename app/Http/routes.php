@@ -18,7 +18,7 @@
 
 Route::get('github/authorize',function(){
 
-return Oauth::authorize('github');
+return OAuth::authorize('github');
 
 });
 
