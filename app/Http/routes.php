@@ -15,6 +15,21 @@
 //     return view('welcome');
 // });
 
+
+Route::get('github/authorize',function(){
+
+return Oauth::authorize('github');
+
+});
+
+
+Route::get('github/login',function(){
+
+OAuth::login('github');
+return 'done';
+}
+
+
 //Analyitcs Data Dashboard
 
 // Redirect to Facebook for authorization
