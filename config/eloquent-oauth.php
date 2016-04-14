@@ -19,9 +19,9 @@ return [
             'scope' => [],
         ],
         'github' => [
-            'client_id' => '12345678',
-            'client_secret' => 'y0ur53cr374ppk3y',
-            'redirect_uri' => 'https://example.com/your/github/redirect',
+            'client_id' => 'b092810879e5c12c0e6a',
+            'client_secret' => '0ba4f268523cd1737a544840f0c8f1e1cb0adbdc',
+            'redirect_uri' => 'http://web-1.redfusionstackwebndb.d4f38d26.cont.dockerapp.io/github/login',
             'scope' => [],
         ],
         'linkedin' => [
