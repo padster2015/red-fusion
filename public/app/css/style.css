@@ -300,9 +300,7 @@ color:#000;
 
 }
 
-nav {
-border-radius:0 !important
-}
+
 
 body {
 font-family: 'Work Sans' , sans-serif;
@@ -370,4 +368,9 @@ color:#FFF;
     .step_nb {
         display: block;
     }
+}
+
+
+.navbar {
+border-radius:0 !important
 }
