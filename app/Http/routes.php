@@ -61,7 +61,7 @@ Route::get('facebook/login', function() {
         $user = Auth::user();
         dd($user);
 
-        return $user;
+   return 'Done';
     });
 
 
