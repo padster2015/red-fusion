@@ -56,11 +56,6 @@ Route::get('facebook/login', function() {
             print_r($provider);
             dd($e);
         }
-
-        // Current user is now available via Auth facade
-        $user = Auth::user();
-        dd($user);
-
    return 'Done';
     });
 
