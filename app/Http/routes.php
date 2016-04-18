@@ -82,7 +82,7 @@ Route::get('api', function() {
     foreach ($routeCollection as $value) {
         echo "<tr>";
             echo "<td>" . $value->getMethods()[0] . "</td>";
-            echo "<td>" . $value->getPath() . "</td>";
+            echo "<td> <a href='" . $value->getPath() . "'>'" . $value->getPath() . "'</td>";
             echo "<td>" . $value->getActionName() . "</td>";
         echo "</tr>";
     }
