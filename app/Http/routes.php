@@ -32,7 +32,7 @@ Route::get('facebook/login', function() {
     // Current user is now available via Auth facade
     $user = Auth::user();
     
-   return $user->name;
+   return 'Done';
    
     
 });
