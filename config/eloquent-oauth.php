@@ -9,7 +9,7 @@ return [
         'facebook' => [
             'client_id' => '222866618076812',
             'client_secret' => 'f42af1b8213f429457e50cbfc16ce118',
-            'redirect_uri' => 'http://web-1.redfusionstackwebndb.43db88ef.cont.dockerapp.io/auth/login/facebook',
+            'redirect_uri' => 'http://web-1.redfusionstackwebndb.43db88ef.cont.dockerapp.io/facebook/login',
             'scope' => [],
         ],
         'google' => [
