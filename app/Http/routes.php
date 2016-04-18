@@ -10,7 +10,8 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+use SocialNorm\Exceptions\ApplicationRejectedException;
+use SocialNorm\Exceptions\InvalidAuthorizationCodeException;
 
 
 
