@@ -41,11 +41,6 @@ Route::get('facebook/login', function() {
         return SocialAuth::authorize($provider);
     });
     Route::get('auth/login/{provider}',  function($provider) {
-            SocialAuth::login($provider, function($user, $details) {
-                $user->username = $details->nickname;
-                $user->name = $details->full_name;
-                $user->save();
-            });
    return 'Done';
     });
 
