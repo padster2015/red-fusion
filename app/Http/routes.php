@@ -15,7 +15,7 @@ use SocialNorm\Exceptions\InvalidAuthorizationCodeException;
 
 Route::get('facebook/login', function() {
     try {
-        OAuth::login('facebook');
+        SocialAuth::login('facebook');
     } catch (ApplicationRejectedException $e) {
         // User rejected application
     } catch (InvalidAuthorizationCodeException $e) {
