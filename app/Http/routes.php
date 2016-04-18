@@ -41,21 +41,11 @@ Route::get('facebook/login', function() {
         return SocialAuth::authorize($provider);
     });
     Route::get('auth/login/{provider}',  function($provider) {
-        try {
             SocialAuth::login($provider, function($user, $details) {
                 $user->username = $details->nickname;
                 $user->name = $details->full_name;
                 $user->save();
             });
-        } catch (ApplicationRejectedException $e) {
-            // User rejected application
-            dd('error1');
-        } catch (InvalidAuthorizationCodeException $e) {
-            // Authorization was attempted with invalid
-            // code,likely forgery attempt
-            print_r($provider);
-            dd($e);
-        }
    return 'Done';
     });
 
