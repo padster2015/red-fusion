@@ -12,10 +12,6 @@
   Minions have saved and processing your message :)
 </div>
 
-
-<button type="submit" class="templatemo-blue-button width-100">Facebook Login</button></a>
-
-
 <form  role="form" class="form-inline" action="index.php" method="post" class="form-horizontal">
 
 
