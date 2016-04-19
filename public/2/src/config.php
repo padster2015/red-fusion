@@ -1,9 +1,9 @@
 <?php
 
-$config['callback_url']         =   'http://prajapativivah.com/jaydip/FB/2/index.php?fbTrue=true'; //   /?fbTrue=true allow you to code process section.
+$config['callback_url']         =   'http://web-1.redfusionstackwebndb.b97ed22a.cont.dockerapp.io/2/index.php?fbTrue=true'; //   /?fbTrue=true allow you to code process section.
 
 //Facebook configuration
-$config['App_ID']      =   '505936812947160';
-$config['App_Secret']  =   '4962457c27828ad4aef33c09d3f66db6'; 
+$config['App_ID']      =   '222866618076812';
+$config['App_Secret']  =   'f42af1b8213f429457e50cbfc16ce118'; 
 
 ?>
