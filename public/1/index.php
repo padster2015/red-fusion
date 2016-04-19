@@ -108,7 +108,6 @@ else
 
 $title = ""; 
 $heading = "";
-include('html.inc');
 ?>
 
 
