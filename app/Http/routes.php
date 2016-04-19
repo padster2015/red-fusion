@@ -10,9 +10,10 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::get('github/authorize', function() {
+    return Socialize::with('github')->redirect();
 
-
-
+});
 
 
 // Redirect to Facebook for authorization

@@ -200,6 +200,7 @@ return [
         'Storage'   => Illuminate\Support\Facades\Storage::class,
     'SocialAuth' => 'AdamWathan\EloquentOAuth\Facades\OAuth',
         'URL'       => Illuminate\Support\Facades\URL::class,
+        'Socialize' => 'Laravel\Socialite\Facades\Socialite',
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
