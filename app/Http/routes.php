@@ -14,8 +14,6 @@ Route::get('github/authorize', function() {
     return Socialize::with('github')->redirect();
 
 });
-use SocialNorm\Exceptions\ApplicationRejectedException;
-use SocialNorm\Exceptions\InvalidAuthorizationCodeException;
 
 
 // Redirect to Facebook for authorization
@@ -23,34 +21,18 @@ Route::get('facebook/authorize', function() {
     return SocialAuth::authorize('facebook');
 });
 
+// Facebook redirects here after authorization
 Route::get('facebook/login', function() {
-    try {
-        SocialAuth::login('facebook');
-    } catch (ApplicationRejectedException $e) {
-        // User rejected application
-    } catch (InvalidAuthorizationCodeException $e) {
-        // Authorization was attempted with invalid
-        // code,likely forgery attempt
-    }
+
+    // Automatically log in existing users
+    // or create a new user if necessary.
+    SocialAuth::login('facebook');
 
     // Current user is now available via Auth facade
     $user = Auth::user();
-    
-   return 'Done';
-   
-    
+
+    return Redirect::intended();
 });
-
-    Route::get('auth/authorize/{provider}',  function($provider) {
-        return SocialAuth::authorize($provider);
-    });
-    Route::get('auth/login/{provider}',  function($provider) {
-   return 'Done';
-    });
-
-
-
-
 
 
 //Analyitcs Data Dashboard
@@ -100,7 +82,7 @@ Route::get('api', function() {
     foreach ($routeCollection as $value) {
         echo "<tr>";
             echo "<td>" . $value->getMethods()[0] . "</td>";
-            echo "<td> <a href='" . $value->getPath() . "'>'" . $value->getPath() . "'</td>";
+            echo "<td>" . $value->getPath() . "</td>";
             echo "<td>" . $value->getActionName() . "</td>";
         echo "</tr>";
     }
@@ -152,6 +134,39 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/', function () {
         return view('welcome');
     });
+
+
+
+    Route::get('auth/authorize/{provider}',  function($provider) {
+        return SocialAuth::authorize($provider);
+    });
+    Route::get('auth/login/{provider}',  function($provider) {
+        try {
+            SocialAuth::login($provider, function($user, $details) {
+                $user->username = $details->nickname;
+                $user->name = $details->full_name;
+                $user->save();
+            });
+        } catch (ApplicationRejectedException $e) {
+            // User rejected application
+            dd('error1');
+        } catch (InvalidAuthorizationCodeException $e) {
+            // Authorization was attempted with invalid
+            // code,likely forgery attempt
+            print_r($provider);
+            dd($e);
+        }
+
+        // Current user is now available via Auth facade
+        $user = Auth::user();
+        dd($user);
+
+        return $user;
+    });
+
+
+
+
 
 
 

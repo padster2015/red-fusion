@@ -1,5 +1,47 @@
 @extends('layouts.app')
 @section('content')
+{{
+
+$config['callback_url'] = 'http://web-1.redfusionstackwebndb.c3c1a3ca.cont.dockerapp.io/?fbTrue=true',
+//Facebook configuration
+$config['App_ID'] = '222866618076812',
+$config['App_Secret']  ='f42af1b8213f429457e50cbfc16ce118',
+
+//include './src/facebook.php'
+
+@if(isset($_POST['status']))
+{
+        $publish = $facebook->api('/me/feed', 'post',
+        array('access_token' => $_SESSION['token'],'message'=>$_POST['status'],
+        'from' => $config['App_ID']
+        ));
+           
+}
+@elseif(isset($_GET['fbTrue']))
+{
+   @if($_GET['fbTrue'] == 'true11' )
+    {
+        $token_url = "https://graph.facebook.com/oauth/access_token?"
+        . "client_id=".$config['App_ID']."&redirect_uri=" . urlencode($config['callback_url'])
+        . "11&client_secret=".$config['App_Secret']."&code=" . $_GET['code'];
+    }
+    @else
+    {
+        $token_url = "https://graph.facebook.com/oauth/access_token?"
+        . "client_id=".$config['App_ID']."&redirect_uri=" . urlencode($config['callback_url'])
+        . "&client_secret=".$config['App_Secret']."&code=" . $_GET['code'];
+    }
+    
+    $response = file_get_contents($token_url);
+    $params = null;
+    parse_str($response, $params);
+
+    $graph_url = "https://graph.facebook.com/me?access_token=" 
+        . $params['access_token'];
+        $_SESSION['token'] = $params['access_token'];
+    $user = json_decode(file_get_contents($graph_url));
+}}
+
 
 
 <div class="container-fluid" >
@@ -11,6 +53,12 @@
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   Minions have saved and processing your message :)
 </div>
+
+{{<a href="https://www.facebook.com/dialog/oauth?client_id='.$config['App_ID'].'&redirect_uri='.$config['callback_url'].'11&scope=email,user_likes,publish_actions'.'">login></a>
+
+}}
+<button type="submit" class="templatemo-blue-button width-100">Facebook Login</button></a>
+
 
 <form  role="form" class="form-inline" action="index.php" method="post" class="form-horizontal">
 
