@@ -27,4 +27,23 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')
         //          ->hourly();
     }
+
+
+
+// schedule post data command every min
+
+
+protected function schedulesSendPost(Schedule $scheduleFacebookPost)
+    {
+$TimeandDate = date(now)
+        $scheduleFacebookPost->call(function () {
+            DB::table('MessageQ')->select->where('sendat' '=' $TimeandDate);
+        })->everyMinute();
+}
+
+
+
+
+
+
 }
