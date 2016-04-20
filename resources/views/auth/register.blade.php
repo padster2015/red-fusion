@@ -20,6 +20,12 @@
                     <input type="password" class="form-control" placeholder="Your Password"  name="password"><br>
                     <input type="password" class="form-control" placeholder="Confirmation Password"  name="password_confirmation">
                 </li>
+
+<li>
+<p>Legal stuff</p>
+we pull your data with your permission and mould and transform it into something new due to this we have created new data which is our property
+<br> if you want a copy please email and we will send you a purchase order
+<li>
                 <li>
                  <input type="text" class="form-control" name="Facebook_api" placeholder="Facebook Api" value="{{ old('Facebook_api') }}">
 
