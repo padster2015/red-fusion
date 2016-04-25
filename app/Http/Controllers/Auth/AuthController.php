@@ -36,18 +36,7 @@ class AuthController extends Controller
      */
 
 
-// git hub login
-public function redirectToProvider()
-{
-    return Socialize::with('github')->redirect();
-}
 
-public function handleProviderCallback()
-{
-    $user = Socialize::with('github')->user();
-
-    // $user->token;
-}
 
 
 

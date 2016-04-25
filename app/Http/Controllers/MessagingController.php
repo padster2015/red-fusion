@@ -25,6 +25,23 @@ class MessagingController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+//add auth
+// git hub login
+public function redirectToProvider()
+{
+    return Socialize::with('github')->redirect();
+}
+
+public function handleProviderCallback()
+{
+    $user = Socialize::with('github')->user();
+
+    // $user->token;
+}
+
+
     public function create(Request $request_Message)
     {
         $now = new DateTime();
