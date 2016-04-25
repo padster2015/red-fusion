@@ -16,15 +16,6 @@ use SocialNorm\Exceptions\ApplicationRejectedException;
 use SocialNorm\Exceptions\InvalidAuthorizationCodeException;
 
 
-// Redirect to Facebook for authorization
-Route::get('facebook/authorize', function() {
-    return SocialAuth::authorize('facebook');
-});
-
-Route::get('facebook/login', function() {
-    SocialAuth::login('github');
-    
-});
 
     Route::get('auth/authorize/{provider}',  function($provider) {
         return SocialAuth::authorize($provider);
@@ -142,6 +133,17 @@ Route::get('github/login', function() {
 
 });
 
+
+
+// Redirect to Facebook for authorization
+Route::get('facebook/authorize', function() {
+    return SocialAuth::authorize('facebook');
+});
+
+Route::get('facebook/login', function() {
+    SocialAuth::login('github');
+    
+});
 
 
 
