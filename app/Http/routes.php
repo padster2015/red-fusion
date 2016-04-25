@@ -11,16 +11,6 @@
 |
 */
 
-Route::get('github/authorize', function (){
-return SocialAuth::authorize('github');
-});
-
-
-Route::get('github/login', function() {
-    SocialAuth::login('github');
-
-});
-
 
 use SocialNorm\Exceptions\ApplicationRejectedException;
 use SocialNorm\Exceptions\InvalidAuthorizationCodeException;
@@ -139,7 +129,23 @@ Route::get('/api/v1/Budget/DashboardSummary_SPTD/', 'DataController@SPTD');
 
 
 Route::group(['middleware' => 'web'], function () {
-    Route::auth();
+  
+
+
+Route::get('github/authorize', function (){
+return SocialAuth::authorize('github');
+});
+
+
+Route::get('github/login', function() {
+    SocialAuth::login('github');
+
+});
+
+
+
+
+  Route::auth();
 
     // Added this!
 
