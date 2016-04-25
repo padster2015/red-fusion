@@ -10,10 +10,18 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::get('github/authorize', function() {
-    return Socialize::with('github')->redirect();
+
+Route::get('github/authorize', function (){
+return SocialAuth::authorize('github');
+});
+
+
+Route::get('github/login', function() {
+    SocialAuth::login('github');
 
 });
+
+
 use SocialNorm\Exceptions\ApplicationRejectedException;
 use SocialNorm\Exceptions\InvalidAuthorizationCodeException;
 
@@ -24,22 +32,7 @@ Route::get('facebook/authorize', function() {
 });
 
 Route::get('facebook/login', function() {
-    try {
-        SocialAuth::login('facebook');
-    } catch (ApplicationRejectedException $e) {
-        // User rejected application
-    } catch (InvalidAuthorizationCodeException $e) {
-        // Authorization was attempted with invalid
-        // code,likely forgery attempt
-    }
-
-    // Current user is now available via Auth facade
-    $user = Auth::user();
-    
-return SocialAuth::authorize('facebook');
-
-   //return 'Done';
-   
+    SocialAuth::login('github');
     
 });
 
