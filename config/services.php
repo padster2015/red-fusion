@@ -35,9 +35,9 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
     'github' => [
-    'client_id' => 'your-github-app-id',
-    'client_secret' => 'your-github-app-secret',
-    'redirect' => 'http://your-callback-url',
+    'client_id' => 'b092810879e5c12c0e6a',
+    'client_secret' => '0ba4f268523cd1737a544840f0c8f1e1cb0adbdc',
+    'redirect' => 'http://web.redfusionstackwebndb.165b10a6.svc.dockerapp.io/github/login',
 ],
 
 ];
