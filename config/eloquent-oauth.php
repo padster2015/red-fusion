@@ -21,7 +21,7 @@ return [
         'github' => [
             'client_id' => 'b092810879e5c12c0e6a',
             'client_secret' => '0ba4f268523cd1737a544840f0c8f1e1cb0adbdc',
-            'redirect_uri' => 'http://web.redfusionstackwebndb.165b10a6.svc.dockerapp.io/auth/login/github',
+            'redirect_uri' => 'http://web.redfusionstackwebndb.165b10a6.svc.dockerapp.io/github/login',
             'scope' => [],
         ],
         'linkedin' => [
