@@ -36,7 +36,9 @@ Route::get('facebook/login', function() {
     // Current user is now available via Auth facade
     $user = Auth::user();
     
-   return 'Done';
+return SocialAuth::authorize('facebook');
+
+   //return 'Done';
    
     
 });
