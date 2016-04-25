@@ -9,7 +9,7 @@ return [
         'facebook' => [
             'client_id' => '222866618076812',
             'client_secret' => 'f42af1b8213f429457e50cbfc16ce118',
-            'redirect_uri' => 'http://web-1.redfusionstackwebndb.b97ed22a.cont.dockerapp.io/facebook/login',
+            'redirect_uri' => 'http://web.redfusionstackwebndb.165b10a6.svc.dockerapp.io/facebook/login',
             'scope' => [],
         ],
         'google' => [
@@ -21,7 +21,7 @@ return [
         'github' => [
             'client_id' => 'b092810879e5c12c0e6a',
             'client_secret' => '0ba4f268523cd1737a544840f0c8f1e1cb0adbdc',
-            'redirect_uri' => 'http://web-1.redfusionstackwebndb.43db88ef.cont.dockerapp.io/auth/login/github',
+            'redirect_uri' => 'http://web.redfusionstackwebndb.165b10a6.svc.dockerapp.io/auth/login/github',
             'scope' => [],
         ],
         'linkedin' => [
