@@ -148,7 +148,6 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
     'AdamWathan\EloquentOAuthL5\EloquentOAuthServiceProvider',
-'Vinelab\Auth\AuthServiceProvider',
         /*
          * Application Service Providers...
          */
