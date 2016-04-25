@@ -147,7 +147,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-    	Laravel\Socialite\SocialiteServiceProvider,
+    	Laravel\Socialite\SocialiteServiceProvider::class,
 		'AdamWathan\EloquentOAuthL5\EloquentOAuthServiceProvider',
         /*
          * Application Service Providers...
@@ -201,7 +201,7 @@ return [
         'Storage'   => Illuminate\Support\Facades\Storage::class,
     	'SocialAuth' => 'AdamWathan\EloquentOAuth\Facades\OAuth',
         'URL'       => Illuminate\Support\Facades\URL::class,
-        'Socialize' => 'Laravel\Socialite\Facades\Socialite',
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 

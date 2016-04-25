@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use Validator;
+use Socialite;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
@@ -36,6 +37,19 @@ class AuthController extends Controller
      */
 
 
+
+public function redirectToProvider()
+    {
+        return Socialite::driver('github')->redirect();
+    }
+
+
+public function handleProviderCallback()
+{
+//    $user = Socialize::with('github')->user();
+$user = Socialite::driver('github')->user();
+    // $user->token;
+}
 
 
 

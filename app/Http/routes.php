@@ -15,9 +15,8 @@
 use SocialNorm\Exceptions\ApplicationRejectedException;
 use SocialNorm\Exceptions\InvalidAuthorizationCodeException;
 
-Route::get('github/auth', 'MessagingController@redirectToProvider');
-Route::get('github/login', 'MessagingController@handleProviderCallback');
-
+Route::get('auth/github', 'Auth\AuthController@redirectToProvider');
+Route::get('auth/github/callback', 'Auth\AuthController@handleProviderCallback');
 
 // Redirect to Facebook for authorization
 Route::get('facebook/authorize', function() {

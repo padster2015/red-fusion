@@ -5,6 +5,8 @@ use DB;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 use DateTime;
+
+use Socialite;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -29,17 +31,6 @@ class MessagingController extends Controller
 
 //add auth
 // git hub login
-public function redirectToProvider()
-{
-    return Socialize::with('github')->redirect();
-}
-
-public function handleProviderCallback()
-{
-    $user = Socialize::with('github')->user();
-
-    // $user->token;
-}
 
 
     public function create(Request $request_Message)
