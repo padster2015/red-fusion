@@ -12,8 +12,8 @@
   Minions have saved and processing your message :)
 </div>
 
-<form  role="form" class="form-inline" action="index.php" method="post" class="form-horizontal">
 
+<form  role="form" class="form-inline" action="javascript:AddMessage()" class="form-horizontal">
 
 <select id="Network" class="selectpicker" data-header="Choose Channel/network" multiple> 
 <option VALUE=""> 
