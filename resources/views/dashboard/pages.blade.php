@@ -11,7 +11,7 @@
 
 
         <!--main-->
-        <div class="main-view" style="width:80%; margin:0 auto;" ng-app="myApp" ng-controller="customersCtrl">  
+        <div class="main-view" style="width:80%; margin:0 auto;" ng-app="myApp" ng-controller="customersCtrl">
 
 
           <h1>
@@ -19,6 +19,13 @@
           <div id="summarise" class="row placeholders chart-highlights" style="text-align=Center;">
             <div class="col-xs-6 col-sm-3 placeholder text-center circlefactsp" style="border-radius:0px 100px 100px 100px; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-left:2%; margin-right:7%;">
             <h1 class="clicks"><strong>@{{ names }}  </strong> </h1>
+
+            <div class="circle-home" ng-controller="SearchController as ctrl">Review max.: <span get-value="" max="ctrl.upperCount">10</span><br/><span class="circle-home-score " id="counterofreviews" data-count="{{ctrl.upperCount}}">{{ctrl.noReviews}}</span> REVIEWS</div>
+
+
+
+
+
               <h4>Clicks</h4>
             </div>
              <div class="col-xs-6 col-sm-3 placeholder text-center positive  " style="border-radius:0px 100px 100px 100px; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:7%;">
@@ -155,7 +162,7 @@
 <script>
 window.setTimeout(function() {
     $(".alert").fadeTo(500, 0).slideUp(500, function(){
-        $(this).remove(); 
+        $(this).remove();
     });
 }, 1500);
 </script>
@@ -163,10 +170,11 @@ window.setTimeout(function() {
 
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
-    
+
     $http.get("./api/v1/Data/DashboardSummary_clicks?jsonp")
     .then(function (response) {
     $scope.names = response.data[0].Total_Clicks;
+    window.$windowScope= $scope;
 });
 
 
@@ -259,7 +267,7 @@ $(document).ready(function() { /*begin chart render*/
                         color: colors[0]
                     }}],
             }},
-        { 
+        {
             name: 'B-1',
             y: 11.94,
             color: colors[2],
@@ -317,7 +325,7 @@ style: {
 color:'white'
         }
         },
- 
+
 title: {
     text: ''
 },
@@ -360,9 +368,9 @@ plotOptions: {
                         }
                     }
                 },
-                
-                
-                
+
+
+
 dataLabels: {
             enabled: true,
             style: {
@@ -371,11 +379,11 @@ dataLabels: {
                 }
 }
 }
-             
+
         },
-        
-        
-       
+
+
+
         //formatting over hover tooltip
 tooltip: {
             formatter: function() {
@@ -409,30 +417,30 @@ exporting: {
             enabled: false
         }
     }, function(chart){
-        
+
         chart.upper = [];
-        
+
         var up = false;
-        
+
         chart.setChart = function(name, categories, data, color) {
             //chart.xAxis[0].setCategories(categories);
             if (name === true && chart.upper.length) {
                 chart.series[0].remove();
                 chart.addSeries( chart.upper.pop() );
-                
+
                 if( chart.upper.length === 0 ) {
                     $("#pie").hide('up');
-                    
+
                     up = false;
                 }
                 return true;
             }
-    
+
             if (up === false) {
                $("#pie").show().bind('click', function(){ chart.setChart(true); });
                 up = true;
             }
-            
+
             chart.upper.push( chart.series[0].options );
             chart.series[0].remove();
             chart.addSeries({
@@ -442,8 +450,8 @@ exporting: {
             });
         }
 
-        
-        
+
+
     });
 
 
@@ -548,8 +556,65 @@ jQuery(function($) {
             }
         });
     });
+//count up
+    var demoApp = angular.module('demoApp', []); //'ngRoute','ui.bootstrap']);
+
+    demoApp.controller('SearchController', function ($scope, $http, $interval) { //$facebook,
+
+        $scope.noReviews = 100;
+        //$scope.childOnLoad = function () {
+
+        this.upperCount = 10; //$("#counterofreviews").text();
+        console.log(this.upperCount);
+
+        var stop;
+
+        this.startCounter = function () { // needed for re-run on change
+            //console.log(stop, this);
+            this.no_Reviews = 0;
+            if ( angular.isUndefined(stop) )
+                stop = $interval(checkCount.bind(this), 100);
+        };
+
+        this.startCounter();
+        //};
+
+        function checkCount() {
+            if (this.upperCount >= this.no_Reviews) {
+
+                this.noReviews = this.no_Reviews;
+                this.no_Reviews++;
+                //console.log('Inside if statement');
+            } else {
+                stopFight();
+            }
+        }
+
+        function stopFight() {
+            if (angular.isDefined(stop)) {
+                $interval.cancel(stop);
+                stop = undefined;
+            }
+        };
 
 
+        //$scope.childOnLoad();
+
+    });
+
+    demoApp.directive('getValue', function(){
+        return {
+            restrict: 'A',
+            scope: {
+              max: '='
+            },
+            link: function(scope, element, attrs)
+            {
+              //alert(element.text());
+              scope.max = parseInt(element.text());
+            }
+        };
+    });
 
 </script>
 @endsection
