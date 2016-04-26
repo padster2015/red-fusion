@@ -1,6 +1,6 @@
 @extends('layouts.app')
-@section('content')
 
+@section('content')
 
 <div class="container-fluid" >
   <div class="row">
@@ -13,7 +13,9 @@
 </div>
 
 
+
 <form  role="form" class="form-inline" action="javascript:AddMessage()" class="form-horizontal">
+
 
 <select id="Network" class="selectpicker" data-header="Choose Channel/network" multiple> 
 <option VALUE=""> 
@@ -58,7 +60,7 @@ Summer Sale
 <br>
 
 <div class="input-group">
-      <input type="textarea" size="70" cols="3" id="status" name="status"  class="form-control" aria-label="..." placeholder="Craft your message here" minlength="3" >
+      <input type="textarea" size="70" cols="3" id="Craft_Post" class="form-control" aria-label="..." placeholder="Craft your message here" minlength="3" >
 
 
       <div class="input-group-btn">
@@ -137,38 +139,26 @@ Summer Sale
 
 
 <script>
-
 $(document).ready(function() {
     var text_max = 144;
     $('#textarea_feedback').html(text_max + ' characters remaining');
-
-    $('#status').keyup(function() {
-        var text_length = $('#status').val().length;
+    $('#Craft_Post').keyup(function() {
+        var text_length = $('#Craft_Post').val().length;
         var text_remaining = text_max - text_length;
-
         $('#textarea_feedback').html(text_remaining + ' characters remaining');
     });
 });
-
-
-
 $( "#btn-save" ).click(function() {
   $( "#response" ).toggle("slow");
 });
-
 $(".alert-message").alert();
 window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
-
-
-
-
             function AddMessage(FirstName,LastName)
             {
                   var IdRequest = document.getElementById('id').value;
-                  var CraftPostIn = document.getElementById('status').value;
+                  var CraftPostIn = document.getElementById('Craft_Post').value;
                   var NetworkRequest = document.getElementById('Network').value;
                   var HashtagIn = document.getElementById('HashTags').value;
-
                 $.ajax({
                        type : 'POST',
                        url : 'api/v1/Messages/save',
@@ -189,7 +179,6 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
         
 
         <script>
-
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
     $http.get("api/v1/Messages/hashtags?user=6").then(function(response) {
