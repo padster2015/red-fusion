@@ -5,50 +5,76 @@ window.setTimeout(function() {
 }, 1500);
 
 
-var demoApp = angular.module('demoApp', []); //'ngRoute','ui.bootstrap']);
-
-demoApp.controller('SearchController', function ($scope, $http, $interval) { //$facebook,
-
-    $scope.noReviews = 100;
-    //$scope.childOnLoad = function () {
-
-    this.upperCount = $scope.noReviews; //$("#counterofreviews").text();
-    console.log(this.upperCount);
-
-    var stop;
-
-    this.startCounter = function () { // needed for re-run on change
-        //console.log(stop, this);
-        this.no_Reviews = 0;
-        if ( angular.isUndefined(stop) )
-            stop = $interval(checkCount.bind(this), 100);
-    };
-
-    this.startCounter();
-    //};
-
-    function checkCount() {
-        if (this.upperCount >= this.no_Reviews) {
-
-            this.noReviews = this.no_Reviews;
-            this.no_Reviews++;
-            //console.log('Inside if statement');
-        } else {
-            stopFight();
-        }
-    }
-
-    function stopFight() {
-        if (angular.isDefined(stop)) {
-            $interval.cancel(stop);
-            stop = undefined;
-        }
-    };
-
-
-    //$scope.childOnLoad();
-
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http,$interval) {
+  $http.get("./api/v1/Data/DashboardSummary_clicks?jsonp")
+  .then(function (response) {
+  $scope.names = response.data[0].Total_Clicks;
+  window.$windowScope= $scope;
 });
+
+
+$http.get("./api/v1/Budget/DashboardSummary_SPTD?jsonp")
+  .then(function (SPTDResponse) {
+  $scope.sptddata = SPTDResponse.data[0].SPTD;
+});
+
+
+      $scope.noReviews = 2000;
+      //$scope.childOnLoad = function () {
+
+      this.upperCount = $scope.noReviews; //$("#counterofreviews").text();
+      console.log(this.upperCount);
+
+      var stop;
+
+      this.startCounter = function () { // needed for re-run on change
+          //console.log(stop, this);
+          this.no_Reviews = 0;
+          if ( angular.isUndefined(stop) )
+              stop = $interval(checkCount.bind(this), 100);
+      };
+
+      this.startCounter();
+      //};
+
+      function checkCount() {
+          if (this.upperCount >= this.no_Reviews) {
+
+              this.noReviews = this.no_Reviews;
+              this.no_Reviews++;
+              //console.log('Inside if statement');
+          } else {
+              stopFight();
+          }
+      }
+
+      function stopFight() {
+          if (angular.isDefined(stop)) {
+              $interval.cancel(stop);
+              stop = undefined;
+          }
+      };
+
+
+      //$scope.childOnLoad();
+
+  });
+
+  app.directive('getValue', function(){
+      return {
+          restrict: 'A',
+          scope: {
+            max: '='
+          },
+          link: function(scope, element, attrs)
+          {
+            //alert(element.text());
+            scope.max = parseInt(element.text());
+          }
+      };
+  });
+
 
 
 
