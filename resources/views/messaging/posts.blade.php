@@ -181,7 +181,7 @@ window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
         <script>
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http) {
-    $http.get("api/v1/Messages/hashtags?user=6").then(function(response) {
+    $http.get("api/v1/Messages/hashtags?user={{ Auth::user()->id }}").then(function(response) {
         $scope.HashTags = response.data.records;
     });
 });
