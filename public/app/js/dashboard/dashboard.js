@@ -78,7 +78,6 @@ $http.get("./api/v1/Budget/DashboardSummary_SPTD?jsonp")
     .then(function (SPTDResponse) {
     $scope.sptddata = SPTDResponse.data[0].SPTD;
 });
-});
 //angel
 
 
