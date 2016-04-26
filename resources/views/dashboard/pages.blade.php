@@ -8,10 +8,16 @@
 
 
 <div class="container-fluid">
+  <div class="circle-home" ng-controller="SearchController as ctrl">Review max.:
+      <input ng-model="ctrl.upperCount" ng-change="ctrl.startCounter()"/> <span class="circle-home-score " id="counterofreviews" data-count="{{ctrl.upperCount}}">{{ctrl.noReviews}}</span> REVIEWS</div>
+
+
+
+
 
 
         <!--main-->
-        <div class="main-view" style="width:80%; margin:0 auto;" ng-app="myApp" ng-controller="customersCtrl">
+        <!--<div class="main-view" style="width:80%; margin:0 auto;" ng-app="myApp" ng-controller="customersCtrl">
 
 
           <h1>
@@ -22,7 +28,7 @@
 
             <span get-value="" max="upperCount"></span><span class="circle-home-score " id="counterofreviews" data-count="@{{upperCount}}"><h1>@{{noReviews}}</span></h1>
 
-
+-->
               <h4>Clicks</h4>
             </div>
              <div class="col-xs-6 col-sm-3 placeholder text-center positive  " style="border-radius:0px 100px 100px 100px; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-right:7%;">

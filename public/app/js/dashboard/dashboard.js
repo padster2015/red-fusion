@@ -5,65 +5,50 @@ window.setTimeout(function() {
 }, 1500);
 
 
-var app = angular.module('myApp', []);
-app.controller('customersCtrl', function($scope, $http,$interval)
-{
+var demoApp = angular.module('demoApp', []); //'ngRoute','ui.bootstrap']);
 
-      $scope.noReviews = 2000;
-      //$scope.childOnLoad = function () {
+demoApp.controller('SearchController', function ($scope, $http, $interval) { //$facebook,
 
-      this.upperCount = $scope.noReviews; //$("#counterofreviews").text();
-      console.log(this.upperCount);
+    $scope.noReviews = 100;
+    //$scope.childOnLoad = function () {
 
-      var stop;
+    this.upperCount = $scope.noReviews; //$("#counterofreviews").text();
+    console.log(this.upperCount);
 
-      this.startCounter = function () { // needed for re-run on change
-          //console.log(stop, this);
-          this.no_Reviews = 0;
-          if ( angular.isUndefined(stop) )
-              stop = $interval(checkCount.bind(this), 100);
-      };
+    var stop;
 
-      this.startCounter();
-      //};
+    this.startCounter = function () { // needed for re-run on change
+        //console.log(stop, this);
+        this.no_Reviews = 0;
+        if ( angular.isUndefined(stop) )
+            stop = $interval(checkCount.bind(this), 100);
+    };
 
-      function checkCount() {
-          if (this.upperCount >= this.no_Reviews) {
+    this.startCounter();
+    //};
 
-              this.noReviews = this.no_Reviews;
-              this.no_Reviews++;
-              //console.log('Inside if statement');
-          } else {
-              stopFight();
-          }
-      }
+    function checkCount() {
+        if (this.upperCount >= this.no_Reviews) {
 
-      function stopFight() {
-          if (angular.isDefined(stop)) {
-              $interval.cancel(stop);
-              stop = undefined;
-          }
-      };
+            this.noReviews = this.no_Reviews;
+            this.no_Reviews++;
+            //console.log('Inside if statement');
+        } else {
+            stopFight();
+        }
+    }
+
+    function stopFight() {
+        if (angular.isDefined(stop)) {
+            $interval.cancel(stop);
+            stop = undefined;
+        }
+    };
 
 
-      //$scope.childOnLoad();
+    //$scope.childOnLoad();
 
-  });
-
-  app.directive('getValue', function(){
-      return {
-          restrict: 'A',
-          scope: {
-            max: '='
-          },
-          link: function(scope, element, attrs)
-          {
-            //alert(element.text());
-            scope.max = parseInt(element.text());
-          }
-      };
-  });
-
+});
 
 
 
