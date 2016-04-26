@@ -49,7 +49,7 @@ app.controller('customersCtrl', function($scope, $http,$interval) {
 
   });
 
-  demoApp.directive('getValue', function(){
+  app.directive('getValue', function(){
       return {
           restrict: 'A',
           scope: {
