@@ -7,6 +7,18 @@ window.setTimeout(function() {
 
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope, $http,$interval) {
+  $http.get("./api/v1/Data/DashboardSummary_clicks?jsonp")
+  .then(function (response) {
+  $scope.names = response.data[0].Total_Clicks;
+  window.$windowScope= $scope;
+});
+
+
+$http.get("./api/v1/Budget/DashboardSummary_SPTD?jsonp")
+  .then(function (SPTDResponse) {
+  $scope.sptddata = SPTDResponse.data[0].SPTD;
+});
+
 
       $scope.noReviews = 100;
       //$scope.childOnLoad = function () {
@@ -67,17 +79,7 @@ app.controller('customersCtrl', function($scope, $http,$interval) {
 
 
 
-    $http.get("./api/v1/Data/DashboardSummary_clicks?jsonp")
-    .then(function (response) {
-    $scope.names = response.data[0].Total_Clicks;
-    window.$windowScope= $scope;
-});
 
-
-$http.get("./api/v1/Budget/DashboardSummary_SPTD?jsonp")
-    .then(function (SPTDResponse) {
-    $scope.sptddata = SPTDResponse.data[0].SPTD;
-});
 //angel
 
 
