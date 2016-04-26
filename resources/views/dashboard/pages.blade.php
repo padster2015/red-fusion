@@ -9,7 +9,7 @@
 
 <div class="container-fluid">
   <div class="circle-home" ng-controller="SearchController as ctrl">Review max.:
-      <input ng-model="ctrl.upperCount" ng-change="ctrl.startCounter()"/> <span class="circle-home-score " id="counterofreviews" data-count="{{ctrl.upperCount}}">{{ctrl.noReviews}}</span> REVIEWS</div>
+      <input ng-model="ctrl.upperCount" ng-change="ctrl.startCounter()"/> <span class="circle-home-score " id="counterofreviews" data-count="@{{ctrl.upperCount}}">@{{ctrl.noReviews}}</span> REVIEWS</div>
 
 
 
