@@ -23,7 +23,7 @@ $http.get("./api/v1/Budget/DashboardSummary_SPTD?jsonp")
       $scope.noReviews = 100;
       //$scope.childOnLoad = function () {
 
-      this.upperCount = 10; //$("#counterofreviews").text();
+      this.upperCount = $scope.noReviews; //$("#counterofreviews").text();
       console.log(this.upperCount);
 
       var stop;
