@@ -20,7 +20,7 @@
             <div class="col-xs-6 col-sm-3 placeholder text-center circlefactsp" style="border-radius:0px 100px 100px 100px; background-color:#2ecc71; color:#FFF; width:200px; height:200px; padding-top:36px; margin-left:2%; margin-right:7%;">
             <h1 class="clicks"><strong>@{{ names }}  </strong> </h1>
 
-            <div class="circle-home" ng-controller="SearchController as ctrl"><span get-value="" max="ctrl.upperCount">00</span><br/><span class="circle-home-score " id="counterofreviews" data-count="@{{ctrl.upperCount}}">@{{ctrl.noReviews}}</span></div>
+            <div class="circle-home"><span get-value="" max="upperCount">00</span><br/><span class="circle-home-score " id="counterofreviews" data-count="@{{upperCount}}">@{{noReviews}}</span></div>
 
 
               <h4>Clicks</h4>
